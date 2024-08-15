@@ -6,8 +6,8 @@
     <title>Document</title>
     <?php
     wp_head();
+    wp_footer();
     ?>
-    <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     <div class="container">

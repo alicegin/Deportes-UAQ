@@ -7,3 +7,12 @@ function deportesUAQ_register_styles(){
 
 add_action('wp_enqueue_scripts', 'deportesUAQ_register_styles');
 ?>
+
+<?php
+//Función para insertar los scripts
+function deportesUAQ_register_scripts(){
+    wp_enqueue_script('deportesUAQ-jquery',get_template_directory_uri() . "/assets/js/bootstrap.bundle.min.js", array(), '1.0');
+}
+
+add_action('wp_enqueue_scripts', 'deportesUAQ_register_scripts');
+?>
