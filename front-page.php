@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/wp-content/themes\Deportes-UAQ\assets\css\bootstrap.min.css">
-    <link rel="stylesheet" href="/wp-content/themes\Deportes-UAQ\assets\css\style.css">
+    <?php
+    wp_head();
+    ?>
     <script src="js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
