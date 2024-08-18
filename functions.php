@@ -1,5 +1,8 @@
 <?php
 function deportesuaq_enqueue_styles() {
+    // Estilo principal para todas las paginas
+    wp_enqueue_style('allStyle', get_template_directory_uri() . '/css/allStyle.css');
+    
     // Estilo para el header, lo hace para todas las paginas
     wp_enqueue_style('headerStyle', get_template_directory_uri() . '/css/headerStyle.css');
 
