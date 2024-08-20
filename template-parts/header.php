@@ -19,7 +19,7 @@
         <div class="navbar-content">
         <button class="navbar-toggler" aria-label="Toggle navigation">
             &#9776; <!-- Símbolo de hamburguesa -->
-          </button>
+        </button>
             <div class="navbar-menu">
             <a href="<?php echo home_url('/conocenos'); ?>">CONÓCENOS</a>
             <a href="<?php echo home_url('/condde'); ?>">CONDDE</a>

@@ -19,7 +19,4 @@ function deportesuaq_enqueue_styles() {
     }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
-
-
-
 ?>
