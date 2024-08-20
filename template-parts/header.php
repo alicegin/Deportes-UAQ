@@ -9,17 +9,34 @@
 </head>
 
 <body <?php body_class(); ?>>
-
-<header style="margin-top: 100px;">
+<div class="titulo">
+        <img src="http://localhost:10004/wp-content/uploads/2024/08/A1.png" class="logo">
+        <h1> <?php the_title(); ?></h1>
+        <img src="http://localhost:10004/wp-content/uploads/2024/08/A2.png" class="logo">
+    </div>
+<header>
     <nav>
-        <!-- Enlace a la página principal -->
-        <a href="<?php echo home_url(); ?>">Inicio</a>
-
-        <!-- Enlace a la página "Salón de la Fama" creada en WordPress -->
-        <a href="<?php echo home_url('/salon-de-la-fama'); ?>">Salón de la Fama</a>
-
-        <!-- Enlace a un archivo PHP dentro de la carpeta views -->
-        <a href="<?php echo home_url('/conocenos') ?>">Conócenos</a>
+        <div class="navbar-content">
+        <button class="navbar-toggler" aria-label="Toggle navigation">
+            &#9776; <!-- Símbolo de hamburguesa -->
+          </button>
+            <div class="navbar-menu">
+            <a href="<?php echo home_url('/conocenos'); ?>">CONÓCENOS</a>
+            <a href="<?php echo home_url('/condde'); ?>">CONDDE</a>
+            <a href="<?php echo home_url('/ciencias-aplicadas') ?>">CIENCIAS APLICADAS</a>
+            <a href="<?php echo home_url('/selecciones-universitarias'); ?>">SELECCIONES UNIVERSITARIAS</a>
+            <a href="<?php echo home_url('/documentos'); ?>">DOCUMENTOS</a>
+            <a href="<?php echo home_url('/contacto') ?>">CONTACTO</a>
+            </div>
+        </div>
     </nav>
 </header>
+<script>
+    const toggler = document.querySelector('.navbar-toggler');
+    const menu = document.querySelector('.navbar-menu');
+  
+    toggler.addEventListener('click', () => {
+      menu.classList.toggle('active');
+    });
+  </script>
 </body>

@@ -3,3 +3,75 @@ header nav a {
     text-decoration: none;
     padding: 10px;
 }
+
+
+header{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px; /* Espacio entre los enlaces */
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.navbar-menu {
+    display: flex;
+    gap: 20px;
+  }
+
+.navbar-toggler {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.titulo{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 20px 0px;
+    font-size:x-large;
+}
+
+.logo{
+    align-self: center;
+    height: 100px;
+    object-fit: cover;
+}
+
+
+@media (max-width: 768px) {
+    .navbar-menu {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+    }
+  
+    .navbar-toggler {
+      display: block;
+    }
+  
+    /* Cuando el menú está activo, se muestra en pantalla completa */
+    .navbar-menu.active {
+      display: flex;
+      position: absolute;
+      top: 50px;
+      left: 0;
+      background-color: white;
+      width: 100%;
+      padding: 10px 0;
+      z-index: 1000;
+    }
+  
+    .navbar-menu a {
+      padding: 10px 20px;
+      border-bottom: 1px solid #444;
+      text-align: center;
+    }
+  }
