@@ -1,0 +1,8 @@
+footer section{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+footer{
+    margin-top: auto;
+}
