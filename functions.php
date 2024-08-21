@@ -9,6 +9,8 @@ function deportesuaq_enqueue_styles() {
     wp_enqueue_style('footerStyle', get_template_directory_uri() . '/css/footerStyle.css');
 
     // Si estás en la página "index"
+    if (is_home()||is_front_page()) {
+        wp_enqueue_style('deportesUAQ-boostrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
         wp_enqueue_style('aboutStyle', get_template_directory_uri() . '/css/mainStyle.css');
     }
 
@@ -21,5 +23,13 @@ add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 
 //Función para insertar los scripts
 function deportesUAQ_register_scripts(){
+
+    if(is_home()||is_front_page()){
+        wp_enqueue_script('carouselScript',"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js");
+    }
+    
+}
+
+add_action('wp_enqueue_scripts', 'deportesUAQ_register_scripts');
 
 ?>
