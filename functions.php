@@ -9,7 +9,6 @@ function deportesuaq_enqueue_styles() {
     wp_enqueue_style('footerStyle', get_template_directory_uri() . '/css/footerStyle.css');
 
     // Si estás en la página "index"
-    if (is_home()) {
         wp_enqueue_style('aboutStyle', get_template_directory_uri() . '/css/mainStyle.css');
     }
 
@@ -19,4 +18,8 @@ function deportesuaq_enqueue_styles() {
     }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
+
+//Función para insertar los scripts
+function deportesUAQ_register_scripts(){
+
 ?>
