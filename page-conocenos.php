@@ -23,7 +23,19 @@
     ?>
 
     <main>
-        <?php get_template_part('template-parts/slider') ?>        
+        <?php 
+            get_template_part('template-parts/slider');
+
+            $images = array(
+                'tryoutsHandBall.jpg',
+                'tryoutsFootball.jpg',
+                'tryoutsTaekwondo.jpg',
+                'torneoEsports.jpg',
+                'tryoutsTiroConArco.jpg'
+            );
+
+            render_slider($images);
+        ?>        
         <section class="mainRow">
             <h2>¿Quiénes SOMOS?</h2>
             <p>

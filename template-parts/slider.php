@@ -70,25 +70,30 @@
 </head>
 
 <body <?php body_class(); ?>>
-    <section class="sliderContainer">
-        <button class="prev">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-            </svg>
-        </button>
-        <div class="slider">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsHandBall.jpg" alt="TRYOUTS UAQ" />
-            <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsFootball.jpg" alt="TRYOUTS UAQ" />
-            <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTaekwondo.jpg" alt="TRYOUTS UAQ" />
-            <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTenisDeMesa.jpg" alt="TRYOUTS UAQ" />
-            <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" alt="TRYOUTS UAQ" />
-        </div>
-        <button class="next">
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-            </svg>
-        </button>
-    </section>
+    <?php
+        function render_slider($images = array()) {
+            if (empty($images)) return;
+            ?>
+            <section class="sliderContainer">
+                <button class="prev">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <div class="slider">
+                    <?php foreach ($images as $image) : ?>
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $image; ?>" alt="TRYOUTS UAQ" />
+                    <?php endforeach; ?>
+                </div>
+                <button class="next">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+            </section>
+            <?php
+        }
+    ?>
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
     <script>
