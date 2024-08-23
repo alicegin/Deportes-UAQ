@@ -18,7 +18,7 @@ get_template_part('template-parts/header');
 
     <section class="contenidoR">
     <div class="ginCard">
-        <img src="http://localhost:10004/wp-content/uploads/2024/08/B1.jpeg">
+        <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/B1.jpeg">
         <div class="cardContenido">
         <h3>Fisioterapia Deportiva</h3>
         <p style="align-self: center;">Texto extra descriptivo</p>
@@ -27,7 +27,7 @@ get_template_part('template-parts/header');
     </div>
 
     <div class="ginCard">
-        <img src="http://localhost:10004/wp-content/uploads/2024/08/B2.jpeg">
+        <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/B2.jpeg">
         <div class="cardContenido">
         <h3>Nutrición deportiva</h3>
         <p style="align-self: center;">Texto extra descriptivo</p>
@@ -36,7 +36,7 @@ get_template_part('template-parts/header');
     </div>
 
     <div class="ginCard">
-        <img src="http://localhost:10004/wp-content/uploads/2024/08/B3.jpeg">
+        <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/B3.jpeg">
         <div class="cardContenido">
         <h3>Psicología deportiva</h3>
         <p style="align-self: center;">Texto extra descriptivo</p>

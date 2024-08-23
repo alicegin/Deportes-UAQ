@@ -90,14 +90,14 @@
                 </p>
             </section>
             <section class="mainRow side">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTaekwondo.jpg" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E1.png" />
             </section>
         </section>
         <section class="mainRow flex wrap">
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>AJEDREZ</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E11_.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>CARLOS DILAN SOLÍS LANDA</h3>
@@ -118,7 +118,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>ATLETISMO</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E3_.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>JÉSUS LOYO NASTA</h3>
@@ -132,63 +132,8 @@
             </article>
             <article class="cardContainer flex">
                 <section class="cardSide">
-                    <h2>BOXEO UNIVERSITARIO</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
-                </section>
-                <section class="cardSide align-start">
-                    <h3>Arturo Vargas García</h3>
-                    <h4>442 138 7289</h4>
-                </section>
-            </article>
-            <article class="cardContainer flex">
-                <section class="cardSide">
-                    <h2>JUDO</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
-                </section>
-                <section class="cardSide align-start">
-                    <h3>ALFREDO VÁZQUEZ MIRANDA</h3>
-                    <h4>442 351 8267</h4>
-                    <p>
-                        <strong>GYM Ingeniería (Centro Universitario)</strong><br>
-                        Lunes a Viernes 19:00 - 21:00 <br>
-                        Sábado 09:00 - 11:00 <br>
-                    </p>
-                </section>
-            </article>
-            <article class="cardContainer flex">
-                <section class="cardSide">
-                    <h2>KARATE</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTaekwondo.jpg" />
-                </section>
-                <section class="cardSide align-start">
-                    <h3>MARCO ANTONIO SOSA GARCÍA</h3>
-                    <h4>442 634 6470</h4>
-                    <p>
-                        <strong>K.O. Karate and Martial Center (Camino a Los
-                            Olvera 144-Altos, El Pueblito, Qro.)</strong><br>
-                        Lunes y Miércoles 18:00 - 20:00 <br>
-                    </p>
-                </section>
-            </article>
-            <article class="cardContainer flex">
-                <section class="cardSide">
-                    <h2>LUCHA UNIVERSITARIA</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
-                </section>
-                <section class="cardSide align-start">
-                    <h3>JUAN CARLOS LINARES VALDÉS</h3>
-                    <h4>442 498 9945</h4>
-                    <p>
-                        <strong>Gimnasio de Lucha (Parque Querétaro 2000)</strong><br>
-                        Lunes a Viernes 07:00 - 08:30 y 15:30-17:00 <br>
-                        Sábado 09:00 - 11:00 <br>
-                    </p>
-                </section>
-            </article>
-            <article class="cardContainer flex">
-                <section class="cardSide">
                     <h2>TENIS DE MESA</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTenisDeMesa.jpg" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E9_.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>GENARO ALFONSO AYALA GARCÍA</h3>
@@ -203,7 +148,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>TIRO CON ARCO</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E5_.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>KAREN ADRIANA MEZA ALVAREZ</h3>
@@ -217,7 +162,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>BÁSQUETBOL FEMENIL</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E6_.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>JAIME RIVAS MÁRQUEZ</h3>
@@ -232,7 +177,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>BÁSQUETBOL VARONIL</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E4_.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>ARTURO SÁNCHEZ ACEVES</h3>
@@ -246,22 +191,8 @@
             </article>
             <article class="cardContainer flex">
                 <section class="cardSide">
-                    <h2>BEISBOL / SOFTBOL</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
-                </section>
-                <section class="cardSide align-start">
-                    <h3>LUIS ENRIQUE LEAL GUERRERO</h3>
-                    <h4>442 143 6040</h4>
-                    <p>
-                        <strong>Campo de Béisbol (Campus Corregidora)</strong><br>
-                        Jueves 16:00 - 19:00 <br>                         
-                    </p>
-                </section>
-            </article>
-            <article class="cardContainer flex">
-                <section class="cardSide">
                     <h2>FÚTBOL ASOCIACIÓN FEMENIL</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E8_.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>ALEJANDRO PALOMARES MARTÍNEZ</h3>
@@ -275,7 +206,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>FÚTBOL ASOCIACIÓN VARONIL</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E10_.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>NOÉ TERÁN FLORES</h3>
@@ -288,37 +219,8 @@
             </article>
             <article class="cardContainer flex">
                 <section class="cardSide">
-                    <h2>FÚTBOL BARDAS</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
-                </section>
-                <section class="cardSide align-start">
-                    <h3>JOSÉ FÉLIX CHÁVEZ RODRÍGUEZ</h3>
-                    <h4>442 157 7053</h4>
-                    <p>
-                        <strong>Cancha Fútbol Rápido FCS (Centro Universitario)</strong><br>
-                        Jueves. Miércoles y Viernes 15:00 - 17:00 <br>                         
-                    </p>
-                </section>
-            </article>
-            <article class="cardContainer flex">
-                <section class="cardSide">
-                    <h2>HANDBALL</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsHandBall.jpg" />
-                </section>
-                <section class="cardSide align-start">
-                    <h3>JUAN CARLOS MAYA CRUZ</h3>
-                    <h4>442 421 9495</h4>
-                    <p>
-                        <strong>Gimnasio Multiusos - Centro de Raqueta (Parque Querétaro 2000)</strong><br>
-                        Lunes a Viernes 17:00 - 21:00 <br>
-                        Sábado 09:00 - 11:00 <br>                         
-                    </p>
-                </section>
-            </article>
-            <article class="cardContainer flex">
-                <section class="cardSide">
                     <h2>VOLEIBOL DE SALA</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E2_.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>HÉCTOR JAVIER VILLANUEVA RODRÍGUEZ</h3>
@@ -331,31 +233,6 @@
                         <strong>Auditorio (Campus Aeropuerto)</strong><br>
                         Jueves 18:00 - 22:00 <br>                         
                     </p>
-                </section>
-            </article>
-            <article class="cardContainer flex">
-                <section class="cardSide">
-                    <h2>VOLEIBOL DE PLAYA</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
-                </section>
-                <section class="cardSide align-start">
-                    <h3>NATALIA RUTH PALMA SALAZAR</h3>
-                    <h4>442 142 2238</h4>                    
-                    <p>
-                        <strong>Cancha de Voleibol de Playa (Parque Querétaro 2000)</strong><br>
-                        Martes y Jueves 19:00 - 22:00 <br>
-                        Sábado 09:00 - 16:00 <br>                         
-                    </p>
-                </section>
-            </article>
-            <article class="cardContainer flex">
-                <section class="cardSide">
-                    <h2>eSports</h2>
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/tryoutsTiroConArco.jpg" />
-                </section>
-                <section class="cardSide align-start">
-                    <h3>RICARDO MATA ANGUIANO</h3>
-                    <h4>442 611 5946</h4>                    
                 </section>
             </article>
         </section>

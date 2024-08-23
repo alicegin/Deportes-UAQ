@@ -4,8 +4,9 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
-
+  <title>
+    <?php
+      wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
   <?php
   wp_head();
   wp_footer();
@@ -14,9 +15,11 @@
 
 <body <?php body_class(); ?>>
   <div class="titulo">
-    <img src="http://localhost:10004/wp-content/uploads/2024/08/A1.png" class="logo">
+    <a href="<?php echo home_url()?>">
+      <img src="http://deportesuaq.mx/wp-content/uploads/2024/07/Asset-6@300x.png" class="logo">
+    </a>
     <h1> <?php the_title(); ?></h1>
-    <img src="http://localhost:10004/wp-content/uploads/2024/08/A2.png" class="logo">
+    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/A2.png" class="logo">
   </div>
   <header>
     <nav>
@@ -65,3 +68,8 @@
     }
   </script>
 </body>
+<?php 
+  function titulo($texto){
+    return $texto;
+  }
+?>
