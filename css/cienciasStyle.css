@@ -1,0 +1,22 @@
+
+.ginCard{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 10px 20px 20px rgba(149, 149, 149, 0.844);
+    border-radius: 20px;
+}
+.ginCard img{
+    object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
+    object-position: center;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.cardContenido{
+    padding-left: 20px;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}

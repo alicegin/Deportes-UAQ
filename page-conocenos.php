@@ -23,19 +23,9 @@
     ?>
 
     <main>
-        <?php 
-            get_template_part('template-parts/slider');
-
-            $images = array(
-                'tryoutsHandBall.jpg',
-                'tryoutsFootball.jpg',
-                'tryoutsTaekwondo.jpg',
-                'torneoEsports.jpg',
-                'tryoutsTiroConArco.jpg'
-            );
-
-            render_slider($images);
-        ?>        
+        <div class="contenedorCentrar">
+            <img src="http://localhost:10004/wp-content/uploads/2024/08/C1.png">      
+        </div>
         <section class="mainRow">
             <h2>¿Quiénes SOMOS?</h2>
             <p>

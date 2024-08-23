@@ -2,6 +2,7 @@
 function deportesuaq_enqueue_styles() {
     // Estilo principal para todas las paginas
     wp_enqueue_style('allStyle', get_template_directory_uri() . '/css/allStyle.css');
+    wp_enqueue_style('deportesUAQ-boostrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
     
     // Estilo para el header, lo hace para todas las paginas
     wp_enqueue_style('headerStyle', get_template_directory_uri() . '/css/headerStyle.css');
@@ -10,7 +11,6 @@ function deportesuaq_enqueue_styles() {
 
     // Si estás en la página "index"
     if (is_home()||is_front_page()) {
-        wp_enqueue_style('deportesUAQ-boostrap', "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css");
         wp_enqueue_style('aboutStyle', get_template_directory_uri() . '/css/mainStyle.css');
     }
 
@@ -18,15 +18,19 @@ function deportesuaq_enqueue_styles() {
     if (is_page('salon-de-la-fama')) {
         wp_enqueue_style('famaStyle', get_template_directory_uri() . '/css/famaStyle.css');
     }
+    if (is_page('condde')) {
+        wp_enqueue_style('conddeStyle', get_template_directory_uri() . '/css/conddeStyle.css');
+    }
+    if (is_page('ciencias-aplicadas')) {
+        wp_enqueue_style('cienciasStyle', get_template_directory_uri() . '/css/cienciasStyle.css');
+    }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 
 //Función para insertar los scripts
 function deportesUAQ_register_scripts(){
 
-    if(is_home()||is_front_page()){
-        wp_enqueue_script('carouselScript',"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js");
-    }
+    wp_enqueue_script('carouselScript',"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js");
     
 }
 

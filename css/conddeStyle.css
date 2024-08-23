@@ -1,0 +1,13 @@
+.subtitulo{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+
+h1{
+    align-self: center;
+}
+
+.carouselMargin{
+    margin: 40px 40px 40px 40px;
+}

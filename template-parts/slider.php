@@ -1,128 +1,30 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+function generarCarrusel($imagenes) {
+    $html = '<div class="contenedorCentrar">
+                <div class="contenedorCarrusel">
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">';
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
+    foreach ($imagenes as $index => $imagen) {
+        $activeClass = $index === 0 ? ' active' : '';
+        $html .= '<div class="carousel-item' . $activeClass . '">
+                      <img src="' . $imagen . '" class="d-block w-100" alt="...">
+                  </div>';
+    }
 
-    <?php
-    wp_head();
-    wp_footer();
-    ?>
-
-    <style>
-        .sliderContainer {
-            position: relative;
-            width: 100%;
-            /* max-width: 800px; */
-            margin: auto;
-            overflow: hidden;
-        }
-
-        .slider {
-            display: flex;
-            transition: transform 0.5s ease-in-out;
-            position: relative;
-        }
-
-        .slider img {
-            width: 100%;
-            flex-shrink: 0;
-            max-height: 500px;
-            object-fit: cover;
-        }
-
-        button.prev,
-        button.next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
-            z-index: 10;
-            border-radius: 100px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            /* Asegura que los botones estén por encima de las imágenes */
-        }
-
-        button.prev svg,
-        button.next svg {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 28px;
-        }
-
-        button.prev {
-            left: 10px;
-        }
-
-        button.next {
-            right: 10px;
-        }
-    </style>
-</head>
-
-<body <?php body_class(); ?>>
-    <?php
-        function render_slider($images = array()) {
-            if (empty($images)) return;
-            ?>
-            <section class="sliderContainer">
-                <button class="prev">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
-                    </svg>
-                </button>
-                <div class="slider">
-                    <?php foreach ($images as $image) : ?>
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/<?php echo $image; ?>" alt="TRYOUTS UAQ" />
-                    <?php endforeach; ?>
+    $html .= '        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
-                <button class="next">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
-                    </svg>
-                </button>
-            </section>
-            <?php
-        }
-    ?>
+            </div>';
 
-    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            let currentIndex = 0;
-            const slides = $('.slider img');
-            const totalSlides = slides.length;
-
-            function moveSlide(index) {
-                if (index < 0) {
-                    currentIndex = totalSlides - 1;
-                } else if (index >= totalSlides) {
-                    currentIndex = 0;
-                } else {
-                    currentIndex = index;
-                }
-                const newTransform = -currentIndex * 100 + '%';
-                $('.slider').css('transform', 'translateX(' + newTransform + ')');
-            }
-
-            $('.next').click(function() {
-                moveSlide(currentIndex + 1);
-            });
-
-            $('.prev').click(function() {
-                moveSlide(currentIndex - 1);
-            });
-        });
-    </script>
-</body>
-
-</html>
+    return $html;
+}
+?>
