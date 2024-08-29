@@ -24,6 +24,10 @@ function deportesuaq_enqueue_styles() {
     if (is_page('ciencias-aplicadas')) {
         wp_enqueue_style('cienciasStyle', get_template_directory_uri() . '/css/cienciasStyle.css');
     }
+
+    if(is_page('documentos')){
+        wp_enqueue_style('documentosStyle', get_template_directory_uri() . '/css/documentosStyle.css');
+    }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 
@@ -35,5 +39,10 @@ function deportesUAQ_register_scripts(){
 }
 
 add_action('wp_enqueue_scripts', 'deportesUAQ_register_scripts');
+
+function titulo_personalizado($texto) {
+    $titulo= get_the_title();
+    return $texto . ' ' . $titulo;
+}
 
 ?>

@@ -18,7 +18,16 @@
     <a href="<?php echo home_url()?>">
       <img src="http://deportesuaq.mx/wp-content/uploads/2024/07/Asset-6@300x.png" class="logo">
     </a>
-    <h1> <?php the_title(); ?></h1>
+    <h1> <?php 
+    if(isset($_GET['valor'])){
+      $valor=$_GET['valor'];
+      echo titulo_personalizado($valor);
+    }
+    else{
+      the_title();
+    } 
+    
+    ?></h1>
     <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/A2.png" class="logo">
   </div>
   <header>
