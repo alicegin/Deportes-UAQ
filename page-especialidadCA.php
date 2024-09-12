@@ -6,8 +6,16 @@ get_template_part('template-parts/header');
 <?php
 if (isset($_GET['valor'])) {
     $valor = htmlspecialchars($_GET['valor']);
-} else {
+    if(!($valor="Fisioterapia" || $valor= "Nutrición"|| $valor= "Psicología" || $valor= "Psicopedagogía")) {
+        wp_safe_redirect( home_url( '/404' ) ); // Redirige a la URL de la página 404
+        exit;
+    }
+}
+else {
+    wp_safe_redirect( home_url( '/404' ) );
     echo "No se recibió ningún valor. Regresa a la página de Ciencias Aplicadas";
+    exit;
+    
 }
 //Los valores del arreglo se manejan de la siguiente manera:
 //[0]= Foto

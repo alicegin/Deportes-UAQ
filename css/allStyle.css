@@ -38,8 +38,8 @@ img{
 .contenido{
     display: flex;
     flex-direction: column;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
     margin-top: 30px;
     gap: 30px;
 }
@@ -47,10 +47,24 @@ img{
 .contenidoR{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     margin: 20px 20px 20px 20px;
     gap: 30px;
 }
 
 .margen{
     margin:20px 20px 20px 20px;
+}
+
+.info{
+    background-color: #678fd8;
+    color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: inline-block;
+    width: fit-content;
+    align-self: center;
+    padding-left: 70px;
+    padding-right: 70px;
+    margin: 30px 0px 50px 0px;
 }

@@ -1,12 +1,11 @@
 
 .ginCard{
-    width: 400px;
-    height: 400px;
+    width: 250px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     box-shadow: 10px 20px 20px rgba(149, 149, 149, 0.844);
     border-radius: 20px;
-    padding-bottom: 10px;
 }
 .ginCard img{
     object-fit: cover; /* Ajusta la imagen para cubrir todo el contenedor */
@@ -15,13 +14,51 @@
     border-top-right-radius: 20px;
 }
 .cardContenido{
-    padding-left: 20px;
     padding-top: 10px;
     display: flex;
     flex-direction: column;
-    
+    padding-bottom: 10px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.cardContenido h6{
+    align-self: center;
+    color:white;
 }
 form{
     display: flex;
     flex-direction: column;
 }
+.boton-AZUL{
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    background-color: #678fd8;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.boton-azul{
+    display: inline-block;
+    padding: 5px 10px 5px 10px;
+    background-color: #80c1d6;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    border-radius: 20px;
+}
+
+.boton-morado{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5px 10px 5px 10px;
+    border-radius: 20px;
+    background-color:#94a9e0;
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
