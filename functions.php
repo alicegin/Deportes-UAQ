@@ -32,6 +32,10 @@ function deportesuaq_enqueue_styles() {
     if (is_page('gatienda')){
         wp_enqueue_style('documentosStyle', get_template_directory_uri() . '/css/gatiendaStyle.css');
     }
+
+    if (is_page('deportes-para-todos')) {
+        wp_enqueue_style('documentosStyle', get_template_directory_uri() . '/css/deportesTodos.css');
+    }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 
