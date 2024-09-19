@@ -68,12 +68,6 @@
                 padding: 80px 40px;
             }
         }
-
-        /* @media(max-width: 335px) {
-            main .infoContainer {
-                padding: 80px 20px;
-            }
-        } */
     </style>
 </head>
 

@@ -1,0 +1,282 @@
+html,
+body {
+    margin: 0;
+    border: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --font-size-main-title: clamp(40px, 2vw, 58px);
+    --font-size-card-title: clamp(26px, 2vw, 28px);
+    --font-size-card-text: clamp(16px, 2vw, 18px);
+    --font-size-main-text: clamp(18px, 2vw, 20px);
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+}
+
+main {
+    width: 100%;
+}
+
+main header {
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    color: #fdfdfd;
+    padding: 80px;
+    width: 100%;
+    max-height: 400px;
+}
+
+main header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to left, #000030, #2d2bb080);
+    z-index: -1;
+}
+
+main header .headerText {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+main header .headerText h1 {
+    font-size: var(--font-size-main-title);
+}
+
+main header .headerText p {
+    font-size: var(--font-size-main-text);
+    font-weight: var(--font-weight-medium);
+    width: 410px;
+    margin-top: 10px;
+}
+
+main header .headerText h1,
+main header .headerText p {
+    text-align: right;
+}
+
+main header .headerText button {
+    outline: none;
+    border: 0;
+    background-color: #fdfdfd;
+    padding: 14px 20px;
+    min-width: 200px;
+    font-size: 18px;
+    font-weight: var(--font-weight-medium);
+    border-radius: 100px;
+    margin-top: 20px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+main header .headerText button:hover {
+    min-width: 210px;
+}
+
+.mainCardsContainer {
+    margin-top: 1400px;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    margin-left: -35px;
+}
+
+.mainCardsContainer .mainCard {
+    margin-bottom: 360px;
+}
+
+.mainCard .imgContainer {
+    width: 100%;
+    position: relative;
+    z-index: -1;
+}
+
+.mainCard .imgContainer img {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.mainCard .infoCard {
+    z-index: 9;
+    padding: 40px;
+    background-color: #00000075;
+    position: relative;
+    bottom: 0;
+    border-radius: 12px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.mainCard .infoCard h1 {
+    font-size: var(--font-size-card-title);
+}
+
+.mainCard .infoCard p {
+    margin: 0;
+    font-size: var(--font-size-card-text);
+    margin-top: 12px;
+}
+
+main #cardsContainer {
+    /* background-color: #000030; */
+    width: calc(100% - 540px);
+    height: 500px;
+    position: absolute;
+    right: 0;
+    padding: 40px 20px;
+}
+
+main #cardsContainer .etiquetasContainer {
+    width: 100%;
+}
+
+main #cardsContainer .etiquetasContainer .etiqueta {
+    padding: 10px 50px;
+    font-size: var(--font-size-card-text);
+    border: 1px solid #000030;
+    border-radius: 0px;
+    margin: 0;
+    text-align: center;
+    font-weight: var(--font-weight-regular);
+    margin-right: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-bottom: 15px;
+}
+
+main #cardsContainer .etiquetasContainer .etiqueta:first-child {
+    background-color: #000030;
+    color: #fdfdfd;
+}
+
+main #cardsContainer .etiquetasContainer .etiqueta:hover {
+    background-color: #000030;
+    color: #fdfdfd;
+}
+
+main #cardsContainer .cardsContent {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;
+    max-height: 1280px;
+    overflow-y: auto;
+}
+
+main #cardsContainer .cardsContent .card {
+    border: 0;
+    /* max-width: 400px; */
+    margin-right: 20px;
+    flex: 1;
+    min-width: 315px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+main #cardsContainer .cardsContent .card .infoCard h1 {
+    font-size: clamp(22px, 2vw, 24px);
+    margin-top: 14px;
+    margin-bottom: 12px;
+    font-weight: 500;
+    color: #2d2d2d;
+}
+
+main #cardsContainer .cardsContent .card .infoCard p {
+    font-size: clamp(16px, 2vw, 18px);
+    width: 100%;
+    line-height: 1.2;
+    /* word-break: break; */
+}
+
+main #cardsContainer .cardsContent .card .imgContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #cardsContainer .cardsContent .card .imgContainer img {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+
+main #cardsContainer .cardsContent .card::after {
+    content: "Detalles";
+    position: absolute;
+    padding: 20px;
+    background-color: #fdfdfd;
+    border-bottom-right-radius: 12px;
+    cursor: pointer;
+}
+
+main #cardsContainer .cardsContent .card:hover::after {
+    color: #2b29a6;
+}
+
+@media (max-width: 1007px) {
+    .headerText {
+        width: 100%;
+    }
+
+    .mainCardsContainer {
+        margin-top: 980px;
+        width: 100%;
+        flex-direction: row;
+        position: absolute;
+        left: 0;
+        margin-left: 0;
+        padding: 0 10px;
+        flex-wrap: nowrap;
+        height: auto;
+        overflow-x: scroll;
+        height: 525px;
+    }
+
+    .mainCardsContainer .mainCard {
+        margin: 0 10px;
+        flex: 1;
+        min-width: 380px;
+    }
+
+    main #cardsContainer {
+        width: 100%;
+        height: auto;
+        margin-top: 550px;
+        padding-right: 0;
+    }
+
+    .cardsContent {
+        width: 100%;
+        max-width: 100%;
+        max-height: none !important;
+    }
+}
+
+@media (max-width: 560px) {
+    main header .headerText p {
+        width: 100%;
+    }
+}
+
+@media (max-width: 501px) {
+    main #cardsContainer .etiquetasContainer {
+        display: flex;
+        overflow-x: auto;
+    }
+}

@@ -25,7 +25,7 @@ function deportesuaq_enqueue_styles() {
         wp_enqueue_style('cienciasStyle', get_template_directory_uri() . '/css/cienciasStyle.css');
     }
 
-    if(is_page('documentos')){
+    if (is_page('documentos')){
         wp_enqueue_style('documentosStyle', get_template_directory_uri() . '/css/documentosStyle.css');
     }
     if(is_page('uaqtivate')){
@@ -33,6 +33,14 @@ function deportesuaq_enqueue_styles() {
     }
     if(is_page('indet')){
         wp_enqueue_style('indetStyle', get_template_directory_uri() . '/css/indetStyle.css');
+    }
+
+    if (is_page('gatienda')){
+        wp_enqueue_style('documentosStyle', get_template_directory_uri() . '/css/gatiendaStyle.css');
+    }
+
+    if (is_page('deportes-para-todos')) {
+        wp_enqueue_style('documentosStyle', get_template_directory_uri() . '/css/deportesTodos.css');
     }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
