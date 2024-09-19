@@ -1,0 +1,35 @@
+.redes{
+    position: relative;
+    display: inline-block;
+}
+
+.imagen-redes{
+border-radius: 10%;
+height: 400px;
+width: auto;
+}
+.imagen-redes:hover{
+    filter: brightness(50%);
+}
+.banner-redes{
+    position: absolute;
+    top: 80%;
+    right: -70px; /* Hace que sobresalga de la imagen */
+    transform: translateY(-50%);
+    background-color: black; /* Color de la tira */
+    padding: 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+}
+.banner-redes img{
+    height: 32px;
+    margin-left:10px ;
+    margin-right: 10px;
+}
+.banner-redes img:hover{
+    filter: brightness(50%)
+}
+.banner-redes a{
+    text-decoration: none;
+}

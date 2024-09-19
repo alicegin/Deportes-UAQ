@@ -9,8 +9,8 @@
 <body>
     <nav>
         <a href="">¿Quiénes somos?</a>
-        <a href="<?php echo home_url('/EspecializacionDep'); ?>">Especialización deportiva</a>
-        <a href="">Deportes para todos</a>
+        <a href="<?php echo home_url('/especializacion-deportiva'); ?>">Especialización deportiva</a>
+        <a href="<?php echo home_url('/deportes-para-todos'); ?>">Deportes para todos</a>
         <a href="">Salón de la fama</a>
         <a href="">Instalaciones</a>
         <a href="">E-Sports</a>

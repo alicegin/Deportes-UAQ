@@ -28,6 +28,12 @@ function deportesuaq_enqueue_styles() {
     if(is_page('documentos')){
         wp_enqueue_style('documentosStyle', get_template_directory_uri() . '/css/documentosStyle.css');
     }
+    if(is_page('uaqtivate')){
+        wp_enqueue_style('uaqtivateStyle', get_template_directory_uri() . '/css/uaqtivateStyle.css');
+    }
+    if(is_page('indet')){
+        wp_enqueue_style('indetStyle', get_template_directory_uri() . '/css/indetStyle.css');
+    }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 
@@ -43,6 +49,19 @@ add_action('wp_enqueue_scripts', 'deportesUAQ_register_scripts');
 function titulo_personalizado($texto) {
     $titulo= get_the_title();
     return $texto . ' ' . $titulo;
+}
+
+function extract_block_content($blocks, $block_name) {
+    $contents = [];
+    foreach ($blocks as $block) {
+        if ($block['blockName'] === $block_name) {
+            $contents[] = $block['innerHTML'];
+        }
+        if (!empty($block['innerBlocks'])) {
+            $contents = array_merge($contents, extract_block_content($block['innerBlocks'], $block_name));
+        }
+    }
+    return $contents;
 }
 
 ?>
