@@ -1,6 +1,6 @@
 <?php
 /* Template Name: UAQtívate */
-wp_head();
+get_template_part('template-parts/headerDPT');
 ?>
 
 <main>

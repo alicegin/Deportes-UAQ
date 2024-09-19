@@ -1,6 +1,6 @@
 <?php
 /* Template Name: Copa Valores */
-wp_head();
+get_template_part('template-parts/headerDPT');
 ?>
 
 <main>

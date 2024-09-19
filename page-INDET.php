@@ -1,6 +1,6 @@
 <?php
 /* Template Name: INDET */
-wp_head();
+get_template_part('template-parts/headerDPT');
 ?>
 <main>
     <?php

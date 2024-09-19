@@ -5,10 +5,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deportes para todos</title>
- <?php
-        wp_head();
-        wp_footer();
-    ?>
 </head>
 <body>
     <?php
