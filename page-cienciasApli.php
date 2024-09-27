@@ -6,8 +6,10 @@ get_template_part('template-parts/header');
     <section class="contenido">
         <H1 style="align-self:center;">¿Qué es ciencias aplicadas al deporte?</H1>
         <p>
-        Para reemplazar cualquier marcador de posición de texto (como este), basta con que haga clic en él y comience a escribir. Creemos que el formato de este párrafo tiene un aspecto
-        excelente tal y como se ha definido. Sin embargo, si quiere personalizarlo un poco para darle un toque personal, puede cambiar las fuentes con un solo clic.
+        Las Ciencias Aplicadas al Deporte (CAD) es un área especializada que cuenta con un equipo multidisciplinario compuesto por profesionales en fisioterapia, nutrición y psicología 
+deportiva. Este equipo se dedica a proporcionar una cobertura integral que busca satisfacer las necesidades deportivas de cada seleccionado universitario. Su objetivo principal es 
+garantizar el bienestar físico, psicológico y mental de los atletas, asegurando que reciban el apoyo necesario de manera gratuita. Con un enfoque holístico, el equipo de CAD trabaja 
+para optimizar el rendimiento deportivo, prevenir lesiones y promover hábitos de vida saludables, contribuyendo así al desarrollo integral de los estudiantes deportistas.
         </p>
 
         <div class="info">
@@ -18,8 +20,10 @@ get_template_part('template-parts/header');
 
         <H1 style="align-self:center">¿Cómo acceder a ellas?</H1>
         <p>
-        Para reemplazar cualquier marcador de posición de texto (como este), basta con que haga clic en él y comience a escribir. Creemos que el formato de este párrafo tiene un aspecto
-        excelente tal y como se ha definido. Sin embargo, si quiere personalizarlo un poco para darle un toque personal, puede cambiar las fuentes con un solo clic.
+        Las Ciencias Aplicadas ofrecen un beneficio gratuito para todas nuestras selecciones. Si estás interesado en acceder a alguno de estos servicios, deberás solicitar un "Pase de 
+Ciencias Aplicadas". Para obtenerlo, tu entrenador deberá proporcionar algunos datos personales, especificar el servicio requerido y explicar el motivo de la solicitud.
+ Comunícate con el área correspondiente (fisioterapia, nutrición, psicología) para agendar una cita. Presenta tu pase cuando asistas con nuestros especialistas y recibirás la atención 
+que necesitas.
         </p>
     </section>
 

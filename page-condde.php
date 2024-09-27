@@ -16,8 +16,12 @@ get_template_part('template-parts/header');
         </a>
         </div>
         <p>
-        Para reemplazar cualquier marcador de posición de texto (como este), basta con que haga clic en él y comience a escribir. Creemos que el formato de este párrafo tiene un aspecto
-        excelente tal y como se ha definido. Sin embargo, si quiere personalizarlo un poco para darle un toque personal, puede cambiar las fuentes con un solo clic.
+        El Consejo Nacional del Deporte de la Educación, A.C. (CONDDE) es la organización en México encargada de promover y coordinar el deporte en las instituciones de educación 
+superior del país. Su objetivo principal es fomentar la práctica deportiva entre los estudiantes universitarios, organizando y supervisando diversas competencias deportivas a nivel 
+regional y nacional, como la Universiada Nacional, que es el evento deportivo estudiantil más importante del país.
+<br><br>
+El CONDDE se encarga de establecer normas y reglamentos para las competencias deportivas universitarias, fomentar la formación y capacitación de entrenadores y árbitros, y 
+promover el desarrollo integral de los estudiantes a través del deporte.
         </p>
     </section>
     <div class="carouselMargin">
