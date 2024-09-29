@@ -24,7 +24,7 @@ nav{
     display: flex;
     width: 100%;
     position: absolute;
-    z-index: 10;
+    z-index: 3;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
     color: white;
