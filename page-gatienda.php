@@ -21,34 +21,34 @@
             <section class="mainCardsContainer">
                 <article class="mainCard">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/article1.jpeg" alt="UAQ Store">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda_p5.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
-                        <h1>Primer UAQSTORE</h1>
+                        <h1>Primer GATIENDA</h1>
                         <p>Recordando uno de nuestros primeros artículos</p>
                     </section>
                 </article>
                 <article class="mainCard">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/article1.jpeg" alt="UAQ Store">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda_p5.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
-                        <h1>Primer UAQSTORE</h1>
+                        <h1>Primer GATIENDA</h1>
                         <p>Recordando uno de nuestros primeros artículos</p>
                     </section>
                 </article>
                 <article class="mainCard">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/article1.jpeg" alt="UAQ Store">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda_p5.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
-                        <h1>Primer UAQSTORE</h1>
+                        <h1>Primer GATIENDA</h1>
                         <p>Recordando uno de nuestros primeros artículos</p>
                     </section>
                 </article>
             </section>
             <article class="headerText">
-                <h1>UAQ STORE</h1>
+                <h1>GATIENDA</h1>
                 <p>Ven a visitarnos y conoce nuestros productos universitarios</p>
                 <button onclick="window.location='#cardsContainer'">Ver productos</button>
             </article>
@@ -63,46 +63,46 @@
             <section class="cardsContent">
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/article2.jpeg" alt="UAQ Store">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda_p2.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
-                        <h1>Porta credencial</h1>
+                        <h1>Toalla GATIENDA</h1>
                         <p>Descubre nuestros colores de porta credenciales</p>
                     </section>
                 </article>
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/article3.jpeg" alt="UAQ Store">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda_p1.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
-                        <h1>Termo UAQSTORE</h1>
+                        <h1>Termo GATIENDA</h1>
                         <p>Ideal para tu día a día, conserva fresca tu agua</p>
                     </section>
                 </article>
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/article4.jpeg" alt="UAQ Store">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda_p3.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
-                        <h1>Suéter Gato Salvaje</h1>
+                        <h1>Googles GATIENDA</h1>
                         <p>Luce cool con las nuevas sudaderas Gatos Salvajes</p>
                     </section>
                 </article>
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/article5.jpeg" alt="UAQ Store">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda_p4.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
-                        <h1>Libretas UAQSTORE</h1>
+                        <h1>Vaso GATIENDA</h1>
                         <p>Dale un toque de alegría a tus apuntes diarios</p>
                     </section>
                 </article>
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/article6.jpeg" alt="UAQ Store">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda_p6.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
-                        <h1>Libretas UAQSTORE</h1>
+                        <h1>Libretas GATIENDA</h1>
                         <p>Dale un toque de alegría a tus apuntes diarios</p>
                     </section>
                 </article>
