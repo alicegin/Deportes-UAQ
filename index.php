@@ -7,8 +7,6 @@
     <link rel="stylesheet" href=<?php echo get_template_directory_uri() . '/css/mainStyle.css'?>>
 </head>
 <body>
-    <section>
-        <div class="pineada">
             <nav>
                 <div class="separador">
                     <a>GATOS SALVAJES</a>
@@ -21,9 +19,11 @@
                     <a href="">E-sports</a>
                 </div>
             </nav>
+    <section>
+        <div class="pineada">
             <img class="atletas" src=<?php echo get_template_directory_uri() . '/img/inicio/atletas.png'?>>
             <div class="dentro-pineada">
-            <img class="imagen" src=<?php echo get_template_directory_uri() . '/img/inicio/UAQ2.jpg'?>>
+                <img class="imagen" src=<?php echo get_template_directory_uri() . '/img/inicio/UAQ2.jpg'?>>
                 <div class="caja">
                     <h1 class="gatos">GATOS</h1>
                     <h1 class="gatos">SALVAJES</h1>

@@ -97,7 +97,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>AJEDREZ</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E11_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/AZ.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>CARLOS DILAN SOLÍS LANDA</h3>
@@ -121,7 +121,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>ATLETISMO</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E3_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/AT.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>JÉSUS LOYO NASTA</h3>
@@ -136,7 +136,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>BOXEO UNIVERSITARIO</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E3_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/BX.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>ARTURO VARGAS GARCÍA</h3>
@@ -146,7 +146,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>JUDO</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E3_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/JD.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>ALFREDO VÁZQUEZ MIRANDA</h3>
@@ -161,7 +161,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>KARATE</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E3_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/KT.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>MARCO ANTONIO SOSA GARCÍA</h3>
@@ -176,7 +176,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>LUCHA UNIVERSITARIA</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E3_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/LU.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>JUAN CARLOS LINARES VALDÉS</h3>
@@ -191,7 +191,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>TENIS DE MESA</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E9_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/TM.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>GENARO ALFONSO AYALA GARCÍA</h3>
@@ -207,7 +207,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>TIRO CON ARCO</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E5_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/TCA.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>KAREN ADRIANA MEZA ALVAREZ</h3>
@@ -221,7 +221,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>BÁSQUETBOL FEMENIL</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E6_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/BF.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>JAIME RIVAS MÁRQUEZ</h3>
@@ -236,7 +236,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>BÁSQUETBOL VARONIL</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E4_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/BV.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>ARTURO SÁNCHEZ ACEVES</h3>
@@ -251,7 +251,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>BEISBOL/SOFTBOL</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E4_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/BB.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>LUIS ENRIQUE LEAL GUERRERO</h3>
@@ -280,7 +280,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>FÚTBOL ASOCIACIÓN VARONIL</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E10_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/FAV.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>NOÉ TERÁN FLORES</h3>
@@ -308,7 +308,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>HANDBALL</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E10_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/HB.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>JUAN CARLOS MAYA CRUZ</h3>
@@ -324,7 +324,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>VOLEIBOL DE SALA</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E2_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/VSF.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>HÉCTOR JAVIER VILLANUEVA RODRÍGUEZ</h3>
@@ -342,7 +342,7 @@
             <article class="cardContainer flex">
                 <section class="cardSide">
                     <h2>VOLEIBOL DE PLAYA</h2>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/E2_.jpg" />
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/VPV.jpg" />
                 </section>
                 <section class="cardSide align-start">
                     <h3>NATALIA RUTH PALMA SALAZAR </h3>

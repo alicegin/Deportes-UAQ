@@ -82,7 +82,6 @@
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="Tj4H5kMi"></script> -->
     </main>
 
-    <?php get_template_part('template-parts/footer'); ?>
 </body>
 
 </html>

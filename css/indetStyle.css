@@ -8,6 +8,12 @@ border-radius: 10%;
 height: 400px;
 width: auto;
 }
+
+.imagen{
+    height: auto;
+    width: auto;
+}
+
 .imagen-redes:hover{
     filter: brightness(50%);
 }

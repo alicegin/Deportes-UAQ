@@ -9,8 +9,9 @@ gsap.from("section",{
     }
 })
 
+
 gsap.from(".caja",{
-    y:"-100%",
+    y:-window.innerHeight,
     scrollTrigger:{
         trigger:"section",
         start:"top top",

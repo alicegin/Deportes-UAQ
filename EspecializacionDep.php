@@ -27,4 +27,4 @@ get_template_part('template-parts/header');
       </div>
     </section>
 </main>
-<?php get_template_part('template-parts/footer'); ?>
+

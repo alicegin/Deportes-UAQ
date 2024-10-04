@@ -15,10 +15,12 @@
 }
 .seccion img{
     height: 100px;
+    width: auto;
 }
 
 .seccion .infoDoc span img{
     height: 50px;
+    width: auto;
 }
 span{
     display: flex;

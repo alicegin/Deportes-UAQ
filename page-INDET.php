@@ -41,10 +41,10 @@ get_template_part('template-parts/headerDPT');
             <div class="banner-redes centrar">
                 <p>Redes sociales:</p>
                 <a href="https://www.facebook.com/INDETMXOFICIAL/?locale=es_LA">
-                    <img src="<?php  echo get_template_directory_uri() . '/assets/facebook.png' ?>">
+                    <img src="<?php  echo get_template_directory_uri() . '/assets/facebook.png' ?>" class="imagen">
                 </a>
                 <a href="https://x.com/indetmexico?lang=es">
-                    <img src="<?php  echo get_template_directory_uri() . '/assets/twitter.png' ?>">
+                    <img src="<?php  echo get_template_directory_uri() . '/assets/twitter.png' ?>" class="imagen">
                 </a>
             </div>
         </div>

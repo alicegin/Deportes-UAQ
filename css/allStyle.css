@@ -8,9 +8,12 @@ body {
     flex-direction: column;
 }
 img{
-    height: 500px;
-    width: auto;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: top;
 }
+
 
 p{
     font-size: 20px;
@@ -48,10 +51,11 @@ p{
 .contenido{
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    margin-right: 100px;
-    margin-top: 30px;
-    gap: 30px;
+    margin-left: 8vw;
+    margin-right: 8vw;
+    margin-top: 10vh;
+    gap: 10vh;
+    text-align: center;
 }
 
 .contenidoR{
@@ -74,9 +78,8 @@ p{
     display: inline-block;
     width: fit-content;
     align-self: center;
-    padding-left: 70px;
-    padding-right: 70px;
-    margin: 30px 0px 50px 0px;
+    padding: 0.5em 5em;
+    margin: 3vh 0 5vh 0;
 }
 .contenedor-imagen-portada{
     width: 100%;

@@ -7,7 +7,7 @@
 }
 
 section{
-    height: 2450px;
+    height:500vh;
     background-color: black;
     position: relative;
     overflow: hidden;
@@ -23,7 +23,7 @@ section{
 nav{
     display: flex;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 3;
     justify-content: space-between;
     font-family: 'Poppins', sans-serif;
@@ -40,11 +40,13 @@ a{
     font-family: 'Poppins', sans-serif;
     color: white; 
 }
+
 .atletas{
     position: absolute;
-    height: 80%;
-    width: auto;
+    height: 100%;
+    width: 100%;
     object-fit: cover;
+    object-position: top;
     z-index: 2;
     bottom:0;
     left:50%;
@@ -72,15 +74,17 @@ a{
 .caja{
     position: absolute;
     width: 100%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    height: 100%;
+    top:0;
+    justify-content: center;
+    align-content: center;
     text-align: center;
     font-family: "Oswald";
     color: brown;
+    overflow: hidden;
 }
 .gatos{
-    font-size: 20vw;
+    font-size: 15vw;
 }
 .espacio{
     height: 400vh;

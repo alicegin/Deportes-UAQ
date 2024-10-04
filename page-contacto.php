@@ -13,6 +13,11 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=SUSE:wght@100..800&display=swap');
+        
+        a{
+            text-decoration: none;
+            color: white;
+        }
 
         main {
             position: relative;
@@ -80,21 +85,41 @@
         <img src="<?php echo get_template_directory_uri(); ?>/img/background_contacto.jpg" alt="deportes UAQ" />
         <section class="infoContainer">
             <article class="infoContent">
-                <p>Contacto</p>
-                <h2>correo@ejemplo.com <br> (555) 555-5555</h2>
+                <h2>Dra. Silvia Lorena Amaya Llano</h2>
+                <p> (442) 192-12-00, Extensión 3100</p>
             </article>
             <article class="infoContent">
-                <p>Contacto</p>
-                <h2>correo@ejemplo.com <br> (555) 555-5555</h2>
+                <h2>Dra. María Antonieta Mendoza Ayala</h2>
+                <p>(442) 192-12-00, Extensión 3501, 3502, 3508<br> <a href="https://dvs.uaq.mx/">https://dvs.uaq.mx/</a></p>
             </article>   
             <article class="infoContent">
-                <p>Contacto</p>
-                <h2>correo@ejemplo.com <br> (555) 555-5555</h2>
-            </article>           
+                <h2>Lic. Félix Alberto Capilla Pérez</h2>
+                <p> deportesuaq@live.com.mx</p>
+            </article>
+            <!--<article class="infoContent">
+                <h2>T. Karen Adriana Meza Álvarez</h2>
+                <p>(442) 192-12-00, Extensión 3520<br> especialización.uaq@gmail.com</p>
+            </article>
+            <article class="infoContent">
+                <h2>LFT. Jhoana Paola Rodríguez Gaytán </h2>
+                <p>(442) 335 0813<br> ftdeportesuaq@gmail.com</p>
+            </article>
+            <article class="infoContent">
+                <h2>Lic. Ana Guadalupe Arguello Mejia </h2>
+                <p>464 205 95 54<br> armejana@gmail.com</p>
+            </article>
+            <article class="infoContent">
+                <h2>Juan González Jayme</h2>
+                <p>442 411 0004<br> psicologiawolfsburg@gmail.com</p>
+            </article>
+            <article class="infoContent">
+                <h2>Lic. Sofía Berrueta Molina </h2>
+                <p>443 224 9414<br>fisioberrueta@gmail.com</p>
+            </article>-->                 
         </section>
     </main>
 
-    <?php get_template_part('template-parts/footer');  ?>
+
 </body>
 
 </html>

@@ -6,16 +6,15 @@ get_template_part('template-parts/header');
 <?php
 if (isset($_GET['valor'])) {
     $valor = htmlspecialchars($_GET['valor']);
-    if(!($valor="Fisioterapia" || $valor= "Nutrición"|| $valor= "Psicología" || $valor= "Psicopedagogía")) {
-        wp_safe_redirect( home_url( '/404' ) ); // Redirige a la URL de la página 404
+    $valores_permitidos = ["Fisioterapia", "Nutrición", "Psicología", "Psicopedagogía"];
+    
+    if (!in_array($valor, $valores_permitidos, true)) {
+        echo'Ese valor no existe. Regresa a la página de Ciencias Aplicadas';
         exit;
     }
-}
-else {
-    wp_safe_redirect( home_url( '/404' ) );
-    echo "No se recibió ningún valor. Regresa a la página de Ciencias Aplicadas";
+} else {
+    echo'No se recibió ningún valor. Regresa a la página de Ciencias Aplicadas';
     exit;
-    
 }
 //Los valores del arreglo se manejan de la siguiente manera:
 //[0]= Foto
@@ -24,12 +23,13 @@ else {
 //[3]= Teléfono
 //[4]= Correo
 //[5]= Semblanza
+//[6]= Color
 
 //valores de las 3 especialidades
 
-$fisioterapia=[get_template_directory_uri() . '/assets/account_box.svg',
+$fisioterapia=[get_template_directory_uri() . '/img/especialidadCA/FISIO.png',
                 "LFT. Jhoana Paola Rodríguez Gaytán",
-                "Fisioterapia",
+                "FISIOTERAPIA",
                 "442 335 0813",
                 "jhoana.rodriguez@uaq.mx",
                 "Soy Licenciada en Fisioterapia graduada de la Universidad Autónoma de Querétaro. Además, obtuve una diplomatura en Integración Multidisciplinaria en la Fisioterapia 
@@ -38,21 +38,43 @@ diversas áreas relacionadas con el deporte, incluyendo vendaje funcional, ejerc
  Soy una apasionada del movimiento humano y su análisis estructural, así como de su promoción para alcanzar una mejor calidad de vida. Creo firmemente que el ejercicio 
 es fundamental para lograr una vida digna, saludable y plena. Por ello, disfruto enormemente trabajar con deportistas, ayudándolos a potenciar sus capacidades para 
 mejorar su rendimiento deportivo, corregir patrones de movimiento, prevenir lesiones y acompañarlos en sus procesos de rehabilitación hasta lograr una reintegración 
-deportiva exitosa."
+deportiva exitosa."," #b0afd2","#94a9e0"
                 ];
 $nutricion=[get_template_directory_uri() . '/assets/account_box.svg',
-            "L.N. Y E.D. Paola Alvarez Soria",
-            "Nutrición",
-            "442 748 6890",
-            "nutriciondeporteuaq@gmail.com",
-            "Desde los 11 años he estado involucrada en el deporte de alto rendimiento, una experiencia que sembró en mí numerosas preguntas sobre cómo mejorar mis hábitos 
-diarios para alcanzar mejores resultados en la competencia.
- Mi formación como Licenciada en Nutrición en la Universidad Autónoma de Querétaro me permitió comprender lo beneficioso que es seguir un plan alimenticio adaptado 
-a mis entrenamientos. Fue en ese momento cuando decidí especializarme como Nutrióloga Deportiva, comenzando por asesorar a mis compañeros de entrenamiento. 
-Gracias a los excelentes resultados obtenidos por ellos, nació en mí el deseo de expandir mi conocimiento y convertirme en una aliada fundamental para los deportistas en 
-la consecución de sus metas deportivas. Actualmente cuento con una especialidad en Nutrición Deportiva, además, de ser educadora en Diabetes."];
-
-
+            "Nombre de responsable de Nutrición",
+            "NUTRICIÓN",
+            "000 000 0000",
+            "correo@gmail.com",
+            "Para reemplazar cualquier marcador de posición de texto (como este), basta con que haga clic en él y
+comience a escribir. Creemos que el formato de este párrafo tiene un aspecto excelente tal y como se ha
+definido. Sin embargo, si quiere personalizarlo un poco para darle un toque personal, puede cambiar las
+fuentes con un solo clic.", "#203f74","#94a9e0"];
+$psicologia=[get_template_directory_uri() . '/assets/account_box.svg',
+            "Juan González Jayme",
+            "PSICOLOGÍA",
+            "442 411 0004",
+            "psicologiawolfsburg@gmail.com",
+            "Psicólogo del deporte 
+-Doctorando en Ciencias de la Educación y del deporte 
+-Maestro en Gestión Deportiva 
+-Maestro en Educación 
+-Director Técnico Profesional  Licencia  PRO
+FEMEXFUT 
+-Licenciado en Psicología educativa
+Experiencia :
+-Miembro del Staff de entrenadores del VFL Wolfsburg  Docente en Maestría, ⁠Scouter  para equipos de Polonia , España y Alemania, ⁠Psicólogo selección Mexicana de Rugby, ⁠Psicólogo Selección mexicana Futbol 7 campeona mundial 2023 y campeona Copa América 2024, ⁠Socio Fundador InterCamps y Especialidades en Psicología, ⁠Docente ENDIT Y ENA, ⁠Psicólogo en Gallos Blancos de Querétaro Femenil y Varonil, ⁠Colaborador en Radar Sport 107.5 FM con la sección de psicología del deporte ,⁠Conferencista , Ponente , Facilitador en temas de psicología del deporte para diferentes disciplinas, Miembro de la Asociación Catalana de Psicología del Deporte.
+","#3d7e93","#80c1d6"];
+$psicopedagogia=[get_template_directory_uri() . '/img/especialidadCA/PSICOPEDAGOGIA.png',
+            "Lic. Sofía Berrueta Molina ",
+            "PSICOPEDAGOGÍA",
+            "443 224 9414",
+            " fisioberrueta@gmail.com",
+            "Mi nombre es Sofia Berrueta soy licenciada en Pedagogía, egresada del Centro de Estudios Superiores de las Culturas. Así como actual pasante del área de fisioterapia en la Universidad del Valle de México. Lo cual me permitirá tener un enfoque integral entre la educación y la salud física de los atletas.
+Cuento con diversos diplomados y cursos, entre ellos intervención en logopedia, estimulación multisensorial en pacientes autistas, ejercicios en la rehabilitación de lesiones deportivas y terapia manual articular. Cuento con conocimientos dentro del área clínica hospitalaria y privada.
+De igual forma he impartido clases dentro de las carreras de educación física y pedagogía, así como conferencias dentro del área de pedagogía y fisioterapia.
+Desde muy temprana edad me he encontrado inmersa en diversos deportes, actualmente compito a nivel nacional en rally automovilístico. Por lo cual comprendo la importancia de llevar una vida equilibrada en todos los ámbitos de la vida del atleta, permitiendo que pueda desarrollarse profesionalmente sin tener que decidir entre su carrera y su actividad deportiva.
+Soy creyente de que logrando una sinergia adecuada se pueden lograr todas las metas propuestas sin tener que dejar de lado aquello que nos apasiona. Me entusiasma formar parte del equipo multidisciplinario que permita generar mejores resultados dentro de todos los ámbitos.
+","#203f74","#94a9e0"];
 
 
 switch ($valor) {
@@ -63,31 +85,69 @@ switch ($valor) {
         $arreglo=$nutricion;
         break;
     case "Psicología":
-        $arreglo=$fisioterapia;
+        $arreglo=$psicologia;
         break;
     case "Psicopedagogía":
-        $arreglo=$nutricion;
+        $arreglo=$psicopedagogia;
         break;
 }
 
 ?>
+<style>
+    @font-face {
+    font-family: 'Plateia Bold';
+    src: url('<?php echo get_template_directory_uri(); ?>/assets/fonts/Plateia Bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  main h1{
+    font-family: 'Plateia Bold';
+  }
+    main{
+        width: auto;
+        height: auto;
+        background-color: <?php echo $arreglo[6]?>;
+        position: relative;
+        background-image: url("<?php echo get_template_directory_uri(); ?>/img/especialidadCA/CAD.png");
+    }
+</style>
 <main>
-    <div class="contenido">
-        <span style="display:flex;">
-        <img style="width: 200px; height: auto; object-fit: cover;" src="<?php echo $arreglo[0] ?>">
-        <section style="align-content: center; margin-left:20px">
-            <h4><?php echo $arreglo[1] ?></h4>
-            <h4>Responsable del área de <?php echo $arreglo[2] ?></h4>
-            <h4>Teléfono: <?php echo $arreglo[3] ?></h4>
-            <h4>Correo: <?php echo $arreglo[4] ?></h4>
-        </section>
-        </span>
+    <img src="<?php echo get_template_directory_uri(); ?>/img/especialidadCA/Ciencias Aplicadas al Deporte-18.png" class="caLogo">
+    <div class="primeraParte">
+        <article class="contenedor-area">
+            <p class="area" style="background-color:<?php echo $arreglo[7]?>"><?php echo $arreglo[2]?></p>
+        </article>
+        <div class="contenedorFoto">
+            <img class="fotoResponsable" src="<?php echo $arreglo[0]?>">
+        </div>
+        
+        <article class="datosResponsable">
+            <h1>
+                <?php echo $arreglo[1]?>
+            </h1>
+            <h4>
+                RESPONSABLE DEL ÁREA DE <?php echo $arreglo[2]?>
+            </h4>
+            <br>
+            <p>
+                TELÉFONO: <?php echo $arreglo[3]?>
+                <br>
+                CORREO: <?php echo $arreglo[4]?>
+            </p>
+        </article>
+    </div>
+    <div class="contenidoR">
+            <h3 class="info" style="background-color: <?php echo $arreglo[7]?>">
+                +INFO
+            </h3>
+        </div>
+    <div class="semblanza">
         <h1>
-            Semblanza
+            SEMBLANZA
         </h1>
+        <br>
         <p>
-        <?php echo $arreglo[5] ?>
+            <?php echo $arreglo[5]?>
         </p>
-
     </div>
 </main>

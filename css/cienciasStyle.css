@@ -1,10 +1,15 @@
+main{
+    background-color: #021328;
+    color:#d6dee1;
+}
+
 
 .ginCard{
     width: 250px;
     height: 250px;
     display: flex;
     flex-direction: column;
-    box-shadow: 10px 20px 20px rgba(149, 149, 149, 0.844);
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.844);
     border-radius: 20px;
 }
 .ginCard img{

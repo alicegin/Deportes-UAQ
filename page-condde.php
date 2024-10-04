@@ -43,4 +43,3 @@ promover el desarrollo integral de los estudiantes a través del deporte.
     
     
 </main>
-<?php get_template_part('template-parts/footer');?>
