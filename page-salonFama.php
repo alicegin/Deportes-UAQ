@@ -14,3 +14,26 @@ get_template_part('template-parts/header');
     </section>
 </main>
 <?php get_template_part('template-parts/footer'); ?>
+
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
+<script>
+    $(document).ready(function() {
+        inicio();
+
+        function inicio() {
+            $.ajax({
+                url: '<?php echo get_template_directory_uri(); ?>/sc/loadMedallistas.php',
+                type: 'POST',
+                data: "",
+                processData: false,
+                contentType: false,
+                success: function(res) {
+                    console.log(res);
+                },
+                error: function() {
+
+                }
+            });
+        }
+    });
+</script>
