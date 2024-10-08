@@ -8,11 +8,11 @@ if (basename($_SERVER['PHP_SELF']) == "lib.inc.php")
     exit;
 
 function conn() {
-    $server = "X";
-    $puerto = "X"; // Puerto por defecto para MySQL
-    $database = "X";
-    $usuario = "X";
-    $clave = "X";
+    $server = "localhost";
+    $puerto = "10005"; // Puerto por defecto para MySQL
+    $database = "medallistas_uaq";
+    $usuario = "root";
+    $clave = "root";
 
     // DSN (Data Source Name) de MySQL
     $dsn = "mysql:host=$server;port=$puerto;dbname=$database;charset=utf8mb4";
