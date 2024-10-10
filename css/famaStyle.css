@@ -13,11 +13,11 @@
 /* Estilos de las imágenes en el carrusel */
 .imgContainer {
     display: flex;
-    align-items: center;    
+    align-items: center;
     width: 100%;
     position: relative;
     overflow-x: auto;
-    height: 500px;  
+    height: 500px;
     max-width: 1180px;
 }
 
@@ -37,14 +37,15 @@
     filter: grayscale(100%);
     opacity: 0.5;
     transition: transform 0.5s ease-in-out, opacity 0.5s ease, filter 0.5s ease;
-    border-right: 2px solid #fdfdfd;    
+    border-right: 2px solid #fdfdfd;
 }
 
 /* Imagen central */
 .medallistaImg.active {
     filter: grayscale(0%);
     opacity: 1;
-    transform: scale(1.2); /* Escalado más grande para resaltar la imagen activa */
+    transform: scale(1.2);
+    /* Escalado más grande para resaltar la imagen activa */
     border: 2px solid #fdfdfd;
     box-shadow: rgba(0, 0, 0, 0.4) 10px 20px 30px, rgba(0, 0, 0, 0.3) 10px 1px 53px 3px, rgba(1, 0, 0, 0.2) 0px -1px 3px inset;
     border-radius: 20px;
@@ -54,25 +55,32 @@
 
 .medallistaImg:nth-child(1).active {
     margin-left: 30px;
-    box-shadow: 
-        rgba(0, 0, 0, 0.4) 40px 20px 30px,   /* Sombra oscura a la derecha */
-        rgba(0, 0, 0, 0.3) 40px 1px 53px 3px, /* Sombra más difusa a la derecha */
-        rgba(1, 0, 0, 0.2) 40px -1px 3px inset; /* Sombra interna a la derecha */
+    box-shadow:
+        rgba(0, 0, 0, 0.4) 40px 20px 30px,
+        /* Sombra oscura a la derecha */
+        rgba(0, 0, 0, 0.3) 40px 1px 53px 3px,
+        /* Sombra más difusa a la derecha */
+        rgba(1, 0, 0, 0.2) 40px -1px 3px inset;
+    /* Sombra interna a la derecha */
 }
 
 .medallistaImg:last-child.active {
     margin-right: 30px;
-    box-shadow: 
-        rgba(0, 0, 0, 0.4) -38px 20px 30px,   /* Sombra oscura a la derecha */
-        rgba(0, 0, 0, 0.3) -38px 1px 53px 3px, /* Sombra más difusa a la derecha */
-        rgba(1, 0, 0, 0.2) -38px -1px 3px inset; /* Sombra interna a la derecha */
+    box-shadow:
+        rgba(0, 0, 0, 0.4) -38px 20px 30px,
+        /* Sombra oscura a la derecha */
+        rgba(0, 0, 0, 0.3) -38px 1px 53px 3px,
+        /* Sombra más difusa a la derecha */
+        rgba(1, 0, 0, 0.2) -38px -1px 3px inset;
+    /* Sombra interna a la derecha */
 }
 
 /* Imagenes laterales */
 .medallistaImg.inactive {
     opacity: 0.5;
     filter: grayscale(100%);
-    transform: scale(1); /* Las imágenes laterales son más pequeñas */
+    transform: scale(1);
+    /* Las imágenes laterales son más pequeñas */
     z-index: 1;
     transition: 0.3s;
 }
@@ -96,25 +104,26 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+
 }
 
 .btnCarrusel.anterior {
     position: absolute;
     left: 15px;
     box-shadow: 15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
+        -15px -15px 30px #ffffff;
 }
 
 .btnCarrusel.siguiente {
     position: absolute;
     right: 15px;
     box-shadow: -15px 15px 30px #bebebe,
-             -15px -15px 30px #ffffff;
+        -15px -15px 30px #ffffff;
 }
 
 .btnCarrusel:hover {
-    background-color: rgba(0, 0, 0, 0.8); /* Cambiar el color al pasar el ratón */
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Cambiar el color al pasar el ratón */
 }
 
 /* Información del medallista (solo el activo será visible) */
@@ -137,7 +146,7 @@
 .infoMedallista {
     position: relative;
     height: 120px;
-    overflow: hidden;    
+    overflow: hidden;
     display: flex;
     align-items: center;
 }
@@ -154,7 +163,8 @@
 }
 
 #medal-gold {
-    background-color: gold; /* Color para la medalla de oro */
+    background-color: gold;
+    /* Color para la medalla de oro */
 }
 
 .nombreMedallista.medal-gold {
@@ -162,7 +172,8 @@
 }
 
 #medal-silver {
-    background-color: silver; /* Color para la medalla de plata */
+    background-color: silver;
+    /* Color para la medalla de plata */
 }
 
 .nombreMedallista.medal-silver {
@@ -170,7 +181,8 @@
 }
 
 #medal-bronze {
-    background-color: #cd7f32; /* Color para la medalla de bronce */
+    background-color: #cd7f32;
+    /* Color para la medalla de bronce */
 }
 
 .nombreMedallista.medal-bronze {
@@ -180,10 +192,10 @@
 
 .parteMedallistas {
     display: flex;
-    flex-direction: column;  
+    flex-direction: column;
     margin-top: 80px;
     border-bottom: 2px solid #55555514;
-    padding-bottom: 60px;  
+    padding-bottom: 60px;
 }
 
 .parteMedallistas .headerParteM {
@@ -200,7 +212,7 @@
     color: #5b5b5b;
 }
 
-.parteMedallistas .parteText  {
+.parteMedallistas .parteText {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -215,7 +227,11 @@
 }
 
 .parteMedallistas .parteText h1 {
-    /* color: #003e84; */
+    font-size: clamp(24px, 2vw, 29px);
+}
+
+.parteMedallistas .parteText h4 {
+    font-size: clamp(18px, 2vw, 19px);
 }
 
 .parteMedallistas .parteText h4 {
@@ -225,5 +241,38 @@
 
 .parteMedallistas .parteText h1,
 .parteMedallistas .parteText h4 {
-    text-align: left;    
+    text-align: left;
+}
+
+@media (max-width: 900px) {
+    .parteMedallistas .parteText {
+        width: calc(100%);
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 425px) {
+    .imgContainer {
+        width: 300px;
+    }
+  
+    .parteMedallistas .parteText {
+        flex-direction: column;
+    }
+
+    .infoMedallista {
+        height: 200px;
+    }
+
+    .parteMedallistas .parteText i {
+        margin-right: 0;
+        margin-bottom: 25px;
+        font-size: 34px;
+        padding: 18px;
+    }
+
+    .parteMedallistas .parteText h1,
+    .parteMedallistas .parteText h4 {
+        text-align: center;
+    }
 }
