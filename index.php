@@ -8,16 +8,29 @@
 </head>
 <body>
             <nav>
-                <div class="separador">
-                    <a>GATOS SALVAJES</a>
-                </div>
-                <div class="separador">
-                    <a href="<?php echo home_url('/especializacion-deportiva'); ?>">Especialización deportiva</a>
-                    <a href="<?php echo home_url('/deportes-para-todos'); ?>">Deportes para Todos</a>
-                    <a href="">Salón de la Fama</a>
-                    <a href="<?php echo home_url('/instalaciones'); ?>">Instalaciones</a>
-                    <a href="">E-sports</a>
-                </div>
+                        <div class="separador reducido">
+                            <a>GATOS S.</a>
+                        </div>
+                    <div class="separador hideMenu">
+                        <a class="hideMenu">GATOS SALVAJES</a>
+                    </div>
+                    <div class="separador">
+                        <div class="hideMenu">
+                            <a href="<?php echo home_url('/especializacion-deportiva'); ?>">Especialización deportiva</a>
+                            <a href="<?php echo home_url('/deportes-para-todos'); ?>">Deportes para Todos</a>
+                            <a href="">Salón de la Fama</a>
+                            <a href="<?php echo home_url('/instalaciones'); ?>">Instalaciones</a>
+                            <a href="">E-sports</a>
+                        </div>
+                       
+                        <div class="reducido">
+                            <a href="<?php echo home_url('/especializacion-deportiva'); ?>">ED</a>
+                            <a href="<?php echo home_url('/deportes-para-todos'); ?>">DpT</a>
+                            <a href="">SF</a>
+                            <a href="<?php echo home_url('/instalaciones'); ?>">I</a>
+                            <a href="">E-sports</a>
+                        </div>
+                    </div>
             </nav>
     <section>
         <div class="pineada">
@@ -37,8 +50,7 @@
         
         <div class="trigger">
             <div class="trigger-container">
-                <h1 class="gatos2">DEPORTES</h1>
-                <h1 class="gatos2">UAQ</h1>
+                <img class="uaqDeportes" src=<?php echo get_template_directory_uri() . '/img/inicio/UAQDeportes.png'?>>
             </div>
         </div>
     </section>

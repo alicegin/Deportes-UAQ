@@ -31,11 +31,12 @@ nav{
 }
 
 .separador{
-    padding: 40px 30px;
+    padding: 3vw 1vw;
+    width: auto;
 }
 a{
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 1vw;
+    padding-right: 1vw;
     text-decoration: none;   
     font-family: 'Poppins', sans-serif;
     color: white; 
@@ -80,7 +81,7 @@ a{
     align-content: center;
     text-align: center;
     font-family: "Oswald";
-    color: brown;
+    color: #0a55a2;
     overflow: hidden;
 }
 .gatos{
@@ -90,8 +91,10 @@ a{
     height: 400vh;
     background-color: transparent;
 }
-.gatos2{
-    font-size: 5vw;
+.uaqDeportes{
+    width: auto;
+    height: 25vh;
+    align-self: center;
 }
 .trigger{
     position: absolute;
@@ -117,4 +120,15 @@ a{
     height: 500vh;
     width: 100%;
     background-color: blue;
+}
+.reducido{
+    display: none;
+}
+@media (max-width: 965px) {
+    .hideMenu{
+        display: none;
+    }
+    .reducido{
+        display: block;
+    }
 }

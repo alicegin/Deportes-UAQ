@@ -7,7 +7,7 @@ get_template_part('template-parts/header');
     <!-- Contenido aquí -->
     <?php
     include 'template-parts/slider.php';
-
+    
     $imagenes = [
       'http://deportesuaq.mx/wp-content/uploads/2024/07/1A-2-scaled.jpg',
       'http://deportesuaq.mx/wp-content/uploads/2024/07/3A-2.jpg',
@@ -16,15 +16,31 @@ get_template_part('template-parts/header');
       'http://deportesuaq.mx/wp-content/uploads/2024/07/6A-1.jpg'
   ];
 
-
   echo generarCarrusel($imagenes);
     
     ?>
-    <section class="margen">
-      <div class="contenedorCentrar" id="socialMedia">
-      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuaqdeportes&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=1835712586922845" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
-        <iframe src="https://widget.taggbox.com/161494" style="border:none;" width="340" height="500"></iframe>
+<div class="cuerpo">
+      <div class="scroll">
+        <div class="elementosScroll">
+          <h1>SÍGUENOS EN NUESTRAS REDES</h1>
+        </div>
       </div>
-    </section>
+      <div class="redesSociales">
+        <a href="https://www.facebook.com/uaqdeportes" class="card">
+            <h1>FACEBOOK</h1>
+            <p>UAQ Deporte Universitario</p>
+            <img src=<?php echo get_template_directory_uri() . '/img/espDep/Facebook.png'?>>
+        </a>
+        <a href="https://www.instagram.com/uaqdeportes" class="card">
+            <h1>INSTAGRAM</h1>
+            <p>@uaqdeportes</p>
+            <img src=<?php echo get_template_directory_uri() . '/img/espDep/Instagram.png'?>>
+        </a>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src=<?php echo get_template_directory_uri() . '/js/espDep/inicio.js'?> ></script>
 </main>
 

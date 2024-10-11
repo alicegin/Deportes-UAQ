@@ -45,6 +45,9 @@ function deportesuaq_enqueue_styles() {
     if (is_page('ca')) {
         wp_enqueue_style('caStyle', get_template_directory_uri() . '/css/caStyle.css');
     }
+    if (is_page('especializacion-deportiva')) {
+        wp_enqueue_style('espDepStyle', get_template_directory_uri() . '/css/espDepStyle.css');
+    }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 

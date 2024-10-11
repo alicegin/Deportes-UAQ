@@ -1,5 +1,11 @@
+*{
+    margin:0;
+    padding: 0;
+}
 main {
     display: flex;
+    height: 100vh;
+    overflow: hidden;
 }
 
 main .mainPart {
@@ -134,7 +140,7 @@ main .mainPart article h2:hover svg {
 }
 
 .mainPart.mainPartOpciones {
-    max-height: 100vh;
+    max-height: 100%;
     overflow-y: auto;
     min-height: 612px;
 }
