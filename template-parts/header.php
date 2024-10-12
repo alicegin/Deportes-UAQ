@@ -61,7 +61,7 @@
 
 
       <div id="drawer" class="drawer">
-        <button id="closeButton" class="close-btn">X</button>
+        <button id="closeButton" class="close-btn">&#x2715;</button>
         <p class="titulo-drawer">MENU</p>
           <a class="link" href="<?php echo home_url('/conocenos'); ?>">CONÓCENOS</a>
           <a class="link" href="<?php echo home_url('/condde'); ?>">CONDDE</a>

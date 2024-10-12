@@ -50,7 +50,7 @@
       </div>
       </div>
       <div id="drawer" class="drawer">
-        <button id="closeButton" class="close-btn">X</button>
+        <button id="closeButton" class="close-btn">&#x2715;</button>
         <p class="titulo-drawer">MENU</p>
         <a href="<?php echo home_url('/deportes-para-todos'); ?>">Inicio</a>
             <a class="link" href="<?php echo home_url('/copa-valores-universitarios'); ?>">Copa Valores</a>
