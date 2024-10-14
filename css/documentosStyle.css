@@ -1,33 +1,67 @@
-.seccion{
-    margin-top: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
+body{
+    background-color: #1a1a1a;
+}
+main{
+    
+    padding-top: 100px;
+    min-height: 100vh;
+    min-width: 100%;
+    color: white;
+}
+
+.todo{
+    position: relative;
+    width: 100%;
+    
+}
+.linea{
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    width:2px;
+    background-color: white;
+    margin: 0 50px;
+}
+
+.contenedorIcono{
+    position: relative;
+    width: 100px;
+}
+
+.documentos{
+    width: 100%;
+    position: absolute;
+    padding: 0 5vw;  
+}
+
+.documento{
     display: flex;
+    width: 100%;
+    gap: 3vw;
+}
+
+.infoDocumento{
+    flex: 1;
+    padding-bottom: 5vh;
     align-content: center;
-}
-.espacio{
-    margin-top: 30px;
-}
-.infoDoc{
-    display: flex;
-    flex-direction: column;
     justify-content: center;
 }
-.seccion img{
+
+.cuadrado{
+    z-index: 2;
+    position: absolute;
+    width: 100px;
+    height:100px;
+    
+}
+
+.circulo{
+    border-radius:50%;
+    width: 100px;
     height: 100px;
-    width: auto;
+    background-color:white;
 }
 
-.seccion .infoDoc span img{
-    height: 50px;
-    width: auto;
-}
-span{
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-}
-
-p{
-    text-align: justify;
+.circulo img{
+    padding: 10px;
 }

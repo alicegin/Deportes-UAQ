@@ -1,41 +1,60 @@
-.redes{
-    position: relative;
-    display: inline-block;
+.fila{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.fila p{
+    min-width: 200px;
+    flex: 1;
+    padding-left: 4vw;
+    padding-right: 4vw;
 }
 
-.imagen-redes{
-border-radius: 10%;
-height: 400px;
-width: auto;
+.contenedor-imgINDET{
+    position:relative;
+    height: 80vh;
+    width: 80vh;
 }
 
-.imagen{
-    height: auto;
-    width: auto;
+.imgINDET {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 80%;
+    width: 80%;
+    object-fit: cover;
+    object-position: center;
+    background-color: black;
 }
 
-.imagen-redes:hover{
+
+.imgINDET:hover{
     filter: brightness(50%);
 }
-.banner-redes{
+
+
+.redes{
     position: absolute;
-    top: 80%;
-    right: -70px; /* Hace que sobresalga de la imagen */
-    transform: translateY(-50%);
-    background-color: black; /* Color de la tira */
-    padding: 20px;
-    border-radius: 5px;
-    color: white;
-    font-weight: bold;
+    padding-left: 10%;
+    padding-right: 10%;
+    gap: 3vw;
+    right: 0;
+    bottom: 5%;
+    height: 15%;
+    max-width: 100%;
+    background-color: black;
+    border-radius: 20px;
+    align-content: center;
+    justify-content: center;
+    display: flex;
 }
-.banner-redes img{
-    height: 32px;
-    margin-left:10px ;
-    margin-right: 10px;
+
+.icono{
+    align-self: center;
+    height: 65%;
+    width: 65%;
 }
-.banner-redes img:hover{
-    filter: brightness(50%)
-}
-.banner-redes a{
-    text-decoration: none;
+
+.icono:hover{
+    filter: brightness(50%);
 }
