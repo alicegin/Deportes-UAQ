@@ -5,22 +5,52 @@ get_template_part('template-parts/header');
 
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.dataTables.min.css" crossorigin="anonymous" />
 </head>
 
 <main>
     <section class="mainMedallistas"></section>
+    <div class="btnViejosContainer">
+        <button id="btnViejos">Ver los medallistas más antiguos</button>
+    </div>
+    <section class="tablesMedallistas" style="display: none;"></section>
 </main>
 
 <?php get_template_part('template-parts/footer'); ?>
 
 <script src="https://kit.fontawesome.com/4d77019a64.js" crossorigin="anonymous"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
+<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.dataTables.min.js"></script>
 <script>
     $(document).ready(function() {
         let currentIndexes = {};
         let mainWinners = $('.mainMedallistas');
+        let tablesMedallistas = $('.tablesMedallistas');
+
+        let medallistasOcultos = [
+            {table: 'medallistas_2001_v', year: '2001'},
+            {table: 'medallistas_2002_bc', year: '2002'},
+            {table: 'medallistas_2003_c', year: '2003'},
+            {table: 'medallistas_2006_m', year: '2006'},
+            {table: 'medallistas_2007_uanl', year: '2007'},
+            {table: 'medallistas_2008_g', year: '2008'},
+            {table: 'medallistas_2009_uaem', year: '2009'},
+            {table: 'medallistas_2011_uamex', year: '2011'},
+            {table: 'medallistas_2012_v', year: '2012'},
+            {table: 'medallistas_2013_s', year: '2013'},
+            {table: 'medallistas_2014_p', year: '2014'},
+            {table: 'medallistas_2015_uanl', year: '2015'},
+            {table: 'medallistas_2016_uanl', year: '2016'},
+            {table: 'medallistas_2017_uanl', year: '2017'}
+        ];
 
         inicio();
+
+        $('#btnViejos').on('click', function() {
+            tablesMedallistas.show(200);
+            $('.btnViejosContainer').css('padding-bottom', '0');
+            $('.btnViejosContainer').css('padding-top', '100px');
+        });
 
         function inicio() {
             $.ajax({
@@ -30,6 +60,7 @@ get_template_part('template-parts/header');
                 processData: false,
                 contentType: false,
                 success: function(res) {
+                    console.log(res)
                     let dataMedallistas_2024 = res.data.medallistas_2024_a;
                     let dataMedallistas_2023 = res.data.medallistas_2023_unison;
                     let dataMedallistas_2022 = res.data.medallistas_2022_uacj;
@@ -41,11 +72,70 @@ get_template_part('template-parts/header');
                     llenarMedallistas(dataMedallistas_2022, mainWinners, '2022');
                     llenarMedallistas(dataMedallistas_2021, mainWinners, '2021');
                     llenarMedallistas(dataMedallistas_2019, mainWinners, '2019');
+
+                    $.each(medallistasOcultos, function(index, item) {
+                        let dataTable = res.data[item.table];
+
+                        if (dataTable) {
+                            llenarTablaMedallistas(dataTable, item.year);
+                        }
+                    });
                 },
                 error: function() {
                     console.log("Error al cargar los medallistas");
                 }
             });
+        }
+
+        function llenarTablaMedallistas(data, year) {
+            if (data && data.length > 0) {
+                let tableID = `medallistas${year}`;
+
+                let articleHTML = `
+                    <article class="parteTable">
+                        <div class="tableTitle">
+                            <h1>Universidad Nacional ${year}</h1>
+                        </div>
+                        <div class="tableContainer">
+                            <table id="${tableID}" class="display">
+                                <thead>
+                                    <tr>                                        
+                                        <th>Nombre</th>
+                                        <th>Apellido Paterno</th>
+                                        <th>Apellido Materno</th>
+                                        <th>Deporte</th>
+                                        <th>Categoría</th>
+                                        <th>Medalla</th>
+                                        <th>Foto</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
+                    </article>
+                `;
+
+                tablesMedallistas.append(articleHTML);
+
+                let tableBody = '';
+                data.forEach(medallista => {
+                    tableBody += `
+                        <tr>                            
+                            <td>${medallista.c_nombre || 'N/A'}</td>
+                            <td>${medallista.c_apellido_paterno || 'N/A'}</td>
+                            <td>${medallista.c_apellido_materno || 'N/A'}</td>
+                            <td>${medallista.c_nombre_deporte}</td>
+                            <td>${medallista.c_nombre_categoria || 'N/A'}</td>
+                            <td>${medallista.c_tipo_medalla || 'N/A'}</td>
+                            <td><img src="<?php echo get_template_directory_uri(); ?>${medallista.c_url_foto}" alt="Foto Medallista"></td>
+                        </tr>
+                    `;
+                });
+
+                $(`#${tableID} tbody`).append(tableBody);
+                $(`#${tableID}`).DataTable();
+            }
         }
 
         function llenarMedallistas(data, container, year) {
@@ -100,8 +190,8 @@ get_template_part('template-parts/header');
                     <div class="parteText ${index === 0 ? 'active' : ''}">
                         <i id="${medalClass}" class="fa-solid fa-medal"></i>
                         <div class="parteInfoText">
-                            <h1 class="nombreMedallista ${medalClass}">${medallista.c_nombre} ${medallista.c_apellido_paterno} ${medallista.c_apellido_materno}</h1>
-                            <h4 class="nombreDeporte">${medallista.c_nombre_deporte} ${medallista.c_nombre_categoria}</h4>
+                            <h1 class="nombreMedallista ${medalClass}">${medallista.c_nombre || ''} ${medallista.c_apellido_paterno || ''} ${medallista.c_apellido_materno || ''}</h1>
+                            <h4 class="nombreDeporte">${medallista.c_nombre_deporte || ''} ${medallista.c_nombre_categoria || ''}</h4>
                         </div>                        
                     </div>`;
                 $infoContainer.append(infoHtml);
@@ -147,7 +237,6 @@ get_template_part('template-parts/header');
                     ajustarScroll($imgs, currentIndexes[year]);
                 }
             });
-
 
             function cambiarSlide(year, direccion, $imgs, $infos) {
                 $imgs.find('.medallistaImg').eq(currentIndexes[year]).removeClass('active').addClass('inactive');
