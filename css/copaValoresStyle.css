@@ -1,0 +1,68 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contenedor-imagen-portada {
+    height: 100vh;
+    min-height: 400px;
+}
+
+.contenedor-imagen-portada .overlay-contenedor h1 {
+    font-family: "Teko-Regular";
+    font-size: clamp(52px, 2vw, 52px);
+    color: #f2f2f2;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 1561px;
+    padding-top: 80px;
+}
+
+.contenedorPrincipal h1, 
+.contenedorPrincipal h2 {
+    font-family: "Futura-Medium";
+    width: 100%;
+    margin: 20px 0;
+    width: fit-content;
+}
+
+.contenedorPrincipal h2,
+.deportesContainer h2 {
+    font-family: "Teko-Regular";
+}
+
+.contenedorPrincipal p {
+    font-size: clamp(20px, 2vw, 22px);
+}
+
+.headerContenedor {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.deportesContainer {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.contenedorPrincipal h3 {
+    font-size: clamp(20px, 2vw, 20px);
+}
+
+.deportesContainer h2 {
+    font-size: clamp(55px, 2vw, 55px);
+}

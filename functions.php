@@ -48,6 +48,9 @@ function deportesuaq_enqueue_styles() {
     if (is_page('especializacion-deportiva')) {
         wp_enqueue_style('espDepStyle', get_template_directory_uri() . '/css/espDepStyle.css');
     }
+    if (is_page('copa-valores-universitarios')) {
+        wp_enqueue_style('copaValores', get_template_directory_uri() . '/css/copaValoresStyle.css');
+    }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 

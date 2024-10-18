@@ -1,184 +1,244 @@
+@font-face {
+  font-family: 'Futura-Regular';
+  src: url('../assets/fonts/Futura\ Regular.ttf') format('opentype');
+}
 
-header nav a:hover{
+@font-face {
+  font-family: 'Futura-Medium';
+  src: url('../assets/fonts/Futura\ Medium.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Futura-Bold';
+  src: url('../assets/fonts/Futura\ Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Teko-Regular';
+  src: url('../assets/fonts/Teko-Regular.ttf') format('opentype');
+}
+
+header, .navbar-content {
+  max-height: 100px;
+  min-height: 80px;
+  height: 100px;
+}
+
+header nav a:hover {
   filter: brightness(70%);
 }
+
 header nav .link {
-    color:  white;
-    text-decoration: none;
-    padding: 10px;
-    position: relative;
-    font-size: 1.2vw;
+  color: white;
+  text-decoration: none;
+  padding: 0px 5px;
+  padding-bottom: 2px;
+  position: relative;
+  font-size: clamp(18px, 2vw, 19px);
+  margin: 0 15px;
+  transition: 0.3s;
 }
 
 header nav .link::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background-color: #444;
-    border-radius: 1px;
-    transition: 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: #5b5b5b;
+  border-radius: 1px;
+  transition: 0.3s;
 }
 
 header nav .link:hover::after {
-    width: 100%;
+  width: 100%;
 }
 
 header {
-    position: -webkit-sticky;
-    /* Safari */
-    position: sticky;
-    top: 0;
-    z-index: 1000;
+  position: -webkit-sticky;
+  /* Safari */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .navbar-content {
-    background-color: #1a1a1a;
-    display: flex;
-    align-items: center;
-    justify-content:space-between;
-    /* Espacio entre los enlaces */
-    padding-top: 1vw;
-    padding-bottom: 1vw;
-    box-shadow: 0px 2px 5px gray;
+  background-color: #1a1a1a;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Espacio entre los enlaces */
+  padding-top: 1vw;
+  padding-bottom: 1vw;
+  border-bottom: 1px solid #5b5b5b;
 }
 
-.redesHeader{
-    filter: invert(75%);
-    align-self: center;
-    height: auto;
-    padding: 0 5px;
-    width: 3vw;
-    object-fit: cover;
+.redesHeader {
+  filter: invert(75%);
+  align-self: center;
+  height: auto;
+  padding: 0 5px;
+  width: 3vw;
+  object-fit: cover;
 }
 
 .navbar-menu {
-    padding: 0 15px;
-    display: flex;
-    align-items: center;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
 }
-
-
 
 .logo {
-    align-self: center;
-    height: auto;
-    width: 5vw;
-    object-fit: cover;
+  align-self: center;
+  height: auto;
+  width: 5vw;
+  max-width: 75%;
+  object-fit: cover;
 }
-
-
 
 /* Estilos para el drawer */
 .drawer {
-    position: fixed;
-    top: 0;
-    left: -100%; /* Fuera de la vista inicialmente */
-    min-width: 150px;
-    height: 100%;
-    background-color: white;
-    padding: 20px;
-    transition: right 0.3s ease;
-    z-index: 1000;
-    transition: 0.5s;
-    color: black;
-  }
-
-  .drawer .link{
-    color: black;
-    font-size:2vh;
-  }
-  
-  .drawer.open {
-    left: 0; /* Drawer visible */
-  }
-  
-  .backdrop {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 500;
-  }
-  
-  .backdrop.show {
-    display: block;
-  }
-  
-  .close-btn, .open-btn {
-    border: none;
-    cursor: pointer;
-    border-radius: 10px;
-    background-color: transparent;
-    color: white;
-    padding-left: 15px;
-  }
-  
-  .open-btn {
-    display: none;
-    gap: 10px;
-  }
-  
-  .close-btn{
-    padding: 10px;
-    position: absolute;
-    right: 10px;
-    color: black;
-    
-  }
-  
-  .close-btn:hover{
-    background-color: #dbdbdb;
-  }
-
- .drawer a {
-    color: #333;
-    text-decoration: none;
-    padding: 10px;
-    position: relative;
-    display: flex;
-    margin-top: 10px;
-    margin-bottom: 10px;
+  position: fixed;
+  top: 0;
+  left: -100%;
+  /* Fuera de la vista inicialmente */
+  min-width: 150px;
+  height: 100%;
+  background-color: white;
+  padding: 20px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+  transition: 0.5s;
+  color: black;
 }
+
+.drawer .link {
+  color: black;
+  font-size: 2vh;
+}
+
+.drawer.open {
+  left: 0;
+  /* Drawer visible */
+}
+
+.backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 500;
+}
+
+.backdrop.show {
+  display: block;
+}
+
+.close-btn,
+.open-btn {
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+  background-color: transparent;
+  color: white;
+  padding-left: 15px;
+}
+
+.open-btn {
+  display: none;
+  gap: 10px;
+}
+
+.close-btn {
+  padding: 10px;
+  position: absolute;
+  right: 10px;
+  color: black;
+
+}
+
+.close-btn:hover {
+  background-color: #dbdbdb;
+}
+
+.drawer a {
+  color: #333;
+  text-decoration: none;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .drawer a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 100%;
-    width: 0;
-    height: 2px;
-    background-color: #444;
-    border-radius: 1px;
-    transition: 0.3s;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: #444;
+  border-radius: 1px;
+  transition: 0.3s;
 }
+
 .drawer a:hover::after {
-    width: 100%;
+  width: 100%;
 }
-.titulo-drawer{
+
+.titulo-drawer {
   align-self: center;
-  font-size:4vw;
-  font-weight:500;
-  padding:0;
+  font-size: 4vw;
+  font-weight: 500;
+  padding: 0;
   margin: 0;
 }
 
+.navbar-menu.hideMenu.redesSociales {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-menu.hideMenu.redesSociales a {
+  width: 38px;
+  height: 38px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.navbar-menu.hideMenu.redesSociales a .redesHeader {
+  position: absolute;
+  max-width: 100%;
+  aspect-ratio: 3/2;
+  object-fit: contain;
+  padding: 0;
+  transition: 0.3s;
+  /* mix-blend-mode: color-burn; */
+}
 
 @media (max-width: 965px) {
-    .hideMenu{
-        display: none;
-    }
-    .open-btn{
-        display: flex
-    }
-    .navbar-content{
-        justify-content: space-between;
-    }
-    .logo{
-      width: 10vw;
-    }
+  .hideMenu {
+    display: none;
+  }
+
+  .open-btn {
+    display: flex
+  }
+
+  .navbar-content {
+    justify-content: space-between;
+  }
+
+  .logo {
+    width: 10vw;
+  }
 }
