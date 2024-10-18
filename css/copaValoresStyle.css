@@ -8,6 +8,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .contenedor-imagen-portada {
@@ -17,8 +18,9 @@ main {
 
 .contenedor-imagen-portada .overlay-contenedor h1 {
     font-family: "Teko-Regular";
-    font-size: clamp(52px, 2vw, 52px);
+    font-size: 54px;
     color: #f2f2f2;
+    text-align: center;
 }
 
 .contenedorPrincipal {
@@ -39,12 +41,18 @@ main {
 }
 
 .contenedorPrincipal h2,
-.deportesContainer h2 {
+.deportesContainer h2,
+main .contenedorPrincipal h5 {
     font-family: "Teko-Regular";
 }
 
+.headerContenedor h2 {
+    font-size: clamp(45px, 2vw, 45vw);
+    margin: 0;
+}
+
 .contenedorPrincipal p {
-    font-size: clamp(20px, 2vw, 22px);
+    font-size: clamp(20px, 2vw, 20px);
 }
 
 .headerContenedor {
@@ -60,9 +68,70 @@ main {
 }
 
 .contenedorPrincipal h3 {
-    font-size: clamp(20px, 2vw, 20px);
+    font-size: clamp(20px, 2vw, 22px);
+    font-family: "Futura-Medium";
+    font-weight: 300;
+    margin-bottom: 12px;
 }
 
-.deportesContainer h2 {
+.deportesContainer h2,
+main .contenedorPrincipal h5 {
     font-size: clamp(55px, 2vw, 55px);
+}
+
+.imgDeporteContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1150px;
+}
+
+.imgDeporteContainer img {
+    flex: 1;
+    width: 280px;
+    max-width: 280px;
+    border: 5px solid #121212;
+}
+
+.deportesContainer .parteDeportesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.deportesContainer .parteDeportesContainer h2 {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.deportesContainer .parteDeportesContainer .imgDeporteContainer {
+    border-bottom: 1px solid #202020;
+    padding-bottom: 50px;
+} 
+
+.deportesContainer .parteDeportesContainer:nth-child(2) {
+    margin-top: 50px;
+}
+
+main .contenedorPrincipal h5 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.facultadContent .facultadContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2 !important;
+    padding: 5px;
+    margin-bottom: 90px !important;
+}
+
+.facultadContent .facultadContainer h4 {
+    margin-top: 22px;
+    font-family: "Futura-Medium";
+    font-size: clamp(19px, 2vw, 19px) !important;
 }
