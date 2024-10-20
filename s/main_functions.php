@@ -18,7 +18,8 @@ function devolverJSON($estado, $error = null, $msg = null){
     header('Content-Type: application/json; charset=utf-8');
     echo json_encode( $output );
 
-    exit; die();
+    return json_encode($output);
+    // exit; die();
 }
 
 function devolverData($estado, $error = null, $data = null){
@@ -35,6 +36,6 @@ function devolverData($estado, $error = null, $data = null){
     header('Content-Type: application/json; charset=utf-8');
     echo json_encode( $output );
 
-    exit; die();
+    // exit; die();
 }
 ?>
