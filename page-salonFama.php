@@ -42,17 +42,17 @@ get_template_part('template-parts/header');
                 data: false,
                 processData: false,
                 contentType: false,
-                success: function(res) {                
+                success: function(res) {
                     if (res.success === 1 && typeof res.data === 'object') {
                         let contador = 0;
 
                         $.each(res.data, function(key, edicion) {
                             let year = (key.match(/_(\d{4})_/) || [])[1];
-                            
+
                             if (contador <= 4) {
                                 llenarMedallistas(edicion, mainWinners, year);
                                 contador++;
-                            } else {                                
+                            } else {
                                 llenarTablaMedallistas(edicion, year);
                             }
                         });
@@ -119,7 +119,7 @@ get_template_part('template-parts/header');
                         <i id="${medalClass}" class="fa-solid fa-medal"></i>
                         <div class="parteInfoText">
                             <h1 class="nombreMedallista ${medalClass}">${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} ${safeValue(medallista.c_apellido_materno)}</h1>
-                            <h4 class="nombreDeporte">${safeValue(medallista.c_deporte)} ${safeValue(medallista.c_deporte_categoria)}</h4>
+                            <h4 class="nombreDeporte">${safeValue(medallista.c_deporte)} <span class="separador"> | </span> ${safeValue(medallista.c_deporte_categoria)}</h4>
                         </div>                        
                     </div>`;
                 $infoContainer.append(infoHtml);
@@ -130,7 +130,7 @@ get_template_part('template-parts/header');
             $parteWinners.append($infoContainer);
             container.append($parteWinners);
 
-            activarCarrusel(year, $imgContainer, $infoContainer);
+            activarCarrusel(year, $imgContainer, $infoContainer, $carruselContainer);
         }
 
         function llenarTablaMedallistas(data, year) {
@@ -184,40 +184,36 @@ get_template_part('template-parts/header');
             }
         }
 
-        function activarCarrusel(year, $imgs, $infos) {
+        function activarCarrusel(year, $imgs, $infos, $carruselImgContainer) {
             let totalImgs = $imgs.find('.medallistaImg').length;
 
+            // Escuchar eventos de click para los botones de navegación
             $(`#btnSiguiente-${year}`).on('click', function() {
-                cambiarSlide(year, 1, $imgs, $infos);
+                cambiarSlide(year, 1, $imgs, $infos, $carruselImgContainer);
             });
 
             $(`#btnAnterior-${year}`).on('click', function() {
-                cambiarSlide(year, -1, $imgs, $infos);
+                cambiarSlide(year, -1, $imgs, $infos, $carruselImgContainer);
             });
 
+            // Evento de click en cada imagen
             $imgs.find('.medallistaImg').on('click', function() {
-                // Obtener el índice de la imagen clickeada directamente desde $imgs
                 let clickedIndex = $imgs.find('.medallistaImg').index(this);
 
-                // Asegurarse de que el índice clickeado es diferente del actual
                 if (clickedIndex !== currentIndexes[year]) {
-                    // Siempre eliminar clases activas y añadir clases inactivas antes de actualizar
                     $imgs.find('.medallistaImg').eq(currentIndexes[year]).removeClass('active').addClass('inactive');
                     $infos.find('.parteText').eq(currentIndexes[year]).removeClass('active');
 
-                    // Actualiza el currentIndex al nuevo índice de la imagen clickeada
                     currentIndexes[year] = clickedIndex;
 
-                    // Activa la nueva imagen y el texto correspondiente
                     $imgs.find('.medallistaImg').eq(currentIndexes[year]).removeClass('inactive').addClass('active');
                     $infos.find('.parteText').eq(currentIndexes[year]).addClass('active');
 
-                    // Ajustar el scroll horizontal para centrar la imagen activa
-                    ajustarScroll($imgs, currentIndexes[year]);
+                    ajustarScroll($imgs, currentIndexes[year], $carruselImgContainer);
                 }
             });
 
-            function cambiarSlide(year, direccion, $imgs, $infos) {
+            function cambiarSlide(year, direccion, $imgs, $infos, $carruselImgContainer) {
                 $imgs.find('.medallistaImg').eq(currentIndexes[year]).removeClass('active').addClass('inactive');
                 $infos.find('.parteText').eq(currentIndexes[year]).removeClass('active');
 
@@ -226,22 +222,30 @@ get_template_part('template-parts/header');
                 $imgs.find('.medallistaImg').eq(currentIndexes[year]).removeClass('inactive').addClass('active');
                 $infos.find('.parteText').eq(currentIndexes[year]).addClass('active');
 
-                ajustarScroll($imgs, currentIndexes[year]);
+                ajustarScroll($imgs, currentIndexes[year], $carruselImgContainer);
             }
 
-            function ajustarScroll($imgs, currentIndex) {
+            function ajustarScroll($imgs, currentIndex, $carruselImgContainer) {
                 let imgActiva = $imgs.find('.medallistaImg').eq(currentIndex);
-                let containerWidth = $imgs.width();
-                let imgPosition = imgActiva.position().left;
-                let imgWidth = imgActiva.width();
+                let containerWidth = $carruselImgContainer.width(); // Ancho del carrusel visible
+                let imgPosition = imgActiva.position().left; // Posición de la imagen activa en imgContainer
 
-                if (imgPosition !== undefined) {
-                    let scrollPos = imgPosition - (containerWidth / 2) + (imgWidth / 2);
+                // Obtener el ancho de la imagen activa (300px) o inactiva (190px)
+                let imgWidth = imgActiva.hasClass('active') ? 300 : 190;
 
-                    $imgs.animate({
-                        scrollLeft: scrollPos
-                    }, 200);
-                }
+                // Cálculo para centrar la imagen activa
+                let scrollPos = imgPosition - (containerWidth / 2) + (imgWidth / 2);
+
+                // Ajustar el scrollLeft de imgContainer para centrar la imagen activa
+                $imgs.animate({
+                    scrollLeft: scrollPos
+                }, 300);
+
+                // Consolas para depuración
+                console.log("Posición de imagen activa:", imgPosition);
+                console.log("Ancho de imagen activa:", imgWidth);
+                console.log("Ancho del contenedor:", containerWidth);
+                console.log("Posición de desplazamiento calculada:", scrollPos);
             }
         }
 

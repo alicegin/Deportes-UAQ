@@ -11,7 +11,10 @@ $reader->open($filePath);
 $response = [];
 $responseData = [];
 
-foreach ($reader->getSheetIterator() as $sheet) {
+// Guardar las hojas en un array
+$sheets = iterator_to_array($reader->getSheetIterator());
+
+foreach (array_reverse($sheets) as $sheet) {
     $sheetName = $sheet->getName();
     $sheetData = [];
     $headers = [];

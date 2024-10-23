@@ -17,8 +17,11 @@
     width: 100%;
     position: relative;
     overflow-x: auto;
-    height: 500px;
+    height: 560px;
     max-width: 1180px;
+    overflow: hidden;
+    white-space: nowrap;
+
 }
 
 .imgContainer::-webkit-scrollbar {
@@ -48,9 +51,11 @@
     /* Escalado más grande para resaltar la imagen activa */
     border: 2px solid #fdfdfd;
     box-shadow: rgba(0, 0, 0, 0.4) 10px 20px 30px, rgba(0, 0, 0, 0.3) 10px 1px 53px 3px, rgba(1, 0, 0, 0.2) 0px -1px 3px inset;
-    border-radius: 20px;
+    border-radius: 12px;
     transition: 0.3s;
     z-index: 2;
+    min-height: 350px;
+    min-width: 300px;
 }
 
 .medallistaImg:nth-child(1).active {
@@ -83,6 +88,7 @@
     /* Las imágenes laterales son más pequeñas */
     z-index: 1;
     transition: 0.3s;
+    min-height: 300px;
 }
 
 /* Botones de navegación */
@@ -310,11 +316,16 @@ td img {
     }
 }
 
+.separador {
+    font-weight: 200;
+    color: #cdcdcd;
+}
+
 @media (max-width: 765px) {
     .parteTable {
-        margin: 0px;  
+        margin: 0px;
         width: calc(100% - 0px);
-        box-shadow: none;   
+        box-shadow: none;
         border-radius: 0;
         border-bottom: 2px solid #55555514 !important;
         padding-bottom: 50px;
@@ -329,7 +340,7 @@ td img {
     .imgContainer {
         width: 300px;
     }
-  
+
     .parteMedallistas .parteText {
         flex-direction: column;
     }

@@ -18,7 +18,7 @@
   src: url('../assets/fonts/Teko-Regular.ttf') format('opentype');
 }
 
-header, .navbar-content {
+header:not(.headerGatienda), .navbar-content {
   max-height: 100px;
   min-height: 80px;
   height: 100px;
