@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
     <?php
-        wp_head();
+      wp_head();
     ?>
 </head>
 
@@ -26,7 +26,7 @@
           <img class="logo" src=<?php echo get_template_directory_uri() . '/img/header/GS-44.png'?>>
         </a>
         </div>
-        <div class="navbar-menu hideMenu">
+        <div class="navbar-menu hideMenu menuDPT">
             <a class="link" href="<?php echo home_url('/deportes-para-todos'); ?>">Inicio</a>
             <a class="link" href="<?php echo home_url('/copa-valores-universitarios'); ?>">Copa Valores</a>
             <a class="link" href="<?php echo home_url('/uaqtivate'); ?>">UAQtívate</a>

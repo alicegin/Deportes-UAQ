@@ -18,10 +18,11 @@
   src: url('../assets/fonts/Teko-Regular.ttf') format('opentype');
 }
 
-header:not(.headerGatienda), .navbar-content {
-  max-height: 100px;
-  min-height: 80px;
-  height: 100px;
+header:not(.headerGatienda),
+.navbar-content {
+  max-height: 100px !important;
+  min-height: 90px !important;
+  height: 80px !important;
 }
 
 header nav a:hover {
@@ -31,21 +32,23 @@ header nav a:hover {
 header nav .link {
   color: white;
   text-decoration: none;
-  padding: 0px 5px;
-  padding-bottom: 2px;
+  padding: 0px 5px !important;
+  padding-bottom: 2px !important;
   position: relative;
-  font-size: clamp(18px, 2vw, 19px);
-  margin: 0 15px;
-  transition: 0.3s;
+  font-size: clamp(16px, 2vw, 16px) !important;
+  margin: 0 15px !important;
+  transition: 0.3s !important;
 }
 
+header nav .link::after,
+.drawer a:hover::after,
 header nav .link::after {
   content: "";
   position: absolute;
   left: 0;
   top: 100%;
   width: 0;
-  height: 2px;
+  height: 1px;
   background-color: #5b5b5b;
   border-radius: 1px;
   transition: 0.3s;
@@ -53,6 +56,7 @@ header nav .link::after {
 
 header nav .link:hover::after {
   width: 100%;
+  height: 1px;
 }
 
 header {
@@ -65,13 +69,13 @@ header {
 
 .navbar-content {
   background-color: #1a1a1a;
-  display: flex;
+  display: flex !important;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-between !important;
   /* Espacio entre los enlaces */
-  padding-top: 1vw;
-  padding-bottom: 1vw;
-  border-bottom: 1px solid #5b5b5b;
+  padding-top: 1vw !important;
+  padding-bottom: 1vw !important;
+  border-bottom: 1px solid #5b5b5b !important;
 }
 
 .redesHeader {
@@ -95,6 +99,7 @@ header {
   width: 5vw;
   max-width: 75%;
   object-fit: cover;
+  min-width: 46px;
 }
 
 /* Estilos para el drawer */
@@ -165,7 +170,8 @@ header {
   background-color: #dbdbdb;
 }
 
-.drawer a {
+.drawer a,
+.drawer .link {
   color: #333;
   text-decoration: none;
   padding: 10px;
@@ -173,6 +179,15 @@ header {
   display: flex;
   margin-top: 10px;
   margin-bottom: 10px;
+  width: 100%;
+}
+
+.drawer a,
+#drawer .link {
+  margin: 15px 0 !important;
+  padding: 0 !important;
+  max-width: fit-content;
+  margin-bottom: 25px !important;
 }
 
 .drawer a::after {
@@ -193,10 +208,28 @@ header {
 
 .titulo-drawer {
   align-self: center;
-  font-size: 4vw;
+  font-size: clamp(22px, 4vw 26px);
   font-weight: 500;
   padding: 0;
   margin: 0;
+}
+
+.drawer.open .titulo-drawer {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.drawer.open #closeButton {
+  transition: 0.3s;
+  width: 38px;
+  height: 38px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
 }
 
 .navbar-menu.hideMenu.redesSociales {
@@ -205,9 +238,12 @@ header {
   align-items: center;
 }
 
+
+.navbar-content .navbar-menu.hideMenu:nth-child(4) a,
 .navbar-menu.hideMenu.redesSociales a {
-  width: 38px;
-  height: 38px;
+  width: 32px;
+  height: 32px;
+  max-width: 32px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -215,30 +251,45 @@ header {
   transition: 0.3s;
 }
 
-.navbar-menu.hideMenu.redesSociales a .redesHeader {
+.navbar-menu.hideMenu.redesSociales a .redesHeader,
+.redesHeader {
   position: absolute;
-  max-width: 100%;
-  aspect-ratio: 3/2;
-  object-fit: contain;
-  padding: 0;
-  transition: 0.3s;
-  /* mix-blend-mode: color-burn; */
+  width: 24px;
+  max-height: 24px;
+  min-height: 24px !important;
+  max-width: 24px !important;
+  min-width: 24px !important;
+  aspect-ratio: 3/2 !important;
+  object-fit: contain !important;
+  padding: 0 !important;
+  transition: 0.3s !important;
+  object-position: center;
 }
 
-@media (max-width: 965px) {
-  .hideMenu {
-    display: none;
-  }
-
+@media (max-width: 1198px) {
   .open-btn {
     display: flex
   }
 
+  .navbar-menu.hideMenu.menu-principal-header,
+  .navbar-menu.hideMenu.menu-logos-principal,
+  .navbar-menu.hideMenu.margenHeaderIz {
+    display: none;
+  }
+}
+
+@media (max-width: 965px) {
   .navbar-content {
     justify-content: space-between;
   }
 
   .logo {
     width: 10vw;
+  }
+}
+
+@media (max-width: 875px) {
+  .navbar-menu.hideMenu.menuDPT {
+    display: none;
   }
 }
