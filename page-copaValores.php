@@ -26,29 +26,164 @@ get_template_part('template-parts/headerDPT');
         <div class="parteDeportesContainer">
             <h2>Deportes Individuales</h2>
             <div class="imgDeporteContainer">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/ATLETISMO_A.png" alt="Copa Valores UAQ">
-                <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/BOX.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/ESCALADA.png" alt="Copa Valores UAQ"> -->
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/JUDO A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/KARATE A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/LEVANTAMIENTO A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/LUCHA A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/TENIS A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/TENIS DE MESA A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/INDIVIDUALES/TIRO CON ARCO A.png" alt="Copa Valores UAQ">
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/INDIVIDUALES/ATLETISMO_A.png" alt="Copa Valores UAQ"> -->
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">AJEDREZ LIBRE</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/INDIVIDUALES/JUDO A.png" alt="Copa Valores UAQ"> -->
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">ATLETISMO</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/INDIVIDUALES/KARATE A.png" alt="Copa Valores UAQ"> -->
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">NATACION</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/INDIVIDUALES/LEVANTAMIENTO A.png" alt="Copa Valores UAQ"> -->
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">SQUASH</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/INDIVIDUALES/LUCHA A.png" alt="Copa Valores UAQ"> -->
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">TENIS</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/INDIVIDUALES/TENIS A.png" alt="Copa Valores UAQ"> -->
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">TENIS DE MESA</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/INDIVIDUALES/TENIS DE MESA A.png" alt="Copa Valores UAQ"> -->
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">ATLETISMO FEMENIL</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <!-- <img src="<?php echo get_template_directory_uri(); ?>/img/Selecciones Universitarias/INDIVIDUALES/TIRO CON ARCO A.png" alt="Copa Valores UAQ"> -->
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">NATACION FEMENIL</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="parteDeportesContainer">
             <h2>Deportes Colaborativos</h2>
             <div class="imgDeporteContainer">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/BÁSQUETBOL_V_A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/FÚTBOL ASOCIACIÓN_F_A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/VOLEIBOL_V_A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/SÓFTBOL A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/FÚTBOL ASOCIACIÓN_V_A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/BÁSQUETBOL_F_A.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/BÉISBOL B.png" alt="Copa Valores UAQ">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/VOLEIBOL_F_A.png" alt="Copa Valores UAQ">
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/VOLEIBOL_FEMENIL.jpg" alt="Copa Valores UAQ">
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">VOLEIBOL FEMENIL</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/BASQUETBOL_FEMENIL.jpg" alt="Copa Valores UAQ">
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">BASQUETBOL FEMENIL</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/FUTBOL_5_VARONIL.jpg" alt="Copa Valores UAQ">
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">FUTBOL 5 VARONIL</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/HANDBALL_FEMENIL.jpg" alt="Copa Valores UAQ">
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">HANDBALL FEMENIL</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/ATLETISMO.jpg" alt="Copa Valores UAQ">
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">RELEVOS MIXTOS</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/VOLEIBOL_VARONIL.jpg" alt="Copa Valores UAQ">
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">VOLEIBOL VARONIL</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/FUTBOL_7_FEMENIL.jpg" alt="Copa Valores UAQ">
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">FUTBOL 7 FEMENIL</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/TOCHITO_LIBRE.jpg" alt="Copa Valores UAQ">
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">TOCHITO LIBRE</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
+                <div class="deporteCard">
+                    <div class="imgContainer">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/CONJUNTO/FUTBOL_SOCCER_VARONIL.jpg" alt="Copa Valores UAQ">
+                    </div>
+                    <div class="infoContainer">
+                        <h1 class="nombreDeporte">FUTBOL SOCCER VARONIL</h1>
+                        <p class="tipoCompetencia">COPA VALORES UNIVERSITARIOS</p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -56,12 +191,15 @@ get_template_part('template-parts/headerDPT');
         <h5>Participación de 13 facultades</h5>
         <div class="facultadContent" style="flex-wrap:wrap; display:flex; align-content:center; justify-content:center;">
             <div class="facultadContainer" style="background-color: gray; width:200px; height: 200px; display: flex; margin:10px 10px 10px 10px;">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/FACULTADES/FIF.jpg" alt="Facultades Copa Valores UAQ">
+                <h4 style="align-self: center; text-align: center;">Facultad de Informática</h4>
+            </div>
+            <div class="facultadContainer" style="background-color: gray; width:200px; height: 200px; display: flex; margin:10px 10px 10px 10px;">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/FACULTADES/FBA.png" alt="Facultades Copa Valores UAQ">
                 <h4 style="align-self: center; text-align: center;">
                     Facultad de Bellas Artes
                 </h4>
             </div>
-
             <div class="facultadContainer" style="background-color: gray; width:200px; height: 200px; display: flex; margin:10px 10px 10px 10px;">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/FACULTADES/FCA.jpg" alt="Facultades Copa Valores UAQ">
                 <h4 style="align-self: center; text-align: center;">
@@ -97,10 +235,6 @@ get_template_part('template-parts/headerDPT');
                 <h4 style="align-self: center; text-align: center;">
                     Facultad de Filosofía
                 </h4>
-            </div>
-            <div class="facultadContainer" style="background-color: gray; width:200px; height: 200px; display: flex; margin:10px 10px 10px 10px;">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/FACULTADES/FIF.jpg" alt="Facultades Copa Valores UAQ">
-                <h4 style="align-self: center; text-align: center;">Facultad de Informática</h4>
             </div>
             <div class="facultadContainer" style="background-color: gray; width:200px; height: 200px; display: flex; margin:10px 10px 10px 10px;">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/deportesCVU/FACULTADES/FI.png" alt="Facultades Copa Valores UAQ">

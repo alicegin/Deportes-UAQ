@@ -28,7 +28,7 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    max-width: 1561px;
+    max-width: 1200px;
     padding-top: 80px;
 }
 
@@ -47,12 +47,22 @@ main .contenedorPrincipal h5 {
 }
 
 .headerContenedor h2 {
-    font-size: clamp(45px, 2vw, 45vw);
+    font-size: clamp(55px, 2vw, 45vw);
     margin: 0;
 }
 
+.contenedorPrincipal p,
+.contenedorPrincipal h3 {
+    font-size: clamp(24px, 2vw, 26px) !important;
+    font-family: 'Futura-Regular' !important;
+}
+
 .contenedorPrincipal p {
-    font-size: clamp(20px, 2vw, 20px);
+    margin-top: 10px;
+}
+
+.contenedorPrincipal h3 {
+    font-weight: 350 !important;
 }
 
 .headerContenedor {
@@ -60,6 +70,7 @@ main .contenedorPrincipal h5 {
     width: 100%;
     align-items: center;
     justify-content: space-between;
+    margin-bottom: 15px;
 }
 
 .deportesContainer {
@@ -87,11 +98,56 @@ main .contenedorPrincipal h5 {
     max-width: 1150px;
 }
 
-.imgDeporteContainer img {
+.imgDeporteContainer .deporteCard {
     flex: 1;
     width: 280px;
+    min-width: 335px;
     max-width: 280px;
     border: 5px solid #121212;
+    position: relative;
+    height: 500px;
+}
+
+.imgDeporteContainer .deporteCard .imgContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.imgDeporteContainer .deporteCard .imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;   
+}
+
+.imgDeporteContainer .deporteCard .infoContainer {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    padding: 0 20px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, #12121200, #121212);
+}
+
+.imgDeporteContainer .deporteCard .infoContainer .nombreDeporte {
+    margin-bottom: 0;
+    font-size: clamp(44px, 2vw, 50px);
+}
+
+.imgDeporteContainer .deporteCard .infoContainer .tipoCompetencia {
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+
+.imgDeporteContainer .deporteCard .infoContainer .nombreDeporte,
+.imgDeporteContainer .deporteCard .infoContainer .tipoCompetencia {
+    font-family: "Teko-Regular";
 }
 
 .deportesContainer .parteDeportesContainer {
@@ -134,4 +190,10 @@ main .contenedorPrincipal h5 {
     margin-top: 22px;
     font-family: "Futura-Medium";
     font-size: clamp(19px, 2vw, 19px) !important;
+}
+
+@media (max-width: 375px) {
+    .imgDeporteContainer .deporteCard {
+        min-width: 280px;
+    }
 }
