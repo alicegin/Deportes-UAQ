@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Deportes para todos</title>
+    <title>Deportes para todes</title>
 </head>
 <body>
     <?php
@@ -18,7 +18,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/img/widgetDPT.jpeg" alt="Deportes UAQ" />
             </div>
             <div class="infoContainer">
-                <h1>Deportes para todos</h1>
+                <h1>Deportes para todes</h1>
                 <p>Promover una vida saludable entre la comunidad estudiantil y sociedad en general, a través de la organización de eventos que fomentan la práctica de actividad física y deportiva, tales como, Ligas Deportivas Escolares y eventos especiales</p>
             </div>
         </section>

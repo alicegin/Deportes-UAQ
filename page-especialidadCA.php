@@ -40,7 +40,7 @@ es fundamental para lograr una vida digna, saludable y plena. Por ello, disfruto
 mejorar su rendimiento deportivo, corregir patrones de movimiento, prevenir lesiones y acompañarlos en sus procesos de rehabilitación hasta lograr una reintegración 
 deportiva exitosa."," #b0afd2","#94a9e0"
                 ];
-$nutricion=[get_template_directory_uri() . '/assets/account_box.svg',
+$nutricion=[get_template_directory_uri() . '/img/especialidadCA/NUTRICION.png',
             "Nombre de responsable de Nutrición",
             "NUTRICIÓN",
             "000 000 0000",
@@ -49,7 +49,7 @@ $nutricion=[get_template_directory_uri() . '/assets/account_box.svg',
 comience a escribir. Creemos que el formato de este párrafo tiene un aspecto excelente tal y como se ha
 definido. Sin embargo, si quiere personalizarlo un poco para darle un toque personal, puede cambiar las
 fuentes con un solo clic.", "#203f74","#94a9e0"];
-$psicologia=[get_template_directory_uri() . '/assets/account_box.svg',
+$psicologia=[get_template_directory_uri() . '/img/especialidadCA/PSICOLOGIA.png',
             "Juan González Jayme",
             "PSICOLOGÍA",
             "442 411 0004",
@@ -119,7 +119,8 @@ switch ($valor) {
         </article>
         <div class="contenedorFoto">
             <img class="fotoResponsable" src="<?php echo $arreglo[0]?>">
-        </div>
+            <button class="btnfoto" onclick="location.href='#semblanza'" style="background-color:white;">Ver semblanza</button>
+            </div>
         
         <article class="datosResponsable">
             <h1>
@@ -136,7 +137,7 @@ switch ($valor) {
             </p>
         </article>
     </div>
-    <div class="contenidoR">
+    <div class="contenidoR" id="semblanza">
             <h3 class="info" style="background-color: <?php echo $arreglo[7]?>">
                 +INFO
             </h3>
