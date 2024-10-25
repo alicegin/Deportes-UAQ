@@ -33,7 +33,7 @@
             <a class="link" href="<?php echo home_url('/indet') ?>">INDET</a>
             <a class="link" href="<?php echo home_url('/gatienda'); ?>">Gatienda</a>
         </div>
-        <div class="navbar-menu hideMenu">
+        <div class="navbar-menu hideMenu redesSociales">
           <a href="https://www.facebook.com/uaqdeportes">
             <img class="redesHeader" src=<?php echo get_template_directory_uri() . '/img/header/facebook.svg'?>>
           </a>

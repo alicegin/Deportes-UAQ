@@ -1,0 +1,199 @@
+body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-imagen-portada {
+    height: 100vh;
+    min-height: 400px;
+}
+
+.contenedor-imagen-portada .overlay-contenedor h1 {
+    font-family: "Teko-Regular";
+    font-size: 54px;
+    color: #f2f2f2;
+    text-align: center;
+}
+
+.contenedorPrincipal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 1200px;
+    padding-top: 80px;
+}
+
+.contenedorPrincipal h1, 
+.contenedorPrincipal h2 {
+    font-family: "Futura-Medium";
+    width: 100%;
+    margin: 20px 0;
+    width: fit-content;
+}
+
+.contenedorPrincipal h2,
+.deportesContainer h2,
+main .contenedorPrincipal h5 {
+    font-family: "Teko-Regular";
+}
+
+.headerContenedor h2 {
+    font-size: clamp(55px, 2vw, 45vw);
+    margin: 0;
+}
+
+.contenedorPrincipal p,
+.contenedorPrincipal h3 {
+    font-size: clamp(24px, 2vw, 26px) !important;
+    font-family: 'Futura-Regular' !important;
+}
+
+.contenedorPrincipal p {
+    margin-top: 10px;
+}
+
+.contenedorPrincipal h3 {
+    font-weight: 350 !important;
+}
+
+.headerContenedor {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.deportesContainer {
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+.contenedorPrincipal h3 {
+    font-size: clamp(20px, 2vw, 22px);
+    font-family: "Futura-Medium";
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+
+.deportesContainer h2,
+main .contenedorPrincipal h5 {
+    font-size: clamp(55px, 2vw, 55px);
+}
+
+.imgDeporteContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1150px;
+}
+
+.imgDeporteContainer .deporteCard {
+    flex: 1;
+    width: 280px;
+    min-width: 335px;
+    max-width: 280px;
+    border: 5px solid #121212;
+    position: relative;
+    height: 500px;
+}
+
+.imgDeporteContainer .deporteCard .imgContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.imgDeporteContainer .deporteCard .imgContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;   
+}
+
+.imgDeporteContainer .deporteCard .infoContainer {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    padding: 0 20px;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    background: linear-gradient(to bottom, #12121200, #121212);
+}
+
+.imgDeporteContainer .deporteCard .infoContainer .nombreDeporte {
+    margin-bottom: 0;
+    font-size: clamp(44px, 2vw, 50px);
+}
+
+.imgDeporteContainer .deporteCard .infoContainer .tipoCompetencia {
+    font-size: 22px;
+    margin-bottom: 28px;
+}
+
+.imgDeporteContainer .deporteCard .infoContainer .nombreDeporte,
+.imgDeporteContainer .deporteCard .infoContainer .tipoCompetencia {
+    font-family: "Teko-Regular";
+}
+
+.deportesContainer .parteDeportesContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.deportesContainer .parteDeportesContainer h2 {
+    margin-bottom: 35px;
+    text-align: center;
+}
+
+.deportesContainer .parteDeportesContainer .imgDeporteContainer {
+    border-bottom: 1px solid #202020;
+    padding-bottom: 50px;
+} 
+
+.deportesContainer .parteDeportesContainer:nth-child(2) {
+    margin-top: 50px;
+}
+
+main .contenedorPrincipal h5 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+.facultadContent .facultadContainer {
+    display: flex;
+    flex-direction: column;
+    background-color: #f2f2f2 !important;
+    padding: 5px;
+    margin-bottom: 90px !important;
+}
+
+.facultadContent .facultadContainer h4 {
+    margin-top: 22px;
+    font-family: "Futura-Medium";
+    font-size: clamp(19px, 2vw, 19px) !important;
+}
+
+@media (max-width: 375px) {
+    .imgDeporteContainer .deporteCard {
+        min-width: 280px;
+    }
+}
