@@ -25,18 +25,12 @@ $posicionTitulo=get_query_var('posicionTitulo');
                 <?php
             }
             else{
-        ?>
-
-
-
-        <?php
-        if ($posicionTitulo== 'izquierda') {
-            ?>
-            <div>
+                ?>
+                <div>
                 <h1><?php the_title();?></h1>
                 <?php 
                 foreach ($subtitulo as $sub){
-                    echo $sub;
+                    echo $sub; //texto por poner css
                 }
                 ?>
             </div>
@@ -49,32 +43,12 @@ $posicionTitulo=get_query_var('posicionTitulo');
                     ?>
                 </span>
             </div>
-            <?php
-        }
-        else{
-            ?>
-            <div>
-                <span>
-                    <?php 
-                    foreach ($botones as $boton){
-                        echo '<a href="#'.strip_tags($boton).'" class="boton">'.strip_tags($boton).'</a>';
-                    }
-                    ?>
-                </span>
-            </div>
-            <div>
-                <h1><?php the_title();?></h1>
-                <?php 
-                foreach ($subtitulo as $sub){
-                    echo $sub;
-                }
-                ?>
-            </div>
-            <?php
-
-        }
-    }
+            <?
+            }
         ?>
+
+
+
         
     </div>
 </div>

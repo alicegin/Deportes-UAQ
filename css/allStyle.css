@@ -114,6 +114,9 @@ p{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .contenedor-imagen-portada .overlay-contenedor div{
@@ -139,10 +142,10 @@ p{
     display: inline-block;
     justify-self: center;
     align-self: center;
-    padding: 5px 10px 5px 10px;
-    border-radius: 20px;
+    padding: 12px 24px;
+    border-radius: 8px;
     background-color: #1a1a1ac2;
-    color: #fdfdfd;
+    color: #fdfdff;
     cursor: pointer;
     text-decoration: none;
     font-size: 25px;
