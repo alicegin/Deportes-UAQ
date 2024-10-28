@@ -137,12 +137,13 @@ main .contenedorPrincipal h5 {
 
 .imgDeporteContainer .deporteCard .infoContainer .nombreDeporte {
     margin-bottom: 0;
-    font-size: clamp(44px, 2vw, 50px);
+    font-size: clamp(50px, 2vw, 50px);
 }
 
 .imgDeporteContainer .deporteCard .infoContainer .tipoCompetencia {
     font-size: 22px;
     margin-bottom: 28px;
+    margin-top: -5px;
 }
 
 .imgDeporteContainer .deporteCard .infoContainer .nombreDeporte,
