@@ -104,13 +104,13 @@ p{
 .contenedor-imagen-portada img{
     object-fit: cover;
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
 }
 
 .contenedor-imagen-portada .overlay-contenedor{
     position: absolute;
-    height: 100%;
+    height: 100vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     display: flex;
