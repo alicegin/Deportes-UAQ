@@ -10,7 +10,7 @@ get_template_part('template-parts/headerDPT');
         $blocks = parse_blocks($post_content);
 
         set_query_var('blocks', $blocks);
-        set_query_var('imagen', 'http://deportesuaq.mx/wp-content/uploads/2024/09/UAQtivate-1.jpeg');
+        set_query_var('imagen', 'http://deportesuaq.mx/wp-content/uploads/2024/10/UAQtivate-1.jpeg');
         get_template_part('template-parts/imagen-portada');
     ?>
 
@@ -41,7 +41,7 @@ get_template_part('template-parts/headerDPT');
 
     <div class="contenedorPrincipal">
         <div class="contenedorPrincipal">
-            <img src="http://deportesuaq.mx/wp-content/uploads/2024/09/UAQtivate-2.jpeg">
+            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/widgetDPT.jpeg">
         </div>
         <div class="contenedorPrincipal">
 

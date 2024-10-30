@@ -45,11 +45,11 @@
         </nav>
         <section>
             <div class="pineada">
-                <img class="atletas" src=<?php echo get_template_directory_uri() . '/img/inicio/atletas.png'?>>
+                <img class="atletas" src="http://deportesuaq.mx/wp-content/uploads/2024/10/atletas.png">
                 <div class="dentro-pineada">
-                    <img class="imagen" src=<?php echo get_template_directory_uri() . '/img/inicio/UAQ2.jpg'?>>
+                    <img class="imagen" src="http://deportesuaq.mx/wp-content/uploads/2024/10/UAQ2.jpg">
                     <div class="caja">
-                        <img src=<?php echo get_template_directory_uri() . '/img/inicio/LOGOTIPO-GS.png'?>>
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/LOGOTIPO-GS.png">
                     </div>
                 </div>
             </div>
@@ -60,7 +60,7 @@
             
             <div class="trigger">
                 <div class="trigger-container">
-                    <img class="uaqDeportes" src=<?php echo get_template_directory_uri() . '/img/inicio/UAQDeportes.png'?>>
+                    <img class="uaqDeportes" src="http://deportesuaq.mx/wp-content/uploads/2024/10/UAQDeportes.png">
                 </div>
             </div>
         </section>

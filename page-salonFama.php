@@ -95,7 +95,7 @@ get_template_part('template-parts/header');
             `);
 
             $.each(data, function(index, medallista) {
-                let imgHTML = `<img src="<?php echo get_template_directory_uri(); ?>${safeValue(medallista.c_url_img)}" alt="${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} Medallista UAQ" class="medallistaImg ${index === 0 ? 'active' : 'inactive'}">`;
+                let imgHTML = `<img src="${safeValue(medallista.c_url_img)}" alt="${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} Medallista UAQ" class="medallistaImg ${index === 0 ? 'active' : 'inactive'}">`;
                 $imgContainer.append(imgHTML);
 
                 let medalClass;
@@ -174,7 +174,7 @@ get_template_part('template-parts/header');
                             <td>${safeNA(medallista.c_deporte)}</td>
                             <td>${safeNA(medallista.c_deporte_categoria)}</td>
                             <td>${safeNA(medallista.c_medalla)}</td>
-                            <td><img src="<?php echo get_template_directory_uri(); ?>${safeValue(medallista.c_url_img)}" alt="${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} Medallista UAQ"></td>
+                            <td><img src="${safeValue(medallista.c_url_img)}" alt="${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} Medallista UAQ"></td>
                         </tr>
                     `;
                 });

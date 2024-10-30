@@ -12,11 +12,11 @@
 </head>
 <body>
     <main>
-        <header class="headerGatienda" style="background-image: url(<?php echo get_template_directory_uri(); ?>/img/gatienda/fondoHeader.jpeg);">
+        <header class="headerGatienda" style="background-image: url(http://deportesuaq.mx/wp-content/uploads/2024/10/fondoHeader.jpeg);">
             <section class="mainCardsContainer">
                 <article class="mainCard">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/gatienda_p5.jpg" alt="GATIENDA">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/gatienda_p5-scaled.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
                         <h1>Primer GATIENDA</h1>
@@ -25,7 +25,7 @@
                 </article>
                 <article class="mainCard">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/gatienda_p5.jpg" alt="GATIENDA">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/gatienda_p5-scaled.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
                         <h1>Primer GATIENDA</h1>
@@ -34,7 +34,7 @@
                 </article>
                 <article class="mainCard">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/gatienda_p5.jpg" alt="GATIENDA">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/gatienda_p5-scaled.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
                         <h1>Primer GATIENDA</h1>
@@ -58,7 +58,7 @@
             <section class="cardsContent">
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/gatienda_p2.jpg" alt="GATIENDA">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/gatienda_p2-scaled.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
                         <h1>Toalla GATIENDA</h1>
@@ -67,7 +67,7 @@
                 </article>
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/gatienda_p1.jpg" alt="GATIENDA">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/gatienda_p1-scaled.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
                         <h1>Termo GATIENDA</h1>
@@ -76,7 +76,7 @@
                 </article>
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/gatienda_p3.jpg" alt="GATIENDA">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/gatienda_p3-scaled.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
                         <h1>Googles GATIENDA</h1>
@@ -85,7 +85,7 @@
                 </article>
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/gatienda_p4.jpg" alt="GATIENDA">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/gatienda_p4-scaled.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
                         <h1>Vaso GATIENDA</h1>
@@ -94,7 +94,7 @@
                 </article>
                 <article class="card">
                     <div class="imgContainer">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/gatienda_p6.jpg" alt="GATIENDA">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/gatienda_p6-scaled.jpg" alt="GATIENDA">
                     </div>
                     <section class="infoCard">
                         <h1>Libretas GATIENDA</h1>

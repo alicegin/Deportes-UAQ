@@ -24,7 +24,7 @@
 
     <main>
         <div class="contenedorCentrar">
-            <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/C1.png">      
+            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/C1.png">      
         </div>
         <section class="mainRow">
             <h2>¿Quiénes SOMOS?</h2>

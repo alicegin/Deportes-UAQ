@@ -40,7 +40,7 @@ get_template_part('template-parts/header');
     <div class="contenidoR">
 
     <div class="ginCard">
-        <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/B2.jpeg">
+        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/B2.jpeg">
         <div class="cardContenido" style="background: linear-gradient(to top, #203f74, #678fd8);">
         <h6>Nutrición deportiva</h6>
         <a href="<?php echo home_url('/ca'); ?>?valor=Nutrición" class="boton-AZUL" style="align-self: center;">INFORMACIÓN</a>
@@ -48,7 +48,7 @@ get_template_part('template-parts/header');
     </div>
     
     <div class="ginCard">
-        <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/B3.jpeg">
+        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/B3.jpeg">
         <div class="cardContenido" style="background: linear-gradient(to top, #3d7e93, #7fc0d5);">
         <h6>Psicología deportiva</h6>
         <a href="<?php echo home_url('/ca'); ?>?valor=Psicología" class="boton-azul" style="align-self: center;">INFORMACIÓN</a>
@@ -56,7 +56,7 @@ get_template_part('template-parts/header');
     </div>
 
     <div class="ginCard">
-        <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/B1.jpeg">
+        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/B1.jpeg">
         <div class="cardContenido" style="background: linear-gradient(to top, #b0afd2, #c7d1ee);">
         <h6>Fisioterapia Deportiva</h6>
         <a href="<?php echo home_url('/ca'); ?>?valor=Fisioterapia" class="boton-morado" style="align-self: center;">INFORMACIÓN</a>
@@ -64,7 +64,7 @@ get_template_part('template-parts/header');
     </div>
     
     <div class="ginCard">
-        <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/B3.jpeg">
+        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/B3.jpeg">
         <div class="cardContenido" style="background: linear-gradient(to top, #203f74, #678fd8);">
         <h6>Psicopedagogía deportiva</h6>
         <a href="<?php echo home_url('/ca'); ?>?valor=Psicopedagogía" class="boton-AZUL" style="align-self: center;">INFORMACIÓN</a>

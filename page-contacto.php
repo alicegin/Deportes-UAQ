@@ -82,7 +82,7 @@
         get_template_part('template-parts/header');
     ?>
     <main>
-        <img src="<?php echo get_template_directory_uri(); ?>/img/background_contacto.jpg" alt="deportes UAQ" />
+        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/background_contacto-scaled.jpg" alt="deportes UAQ" />
         <section class="infoContainer">
             <article class="infoContent">
                 <h2>Dra. Silvia Lorena Amaya Llano</h2>

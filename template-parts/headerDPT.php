@@ -23,15 +23,14 @@
         </button>
         <div class="navbar-menu hideMenu margenHeaderIz">
         <a href="<?php echo home_url()?>">
-          <img class="logo" src=<?php echo get_template_directory_uri() . '/img/header/GS-44.png'?>>
+          <img class="logo" src="http://deportesuaq.mx/wp-content/uploads/2024/10/GS-44.png">
         </a>
         </div>
         <div class="navbar-menu hideMenu menuDPT">
-            <a class="link" href="<?php echo home_url('/deportes-para-todos'); ?>">Inicio</a>
+            <a class="link" href="<?php echo home_url('/deportes-para-todes'); ?>">Inicio</a>
             <a class="link" href="<?php echo home_url('/copa-valores-universitarios'); ?>">Copa Valores</a>
             <a class="link" href="<?php echo home_url('/uaqtivate'); ?>">UAQtívate</a>
             <a class="link" href="<?php echo home_url('/indet') ?>">INDET</a>
-            <a class="link" href="<?php echo home_url('/gatienda'); ?>">Gatienda</a>
         </div>
         <div class="navbar-menu hideMenu redesSociales">
           <a href="https://www.facebook.com/uaqdeportes">
@@ -52,11 +51,11 @@
       <div id="drawer" class="drawer">
         <button id="closeButton" class="close-btn">&#x2715;</button>
         <p class="titulo-drawer">MENU</p>
-        <a href="<?php echo home_url('/deportes-para-todos'); ?>">Inicio</a>
+        <a href="<?php echo home_url('/deportes-para-todes'); ?>">Inicio</a>
             <a class="link" href="<?php echo home_url('/copa-valores-universitarios'); ?>">Copa Valores</a>
             <a class="link" href="<?php echo home_url('/uaqtivate'); ?>">UAQtívate</a>
             <a class="link" href="<?php echo home_url('/indet') ?>">INDET</a>
-            <a class="link" href="<?php echo home_url('/gatienda'); ?>">Gatienda</a>
+            
       </div>
       
       <div id="backdrop" class="backdrop"></div>

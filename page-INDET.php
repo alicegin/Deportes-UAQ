@@ -9,7 +9,7 @@ get_template_part('template-parts/headerDPT');
         $blocks = parse_blocks($post_content);
 
         set_query_var('blocks', $blocks);
-        set_query_var('imagen', 'http://deportesuaq.mx/wp-content/uploads/2024/09/Portada-INDET.png');
+        set_query_var('imagen', 'http://deportesuaq.mx/wp-content/uploads/2024/10/INDET.png');
         get_template_part('template-parts/imagen-portada');
     ?>
     <div class="contenedorPrincipal">
@@ -35,7 +35,7 @@ get_template_part('template-parts/headerDPT');
     <div class="contenedorPrincipal">
         <article class="contenedor-imgINDET">
         <a href="https://indet.org.mx">
-            <img class="imgINDET" src="http://deportesuaq.mx/wp-content/uploads/2024/09/INDET-foto.png"/>
+            <img class="imgINDET" src="http://deportesuaq.mx/wp-content/uploads/2024/10/INDET-foto.png"/>
         </a>
             <article class="redes">
                 <a href="https://www.facebook.com/INDETMXOFICIAL/?locale=es_LA" class="icono">

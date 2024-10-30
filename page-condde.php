@@ -5,14 +5,14 @@ get_template_part('template-parts/header');
 
 <main>
     <div class="contenedorCentrar">
-        <img src='http://deportesuaq.mx/wp-content/uploads/2024/08/D1.png'>
+        <img src='http://deportesuaq.mx/wp-content/uploads/2024/10/D1-2.png'>
     </div>
 
     <section class="contenido">
         <div class="subtitulo">
         <h1>¿Qué es el CONDDE?</h1>
         <a href="https://www.condde.org.mx/web/">
-            <img src="http://deportesuaq.mx/wp-content/uploads/2024/08/D2.jpeg"class="logo">
+            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/D2.jpeg"class="logo">
         </a>
         </div>
         <p>
@@ -29,10 +29,10 @@ promover el desarrollo integral de los estudiantes a través del deporte.
     include 'template-parts/slider.php';
 
     $imagenes = [
-      'http://deportesuaq.mx/wp-content/uploads/2024/08/D2.jpg',
-      'http://deportesuaq.mx/wp-content/uploads/2024/08/D5-scaled.jpg',
-      'http://deportesuaq.mx/wp-content/uploads/2024/08/D6.jpg',
-      'http://deportesuaq.mx/wp-content/uploads/2024/08/D7.jpg'
+      'http://deportesuaq.mx/wp-content/uploads/2024/10/D2.jpg',
+      'http://deportesuaq.mx/wp-content/uploads/2024/10/D5-scaled.jpg',
+      'http://deportesuaq.mx/wp-content/uploads/2024/10/D6.jpg',
+      'http://deportesuaq.mx/wp-content/uploads/2024/10/D7.jpg'
   ];
 
 

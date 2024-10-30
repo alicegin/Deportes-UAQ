@@ -5,20 +5,10 @@ get_template_part('template-parts/header');
 ?>
 <main>
     <!-- Contenido aquí -->
-    <?php
-    include 'template-parts/slider.php';
-    
-    $imagenes = [
-      'http://deportesuaq.mx/wp-content/uploads/2024/07/1A-2-scaled.jpg',
-      'http://deportesuaq.mx/wp-content/uploads/2024/07/3A-2.jpg',
-      'http://deportesuaq.mx/wp-content/uploads/2024/07/4A-2-scaled.jpg',
-      'http://deportesuaq.mx/wp-content/uploads/2024/07/5A-1.jpg',
-      'http://deportesuaq.mx/wp-content/uploads/2024/07/6A-1.jpg'
-  ];
-
-  echo generarCarrusel($imagenes);
-    
-    ?>
+     <div class="contenedorImgLottie">
+       <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/1A-scaled.jpg"> 
+       <iframe src="https://lottie.host/embed/e5fcebd6-5cac-430b-9ffd-f5598d19d66d/fx1Xv66RUC.json"></iframe>
+     </div>
     <div class="cuerpo">
       <div class="scroll">
         <div class="elementosScroll">

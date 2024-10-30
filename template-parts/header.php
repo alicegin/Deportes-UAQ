@@ -27,10 +27,10 @@
         </button>
         <div class="navbar-menu hideMenu menu-logos-principal">
           <a href="<?php echo home_url() ?>">
-            <img class="logo" src=<?php echo get_template_directory_uri() . '/img/header/GS-44.png' ?>>
+            <img class="logo" src="http://deportesuaq.mx/wp-content/uploads/2024/10/GS-44.png">
           </a>
           <a href="<?php echo home_url('/especializacion-deportiva'); ?>">
-            <img class="logo" src=<?php echo get_template_directory_uri() . '/img/header/ED-LOGO-43.png' ?>>
+            <img class="logo" src="http://deportesuaq.mx/wp-content/uploads/2024/10/ED-LOGO-43.png">
           </a>
         </div>
 

@@ -3,5 +3,5 @@
     get_template_part('template-parts/header');
 ?>
 <main>
-    <img src="<?php echo get_template_directory_uri() . '/img/Selecciones Universitarias/1A.jpg'?>">
+    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/1A-scaled.jpg">
 </main>

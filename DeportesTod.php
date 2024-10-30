@@ -15,7 +15,7 @@
     <main>
         <section class="mainPart manPartInfo">
             <div class="imgContainer">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/widgetDPT.jpeg" alt="Deportes UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/widgetDPT.jpeg" alt="Deportes UAQ" />
             </div>
             <div class="infoContainer">
                 <h1>Deportes para todes</h1>
@@ -25,7 +25,7 @@
         <section class="mainPart mainPartOpciones">
             <article>
                 <div class="imgContainerDPT">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/voleiball.jpg" alt="Copa Valores" />                    
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/voleiball.jpg" alt="Copa Valores" />                    
                 </div>
                 <h2>Copa Valores 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -35,7 +35,7 @@
             </article>
             <article>
                 <div class="imgContainerDPT">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/voleiball.jpg" alt="Copa Valores" />                    
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/voleiball.jpg" alt="Copa Valores" />                    
                 </div>
                 <h2>Cultura Física 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -45,7 +45,7 @@
             </article>
             <article>
                 <div class="imgContainerDPT">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/voleiball.jpg" alt="Copa Valores" />                    
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/voleiball.jpg" alt="Copa Valores" />                    
                 </div>
                 <h2>INDET 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -55,7 +55,7 @@
             </article>
             <article>
                 <div class="imgContainerDPT">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/voleiball.jpg" alt="Copa Valores" />                    
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/voleiball.jpg" alt="Copa Valores" />                    
                 </div>
                 <h2>Gatienda 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">

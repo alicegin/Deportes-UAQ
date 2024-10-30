@@ -27,7 +27,7 @@ if (isset($_GET['valor'])) {
 
 //valores de las 3 especialidades
 
-$fisioterapia=[get_template_directory_uri() . '/img/especialidadCA/FISIO.png',
+$fisioterapia=['http://deportesuaq.mx/wp-content/uploads/2024/10/FISIO.png',
                 "LFT. Jhoana Paola Rodríguez Gaytán",
                 "FISIOTERAPIA",
                 "442 335 0813",
@@ -40,7 +40,7 @@ es fundamental para lograr una vida digna, saludable y plena. Por ello, disfruto
 mejorar su rendimiento deportivo, corregir patrones de movimiento, prevenir lesiones y acompañarlos en sus procesos de rehabilitación hasta lograr una reintegración 
 deportiva exitosa."," #b0afd2","#94a9e0"
                 ];
-$nutricion=[get_template_directory_uri() . '/img/especialidadCA/NUTRICION.png',
+$nutricion=['http://deportesuaq.mx/wp-content/uploads/2024/10/NUTRICION.png',
             "Nombre de responsable de Nutrición",
             "NUTRICIÓN",
             "000 000 0000",
@@ -49,7 +49,7 @@ $nutricion=[get_template_directory_uri() . '/img/especialidadCA/NUTRICION.png',
 comience a escribir. Creemos que el formato de este párrafo tiene un aspecto excelente tal y como se ha
 definido. Sin embargo, si quiere personalizarlo un poco para darle un toque personal, puede cambiar las
 fuentes con un solo clic.", "#203f74","#94a9e0"];
-$psicologia=[get_template_directory_uri() . '/img/especialidadCA/PSICOLOGIA.png',
+$psicologia=['http://deportesuaq.mx/wp-content/uploads/2024/10/PSICOLOGIA.png',
             "Juan González Jayme",
             "PSICOLOGÍA",
             "442 411 0004",
@@ -64,7 +64,7 @@ FEMEXFUT
 Experiencia :
 -Miembro del Staff de entrenadores del VFL Wolfsburg  Docente en Maestría, ⁠Scouter  para equipos de Polonia , España y Alemania, ⁠Psicólogo selección Mexicana de Rugby, ⁠Psicólogo Selección mexicana Futbol 7 campeona mundial 2023 y campeona Copa América 2024, ⁠Socio Fundador InterCamps y Especialidades en Psicología, ⁠Docente ENDIT Y ENA, ⁠Psicólogo en Gallos Blancos de Querétaro Femenil y Varonil, ⁠Colaborador en Radar Sport 107.5 FM con la sección de psicología del deporte ,⁠Conferencista , Ponente , Facilitador en temas de psicología del deporte para diferentes disciplinas, Miembro de la Asociación Catalana de Psicología del Deporte.
 ","#3d7e93","#80c1d6"];
-$psicopedagogia=[get_template_directory_uri() . '/img/especialidadCA/PSICOPEDAGOGIA.png',
+$psicopedagogia=['http://deportesuaq.mx/wp-content/uploads/2024/10/PSICOPEDAGOGIA.png',
             "Lic. Sofía Berrueta Molina ",
             "PSICOPEDAGOGÍA",
             "443 224 9414",
@@ -108,11 +108,11 @@ switch ($valor) {
         height: auto;
         background-color: <?php echo $arreglo[6]?>;
         position: relative;
-        background-image: url("<?php echo get_template_directory_uri(); ?>/img/especialidadCA/CAD.png");
+        background-image: url("http://deportesuaq.mx/wp-content/uploads/2024/10/CAD.png");
     }
 </style>
 <main>
-    <img src="<?php echo get_template_directory_uri(); ?>/img/especialidadCA/Ciencias Aplicadas al Deporte-18.png" class="caLogo">
+    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/Ciencias-Aplicadas-al-Deporte-18.png" class="caLogo">
     <div class="primeraParte">
         <article class="contenedor-area">
             <p class="area" style="background-color:<?php echo $arreglo[7]?>"><?php echo $arreglo[2]?></p>

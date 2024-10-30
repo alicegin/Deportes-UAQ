@@ -9,7 +9,7 @@ get_template_part('template-parts/header');
             <div class="documento">
                 <div class="contenedorIcono">
                     <div class="cuadrado">
-                        <a href=<?php  echo get_template_directory_uri() . '/assets/documentos/prueba.pdf' ?> download="prueba.pdf">
+                        <a href=http://deportesuaq.mx/wp-content/uploads/2024/10/prueba.pdf download="prueba.pdf">
                         <div class="circulo">
                                 <img src= <?php  echo get_template_directory_uri() . '/assets/doc.svg' ?>>
                             </div>
@@ -30,7 +30,7 @@ get_template_part('template-parts/header');
             <div class="documento">
                 <div class="contenedorIcono">
                     <div class="cuadrado">
-                        <a href=<?php  echo get_template_directory_uri() . '/assets/documentos/prueba.pdf' ?> download="prueba.pdf"><div class="circulo">
+                        <a href=http://deportesuaq.mx/wp-content/uploads/2024/10/prueba.pdf download="prueba.pdf"><div class="circulo">
                                 <img src= <?php  echo get_template_directory_uri() . '/assets/doc.svg' ?>>
                             </div>
                         </a>
@@ -50,7 +50,7 @@ get_template_part('template-parts/header');
             <div class="documento">
                 <div class="contenedorIcono">
                     <div class="cuadrado">
-                        <a href=<?php  echo get_template_directory_uri() . '/assets/documentos/prueba.pdf' ?> download="prueba.pdf">
+                        <a href=http://deportesuaq.mx/wp-content/uploads/2024/10/prueba.pdf download="prueba.pdf">
                         <div class="circulo">
                                 <img src= <?php  echo get_template_directory_uri() . '/assets/doc.svg' ?>>
                             </div>
