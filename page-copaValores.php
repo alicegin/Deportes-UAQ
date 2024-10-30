@@ -4,17 +4,6 @@ get_template_part('template-parts/headerDPT');
 ?>
 
 <main>
-    <?php
-    $post_id = get_queried_object_id();
-    $post_content = get_post_field('post_content', $post_id);
-    $blocks = parse_blocks($post_content);
-
-    set_query_var('blocks', $blocks);
-    set_query_var('imagen', 'http://deportesuaq.mx/wp-content/uploads/2024/10/Copa-Valores-1.jpeg');
-    set_query_var('posicionTitulo', 'izquierda');
-    get_template_part('template-parts/imagen-portada');
-    ?>
-
     <div class="contenedorPrincipal">
         <div class="headerContenedor">
             <h2>Desde 2006</h2>

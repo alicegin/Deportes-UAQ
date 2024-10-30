@@ -25,7 +25,7 @@
                 <div class="hideMenu">
                     <a href="<?php echo home_url('/especializacion-deportiva'); ?>">Especialización deportiva</a>
                     <a href="<?php echo home_url('/deportes-para-todes'); ?>">Deportes para Todes</a>
-                    <a href="">Salón de la Fama</a>
+                    <a class="link" href="<?php echo home_url('/salon-de-la-fama'); ?>">Salón de la Fama</a>
                     <a href="<?php echo home_url('/instalaciones'); ?>">Instalaciones</a>
                     <a href="">E-sports</a>
                 </div>
