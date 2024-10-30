@@ -1,0 +1,82 @@
+a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+main::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0; 
+    background-color: #1212125c;
+    z-index: -1;
+}
+
+main img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+main .infoContainer {
+    width: 100%;
+    z-index: 10;
+    padding: 80px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+main .infoContainer h2 {
+    font-size: clamp(38px, 2vw, 38px);
+    line-height: calc(1.4em * (1 + (1 - 2.8)/25));
+    font-family: "Teko-Regular";
+    color: #fdfdfd;   
+    margin: 0;     
+}       
+
+main .infoContainer p {
+    font-family: "Futura-Medium";
+    color: #fdfdfd;
+    font-size: clamp(18px, 2vw, 20px);
+    margin-bottom: 0;
+    font-weight: 300;
+}
+
+main .infoContainer .infoContent:not(:last-child) {
+    margin-bottom: 60px;
+}
+
+main .infoContainer .infoContent {
+    width: 420px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+@media(max-width: 500px) {
+    main .infoContainer .infoContent {
+        width: 100%;
+    }
+}
+
+@media(max-width: 425px) {
+    main .infoContainer {
+        padding: 80px 40px;
+    }
+}

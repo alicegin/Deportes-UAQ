@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
     <?php
-        wp_head();
-        wp_footer();
+    wp_head();
+    wp_footer();
     ?>
     <style>
         .cardContainer {
@@ -18,16 +18,17 @@
 
 <body <?php body_class(); ?>>
     <?php
-        /* Template Name: Conócenos */
-        get_template_part('template-parts/header');
+    /* Template Name: Conócenos */
+    get_template_part('template-parts/header');
     ?>
 
     <main>
         <div class="contenedorCentrar">
-            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/C1.png">      
+            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/C1.png">
+            <a id="btnVerMas" href="#principalContent">Conoce Nuestra historia</a>
         </div>
-        <section class="mainRow">
-            <h2>¿Quiénes SOMOS?</h2>
+        <section id="principalContent" class="mainRow">
+            <h2 id="mainTitle" style="margin-top: 150px;">¿Quiénes SOMOS?</h2>
             <p>
                 El Área de Especialización Deportiva es el departamento encargado de fomentar y promover el deporte en la universidad. Además, se encarga de dar seguimiento a las y los
                 seleccionados de las distintas disciplinas deportivas a nivel estatal, regional, y nacional, así como en competencias internacionales del Consejo Nacional del Deporte de la Educación
@@ -39,7 +40,7 @@
             </p>
         </section>
         <section class="mainRow">
-            <h2>¿QUE HACEMOS?</h2>
+            <h2>¿Qué HACEMOS?</h2>
             <p>
                 El área de Especialización Deportiva se encarga de realizar la gestión, administración y seguimiento de todas las selecciones deportivas universitarias. Desde la afiliación y emisión de
                 credenciales, hasta la inscripción y asistencia a las juntas previas, la calendarización de competencias, y la provisión del material deportivo oficial necesario. Además, se ocupa de la
@@ -82,6 +83,24 @@
         <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="Tj4H5kMi"></script> -->
     </main>
 
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            let $mainTitle = $('#mainTitle');
+
+            $('body').on('click', '#btnVerMas', function() {
+                $mainTitle.css('margin-top', '95px');
+            });
+
+            $(window).on("scroll", function() {
+                if ($(window).scrollTop() === 0) {
+                    $mainTitle.css('margin-top', '150px');
+                } else if ($(window).scrollTop() <= 100) {
+                    $mainTitle.css('margin-top', '95px');
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>

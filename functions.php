@@ -51,6 +51,12 @@ function deportesuaq_enqueue_styles() {
     if (is_page('copa-valores-universitarios')) {
         wp_enqueue_style('copaValores', get_template_directory_uri() . '/css/copaValoresStyle.css');
     }
+    if (is_page('conocenos')) {
+        wp_enqueue_style('conocenosStyle', get_template_directory_uri() . '/css/conocenosStyle.css');
+    }
+    if (is_page('contacto')) {
+        wp_enqueue_style('contactoStyle', get_template_directory_uri() . '/css/contactoStyle.css');
+    }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 
