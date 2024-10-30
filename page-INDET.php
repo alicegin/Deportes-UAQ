@@ -3,15 +3,6 @@
 get_template_part('template-parts/headerDPT');
 ?>
 <main>
-    <?php
-        $post_id = get_queried_object_id();
-        $post_content = get_post_field('post_content', $post_id);
-        $blocks = parse_blocks($post_content);
-
-        set_query_var('blocks', $blocks);
-        set_query_var('imagen', 'http://deportesuaq.mx/wp-content/uploads/2024/10/INDET.png');
-        get_template_part('template-parts/imagen-portada');
-    ?>
     <div class="contenedorPrincipal">
         <h1>
             ¿Qué es INDET?
