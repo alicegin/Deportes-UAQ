@@ -28,14 +28,14 @@ main .contenedorCentrar::after {
 }
 
 .mainRow {
-    padding: 40px;
+    padding: 80px 40px;
     border-bottom: 1px solid #5b5b5b7c;
 }
 
 .mainRow h2 {
     font-family: "Teko-Regular";
-    font-size: clamp(45px, 2vw, 50px);
-    margin-bottom: 12px;
+    font-size: clamp(48px, 2vw, 50px);
+    margin-bottom: 16px;
 }
 
 .mainRow p {
@@ -71,4 +71,27 @@ main .contenedorCentrar::after {
 
 #mainTitle {
     transition: 0.3s;
+}
+
+.tablaContainer {
+    overflow-x: auto;
+}
+
+.tablaContainer::-webkit-scrollbar {
+    width: 4px; /* Ajusta el grosor de la barra de desplazamiento */
+    height: 4px;
+}
+
+.tablaContainer::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 0.3); /* Fondo oscuro y semi-transparente para el track */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.tablaContainer::-webkit-scrollbar-thumb {
+    background-color: rgba(50, 50, 50, 0.8); /* Color medio oscuro para la barra */
+    border-radius: 10px; /* Bordes redondeados */
+}
+
+.tablaContainer::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(70, 70, 70, 0.9); /* Cambia ligeramente el color al hacer hover */
 }
