@@ -25,9 +25,11 @@
         <a href="<?php echo home_url()?>">
           <img class="logo" src="http://deportesuaq.mx/wp-content/uploads/2024/10/GS-44.png">
         </a>
+        <a href="<?php echo home_url('/deportes-para-todes'); ?>">
+            <img class="logo" src="http://deportesuaq.mx/wp-content/uploads/2024/11/Deporte-para-Todes-.png">
+          </a>
         </div>
         <div class="navbar-menu hideMenu menuDPT">
-            <a class="link" href="<?php echo home_url('/deportes-para-todes'); ?>">Inicio</a>
             <a class="link" href="<?php echo home_url('/copa-valores-universitarios'); ?>">Copa Valores</a>
             <a class="link" href="<?php echo home_url('/uaqtivate'); ?>">UAQtívate</a>
             <a class="link" href="<?php echo home_url('/indet') ?>">INDET</a>
@@ -51,7 +53,6 @@
       <div id="drawer" class="drawer">
         <button id="closeButton" class="close-btn">&#x2715;</button>
         <p class="titulo-drawer">MENU</p>
-        <a href="<?php echo home_url('/deportes-para-todes'); ?>">Inicio</a>
             <a class="link" href="<?php echo home_url('/copa-valores-universitarios'); ?>">Copa Valores</a>
             <a class="link" href="<?php echo home_url('/uaqtivate'); ?>">UAQtívate</a>
             <a class="link" href="<?php echo home_url('/indet') ?>">INDET</a>
