@@ -34,7 +34,7 @@ main .contenedorCentrar::after {
 
 .mainRow h2 {
     font-family: "Teko-Regular";
-    font-size: clamp(48px, 2vw, 50px);
+    font-size: clamp(46px, 2vw, 50px);
     margin-bottom: 16px;
 }
 
@@ -64,9 +64,9 @@ main .contenedorCentrar::after {
 
 .contenedorCentrar a:hover {
     background-color: #121212d2;
-    padding: 14px 38px;
+    padding: 14px 32px;
     padding-top: 20px;
-    border-radius: 20px;
+    border-radius: 16px;
 }
 
 #mainTitle {

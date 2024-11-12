@@ -96,10 +96,18 @@ header {
 .logo {
   align-self: center;
   height: auto;
-  width: 5vw;
+  width: 4vw;
   max-width: 75%;
   object-fit: cover;
   min-width: 46px;
+  transition: 0.3s;
+}
+
+.navbar-menu.hideMenu.menu-logos-principal a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
 }
 
 /* Estilos para el drawer */
