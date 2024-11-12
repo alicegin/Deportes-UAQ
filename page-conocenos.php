@@ -10,6 +10,7 @@
     wp_footer();
     ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.dataTables.min.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/valorCardStyle.css" crossorigin="anonymous" />
     <style>
         .cardContainer {
             margin: 10px 15px;
@@ -55,53 +56,244 @@
         <section class="mainRow">
             <h2 style="margin-bottom: 22px;">NUESTROS VALORES</h2>
             <section class="valoresContainer">
-                <div class="valorCard">
-                    <p>AMISTAD</p>
-                    <h5>La rivalidad y la competencia es parte del deporte, y esta no limita que pueda existir una amistad entre estudiantes universitarios, sin importar la institución. Las mejores amistades las forja el deporte.</h5>
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">AMISTAD</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>La rivalidad y la competencia es parte del deporte, y esta no limita que pueda existir una amistad entre estudiantes universitarios, sin importar la institución. Las mejores amistades las forja el deporte.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>DIVERSIDAD</p>
-                    <h5>Las, les y los seleccionados universitarios deberán valorar y aceptar las diferencias sexuales, ideológicas, étnicas, culturales o de pensamiento dentro de cada selección universitaria, entendiendo que la diversidad fortalece el rendimiento colectivo en el deporte.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">DIVERSIDAD</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Las, les y los seleccionados universitarios deberán valorar y aceptar las diferencias sexuales, ideológicas, étnicas, culturales o de pensamiento dentro de cada selección universitaria, entendiendo que la diversidad fortalece el rendimiento colectivo en el deporte.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>EQUIDAD</p>
-                    <h5>El actuar con justicia y buscar un trato equitativo en todas sus interacciones deportivas, asegurándose de que todas y todos tengan las mismas oportunidades de participación y éxito.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">EQUIDAD</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>El actuar con justicia y buscar un trato equitativo en todas sus interacciones deportivas, asegurándose de que todas y todos tengan las mismas oportunidades de participación y éxito.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>ESFUERZO Y SACRIFICIO</p>
-                    <h5>Comprometerse con la dedicación, sacrificio y esfuerzo necesarios para mejorar su rendimiento y alcanzar las metas deportivas establecidas, entendiendo que el ámbito académico es clave para el éxito.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">ESFUERZO Y SACRIFICIO</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Comprometerse con la dedicación, sacrificio y esfuerzo necesarios para mejorar su rendimiento y alcanzar las metas deportivas establecidas, entendiendo que el ámbito académico es clave para el éxito.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>HONESTIDAD</p>
-                    <h5>Mantener la integridad en todas sus acciones deportivas, siendo honesto en la competencia y en el entrenamiento, respetando las reglas del juego.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">HONESTIDAD</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Mantener la integridad en todas sus acciones deportivas, siendo honesto en la competencia y en el entrenamiento, respetando las reglas del juego.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>IGUALDAD</p>
-                    <h5>Promover la igualdad de oportunidades en el equipo o selección, asegurando que todas, todes y todos tengan acceso a los mismos recursos, apoyo y oportunidades para desarrollar sus actividades deportivas.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">IGUALDAD</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Promover la igualdad de oportunidades en el equipo o selección, asegurando que todas, todes y todos tengan acceso a los mismos recursos, apoyo y oportunidades para desarrollar sus actividades deportivas.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>INCLUSIÓN</p>
-                    <h5>Integrar a todas, todes y todos los integrantes de equipo o selección, independientemente de sus diferencias, creando un ambiente de respeto y apoyo mutuo en las actividades deportivas.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">INCLUSIÓN</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Integrar a todas, todes y todos los integrantes de equipo o selección, independientemente de sus diferencias, creando un ambiente de respeto y apoyo mutuo en las actividades deportivas.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>RESPETO</p>
-                    <h5>Tratar a las, les y los compañeros, entrenadores, administrativos, adversarios y público en general con consideración, decencia y cortesía, valorando las reglas del juego y la dignidad de cada individuo en el ámbito deportivo.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">RESPETO</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Tratar a las, les y los compañeros, entrenadores, administrativos, adversarios y público en general con consideración, decencia y cortesía, valorando las reglas del juego y la dignidad de cada individuo en el ámbito deportivo.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>RESPONSABILIDAD</p>
-                    <h5>Cumplir con sus deberes académicos y compromisos deportivos con seriedad, asumiendo las consecuencias de sus actos dentro y fuera del campo de juego. Además, de representar a la universidad con orgullo.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">RESPONSABILIDAD</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Cumplir con sus deberes académicos y compromisos deportivos con seriedad, asumiendo las consecuencias de sus actos dentro y fuera del campo de juego. Además, de representar a la universidad con orgullo.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>SOLIDARIDAD</p>
-                    <h5>Apoyar a sus compañeros y compañeras en los momentos difíciles, fomentando la unidad y el trabajo en equipo dentro del deporte.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">SOLIDARIDAD</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Apoyar a sus compañeros y compañeras en los momentos difíciles, fomentando la unidad y el trabajo en equipo dentro del deporte.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>TOLERANCIA</p>
-                    <h5>Demostrar tolerancia hacia las diferentes opiniones, culturas y habilidades de sus compañeros, tanto en el deporte como en el ámbito académico. Además, de respetar a los árbitros o jueces, sabiendo que estos pueden equivocarse.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">TOLERANCIA</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Demostrar tolerancia hacia las diferentes opiniones, culturas y habilidades de sus compañeros, tanto en el deporte como en el ámbito académico. Además, de respetar a los árbitros o jueces, sabiendo que estos pueden equivocarse.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="valorCard">
-                    <p>TRABAJO Y ESPÍRITU EN EQUIPO</p>
-                    <h5>Deberá colaborar de manera efectiva con sus compañeros para alcanzar las metas comunes del equipo, entendiendo que el éxito en el deporte es colectivo.</h5>
+
+                <div class="outer">
+                    <div class="dot"></div>
+                    <div class="card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <div class="ray"></div>
+                                <div class="text">ESPÍRITU EN EQUIPO</div>
+                                <div>Deportistas Valores</div>
+                                <div class="line topl"></div>
+                                <div class="line leftl"></div>
+                                <div class="line bottoml"></div>
+                                <div class="line rightl"></div>
+                            </div>
+                            <div class="flip-card-back">
+                                <p>Deberá colaborar de manera efectiva con sus compañeros para alcanzar las metas comunes del equipo, entendiendo que el éxito en el deporte es colectivo.</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </section>
         </section>
