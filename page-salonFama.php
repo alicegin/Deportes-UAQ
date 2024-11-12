@@ -16,7 +16,6 @@ get_template_part('template-parts/header');
     <section class="tablesMedallistas" style="display: none;"></section>
 </main>
 
-<?php get_template_part('template-parts/footer'); ?>
 
 <script src="https://kit.fontawesome.com/4d77019a64.js" crossorigin="anonymous"></script>
 <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>

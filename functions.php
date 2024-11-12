@@ -57,6 +57,9 @@ function deportesuaq_enqueue_styles() {
     if (is_page('contacto')) {
         wp_enqueue_style('contactoStyle', get_template_directory_uri() . '/css/contactoStyle.css');
     }
+    if (is_page('selecciones-universitarias')) {
+        wp_enqueue_style('seleccionesStyle', get_template_directory_uri() . '/css/seleccionesStyle.css');
+    }
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 

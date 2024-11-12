@@ -23,29 +23,29 @@
             </div>
             <div class="separador">
                 <div class="hideMenu">
-                    <a href="<?php echo home_url('/especializacion-deportiva'); ?>">Especialización deportiva</a>
-                    <a href="<?php echo home_url('/deportes-para-todes'); ?>">Deportes para Todes</a>
-                    <a class="link" href="<?php echo home_url('/salon-de-la-fama'); ?>">Salón de la Fama</a>
-                    <a href="<?php echo home_url('/instalaciones'); ?>">Instalaciones</a>
-                    <a href="">E-sports</a>
+                    <a href="<?php echo home_url('/especializacion-deportiva'); ?>">ESPECIALIZACIÓN DEPORTIVA</a>
+                    <a href="<?php echo home_url('/deportes-para-todes'); ?>">DEPORTES PARA TODES</a>
+                    <a class="link" href="<?php echo home_url('/salon-de-la-fama'); ?>">SALÓN DE LA FAMA</a>
+                    <a href="<?php echo home_url('/instalaciones'); ?>">INSTALACIONES</a>
+                    <a href="">e-SPORTS</a>
                 </div>
                            
             </div>
             <div id="drawer" class="drawer">
         <button id="closeButton" class="close-btn">&#x2715;</button>
         <p class="titulo-drawer">MENÚ</p>
-          <a class="link" href="<?php echo home_url('/especializacion-deportiva'); ?>">Especialización deportiva</a>
-          <a class="link" href="<?php echo home_url('/deportes-para-todes'); ?>">Deportes para Todes</a>
-          <a class="link" href="">Salón de la Fama</a>
-          <a class="link" href="<?php echo home_url('/instalaciones'); ?>">Instalaciones</a>
-          <a class="link" href="">E-sports</a>
+          <a class="link" href="<?php echo home_url('/especializacion-deportiva'); ?>">ESPECIALIZACIÓN DEPORTIVA</a>
+          <a class="link" href="<?php echo home_url('/deportes-para-todes'); ?>">DEPORTES PARA TODES</a>
+          <a class="link" href="<?php echo home_url('/salon-de-la-fama'); ?>">SALÓN DE LA FAMA</a>
+          <a class="link" href="<?php echo home_url('/instalaciones'); ?>">INSTALACIONES</a>
+          <a class="link" href="">e-SPORTS</a>
       </div>
       
       <div id="backdrop" class="backdrop"></div>
         </nav>
         <section>
             <div class="pineada">
-                <img class="atletas" src="http://deportesuaq.mx/wp-content/uploads/2024/10/atletas.png">
+                <img class="atletas" src="http://deportesuaq.mx/wp-content/uploads/2024/11/banner-inicio-web.png">
                 <div class="dentro-pineada">
                     <img class="imagen" src="http://deportesuaq.mx/wp-content/uploads/2024/10/UAQ2.jpg">
                     <div class="caja">
