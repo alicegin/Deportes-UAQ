@@ -53,6 +53,12 @@
       <div id="drawer" class="drawer">
         <button id="closeButton" class="close-btn">&#x2715;</button>
         <p class="titulo-drawer">MENU</p>
+        <div>
+          <a href="<?php echo home_url() ?>">
+            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/LOGOTIPO-GS.png">
+          </a>
+        </div>
+            <a class="link" href="<?php echo home_url('/deportes-para-todes'); ?>">Inicio DP</a>
             <a class="link" href="<?php echo home_url('/copa-valores-universitarios'); ?>">Copa Valores</a>
             <a class="link" href="<?php echo home_url('/uaqtivate'); ?>">UAQtívate</a>
             <a class="link" href="<?php echo home_url('/indet') ?>">INDET</a>

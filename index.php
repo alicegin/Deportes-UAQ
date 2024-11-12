@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href=<?php echo get_template_directory_uri() . '/css/mainStyle.css'?>>
+    <link rel="stylesheet" href=<?php echo get_template_directory_uri() . '/css/headerStyle.css'?>>
 </head>
 <body>
     <div>
