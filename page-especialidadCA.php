@@ -41,14 +41,21 @@ mejorar su rendimiento deportivo, corregir patrones de movimiento, prevenir lesi
 deportiva exitosa."," #b0afd2","#94a9e0"
                 ];
 $nutricion=['http://deportesuaq.mx/wp-content/uploads/2024/10/NUTRICION.png',
-            "Nombre de responsable de Nutrición",
+            "Ana Guadalupe Arguello Mejia",
             "NUTRICIÓN",
-            "000 000 0000",
-            "correo@gmail.com",
-            "Para reemplazar cualquier marcador de posición de texto (como este), basta con que haga clic en él y
-comience a escribir. Creemos que el formato de este párrafo tiene un aspecto excelente tal y como se ha
-definido. Sin embargo, si quiere personalizarlo un poco para darle un toque personal, puede cambiar las
-fuentes con un solo clic.", "#203f74","#94a9e0"];
+            "464 205 9554",
+            "armejana@gmail.com",
+            "Mi nombre es Ana Guadalupe Arguello Mejía, soy nutrióloga apasionada del deporte, egresada de la Universidad Autónoma de
+             Querétaro, cuento con diplomados, cursos y actualizaciones relacionados al deporte y su fisiología, avalados por CONADE, 
+             Universidad Anáhuac y el Instituto de Ciencias del Deporte de Gatorade.
+             Soy instructora ISAK 2, avalada por la Sociedad Internacional para el avance de la cineantropometría; tengo 5 años de
+             experiencia en el alto rendimiento, trabajando para el club Querétaro gallos blancos, soy docente en la Universidad ITECA
+             y la Federación Mexicana de Futbol impartiendo materias como nutrición, fisiología, dopaje, biología. <br>
+             Fui parte de selectivos de handball y basquetbol durante mis estudios en la UAQ, por lo cual, soy consiente de los problemas 
+             que nos podemos enfrentar al estudiar y entrenar. Ser parte ahora del equipo de Especialización Deportiva de la UAQ, representa 
+             para mi un gran reto con el cual, pretendo orientar a cada deportista, demostrarle que podemos comer todo lo que se nos antoje, 
+             pero aprendiendo en que momento. Mi objetivo será aplicar estrategias alimenticias para promover la buena salud y la adaptación 
+             a sus entrenamientos, buscando la recuperación rápida y el desempeño optimo en cada competencia.", "#203f74","#94a9e0"];
 $psicologia=['http://deportesuaq.mx/wp-content/uploads/2024/10/PSICOLOGIA.png',
             "Juan González Jayme",
             "PSICOLOGÍA",

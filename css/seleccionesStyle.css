@@ -1,0 +1,273 @@
+html, body {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+main{
+    height: 85%;
+}
+.imagenPrincipal{
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.imagenPrincipal img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+    filter: brightness(0.7);
+}
+
+.banners{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    left: 50%;
+    transform: translate(-50%,50%);
+    color: black;
+    gap:10px;
+}
+.banners div, .banners a{
+    background-color:white;
+    font-family: "Teko-Regular";
+    padding: 2px 15px;
+    text-decoration: none;
+    font-size: 50px;
+    text-align: center;
+    align-content: center;
+}
+.banners div img{
+    position: relative;
+    height: 1em;
+    width:auto;
+    object-fit: cover;
+}
+
+.informacion{
+    margin-top: 70px;
+    padding-top:60px;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.informacion h1,.informacion h2{
+    text-align: center;
+    font-family: "Teko-Regular";
+    font-size: clamp(45px, 2vw, 50px);
+}
+p{
+    font-family: "Futura-Medium";
+    font-size: clamp(18px, 2vw, 20px);
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.tipoSelecciones{
+    max-width: max-content;
+    min-width: 240px;
+}
+.scroll{
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+}
+
+.tipoSelecciones button{
+    background-color:transparent;
+    border:none;
+    color:#e0e0e0;
+    display: inline-flex;
+    padding: 0;
+    margin: 0;
+}
+.opciones{
+    display: flex;
+    justify-content:center;
+    gap: 5px;
+}
+
+.opciones article{
+    align-self: center;
+    width: 10px;
+    height: 10px;
+    background-color: #e0e0e0;
+    border-radius: 50%;
+}
+
+.carruselDeportes{
+    width: 100%;
+    height:80vh;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.cardsContainer{
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    padding: 0 10px ;
+    gap: 2px;
+    overflow-x: auto;
+    z-index: 1;
+    overflow-x: auto;
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+}
+
+.cardsContainer::-webkit-scrollbar {
+    display: none; /* Safari y Chrome */
+}
+
+.cardCarrusel{
+    position: relative;
+    min-width:350px;
+    height: 100%;
+    background-color:gray;
+    transform: scale(0.9);
+    cursor: pointer;
+    transition: transform 0.5s ease;
+    box-shadow: 0 2px 10px black;
+}
+
+.cardCarrusel img{
+    position: absolute;
+    object-fit: cover;
+    filter:grayscale() brightness(0.7);
+}
+
+.cardCarrusel img:hover{
+    filter:brightness(0.7)
+}
+.cardCarrusel h1{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+}
+
+.carruselDeportes button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(255, 255, 255, 0.6);
+    border: none;
+    border-radius: 50%;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 2;
+}
+.carruselDeportes .prev {
+    left: 10px;
+}
+
+.carruselDeportes .next {
+    right: 10px;
+}
+
+
+.infoDeporte{
+    width: 100%;
+    background-color: #222222;
+    margin-bottom: 50px;
+    box-shadow: 0 2px 10px black;
+}
+
+.tituloED{
+    width: 100%;
+    background-color: #021328;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.tituloED div{
+    align-content: center;
+}
+
+.tituloED h1{
+    font-size: clamp(55px, 3.5vw, 70px);
+}
+.tituloED p, .entrenador p{
+    text-align: center;
+}
+.tituloED img{
+    width: 150px;
+    object-fit: contain;
+    align-self: center;
+}
+
+.entrenador{
+display: flex;
+justify-content:center;
+flex-wrap: wrap;
+}
+.entrenador h1{
+    font-size: clamp(50px, 3vw, 65px);
+}
+.entrenador h2{
+    padding: 0;
+    margin: 0;
+}
+
+
+.entrenador img{
+    width: 180px;
+    align-self: end;
+}
+
+.ubicacion{
+    margin-top: 30px;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.ubicacion .division, .infoUbi{
+    display: flex;
+    margin-left: 30px;
+   margin-right: 30px;
+   flex-wrap: wrap;
+}
+
+.division div, .infoUbi div{
+    width: 50%;
+    align-content: center;
+    z-index: 10;
+    
+}
+
+.infoUbi{
+   border-bottom: 1px solid gray;
+}
+
+
+
+.ubicacion div p{
+    text-align: center;
+}
+
+
+
+@media (max-width: 450px) {
+    .banners div{
+        display: none;
+    }
+    .cardCarrusel{
+        min-width: 250px;
+    }
+    .carruselDeportes{
+        height:65vh;
+    }
+    .infoUbi{
+        display: inline-block;
+    }
+    .division h1{
+        display: none;
+    }
+    .infoUbi div{
+        width:100%;
+    }
+}
