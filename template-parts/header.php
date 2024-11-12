@@ -63,6 +63,12 @@
       <div id="drawer" class="drawer">
         <button id="closeButton" class="close-btn">&#x2715;</button>
         <p class="titulo-drawer">MENU</p>
+        <div>
+          <a href="<?php echo home_url() ?>">
+            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/LOGOTIPO-GS.png">
+          </a>
+        </div>
+        <a class="link" href="<?php echo home_url('/especializacion-deportiva'); ?>">INICIO ED</a>
         <a class="link" href="<?php echo home_url('/conocenos'); ?>">CONÓCENOS</a>
         <a class="link" href="<?php echo home_url('/condde'); ?>">CONDDE</a>
         <a class="link" href="<?php echo home_url('/ciencias-aplicadas') ?>">CIENCIAS APLICADAS</a>

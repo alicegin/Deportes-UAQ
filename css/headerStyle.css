@@ -126,6 +126,17 @@ header {
   color: black;
 }
 
+.drawer div{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+}
+
+.drawer div img{
+  width: clamp(150px, 20vw, 300px);
+  object-fit: scale-down;
+}
+
 .drawer .link {
   color: black;
   font-size: 2vh;
