@@ -14,6 +14,40 @@
             <div class="card">
                 <p class="precio">$750 MXN</p>
                 <h1 class="nombre">Alberca El Pueblito</h1>
+                <div class="hiddenContainer">
+                    <div class="moreInfo">
+                        <div class="parteMoreInfo">
+                            <label>Descripcion</label>
+                            <p class="desc">Clases para niños y adultos. Se cuenta con distintos horarios</p>
+                        </div>
+                        <div class="parteMoreInfo">
+                            <label>Características </label>
+                            <p class="caracteristicas">10 carriles en curso largo y 20 en curso corto</p>
+                        </div>
+                        <div class="parteIcon infoDireccion">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <p class="direccion">Carretera a Celaya Km. 3, Corregidora 5, Emiliano Zapata, 76912 El Pueblito, Qro.</p>
+                        </div>
+                    </div>
+                    <div class="contactoContainer">       
+                        <label>Contacto</label>                           
+                        <div class="parteIcon">
+                            <p class="correo">correo@gmail.com</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>                            
+                        </div>
+                        <div class="parteIcon">
+                            <p class="tel">555-555-5555</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>                          
+                        </div>
+                    </div>
+                </div>
                 <div class="imgContainer">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/alberca_3.jpg" alt="Instalaciones UAQ" />
                 </div>
@@ -93,7 +127,7 @@
                             </svg>                                                      
                         </div>
                     </div>
-                </div>
+                </div>                           
             </div>
             <div class="card">
                 <p class="precio">$750 MXN</p>
@@ -126,5 +160,56 @@
         </section>
     </main>    
     <?php get_template_part('template-parts/footer'); ?>
+
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('body').on('click', '.card', function() {
+                let $card = $(this);
+                let $hiddenContainer = $card.closest('.card').find('.hiddenContainer');
+                let $btnCerrar = $card.closest('.card').find('.cardDetalle.btnMas');
+
+                $('.card').removeClass('active-card');
+                $card.addClass('active-card');
+
+                $hiddenContainer.css({
+                    'transition': 'opacity 0.3s ease',
+                    'transition': '0.5s',
+                    'transition-delay': '0.25s',
+                    'opacity': '1',
+                    'transform': 'translateY(0)',
+                });
+
+                $btnCerrar.empty();
+                $btnCerrar.html(`
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25" />
+                    </svg>
+                `);
+               
+                // Manejar el clic en el botón cerrar
+                $btnCerrar.off('click').on('click', function(e) {
+                    e.stopPropagation(); // Evita que el clic se propague
+
+                    // Animar opacidad al quitar la clase active-card
+                    $card.addClass('inactive-card'); // Reduce opacidad a 0
+
+                    // Escucha el evento de transición
+                    $card.one('transitionend', function() {
+                        $card.removeClass('active-card inactive-card'); // Elimina clases
+                        $card.css('display', 'flex'); // Cambia a display: none al final
+                    });
+
+                    $hiddenContainer.css({
+                        'transition': '0s',
+                        'transition': '0s',
+                        'transition-delay': '0s',
+                        'opacity': '0',
+                        'transform': 'translateY(600px)',
+                    });
+                });
+            });
+        });
+    </script>
 </body>
 </html>
