@@ -25,7 +25,7 @@ body {
     transition: all 0.3s ease;
     overflow: hidden;
     opacity: 1;
-    transition: opacity 0.3s ease; 
+    transition: opacity 0.3s ease;
 }
 
 .card:not(:last-child) {
@@ -225,7 +225,8 @@ body {
 
 /* estilos para cuando click */
 .inactive-card {
-    opacity: 0; /* Oculta la tarjeta suavemente */
+    opacity: 0;
+    /* Oculta la tarjeta suavemente */
     pointer-events: none;
 }
 
@@ -237,8 +238,8 @@ body {
     z-index: 10 !important;
     border: 0;
     cursor: default !important;
-    transition: 0.3s;  
-    opacity: 1; 
+    transition: 0.3s;
+    opacity: 1;
 }
 
 .active-card .imgContainer::after {
@@ -251,7 +252,7 @@ body {
     top: 58px;
 }
 
-.active-card .infoContainer .detallesContainer {    
+.active-card .infoContainer .detallesContainer {
     transform: translateY(0);
     opacity: 1;
 }
@@ -266,7 +267,7 @@ body {
     top: 20px;
 }
 
-.active-card  .precio {
+.active-card .precio {
     border: 1px solid #e0e0e0e0;
 }
 
@@ -369,7 +370,7 @@ body {
     bottom: 285px;
     display: flex;
     justify-content: center;
-    align-items: center;   
+    align-items: center;
     width: calc(100% - 40px);
     height: 350px;
     z-index: -1;
@@ -405,7 +406,7 @@ body {
 
 .active-card .hiddenImgContainer .hiddenImg:first-child,
 .active-card .hiddenImgContainer .hiddenImg:nth-child(2),
-.active-card .hiddenImgContainer .hiddenImg:nth-child(3) {    
+.active-card .hiddenImgContainer .hiddenImg:nth-child(3) {
     transform: translateX(0%);
     opacity: 1;
 }
@@ -424,12 +425,183 @@ body {
     width: 100%;
     height: 100%;
 }
+
 /* fin de estilos */
+
+@media (max-width: 1515px) {
+    .active-card {
+        height: calc(100% + 40px) !important;
+    }
+
+    .hiddenImgContainer {
+        bottom: 310px;
+        height: 500px;
+    }
+}
+
+@media (max-width: 1015px) {
+    .active-card {
+        height: calc(100% + 540px) !important;
+    }
+
+    .hiddenImgContainer {
+        flex-direction: column;
+        height: 1000px;
+        width: 600px;
+    }
+
+    .hiddenImgContainer .hiddenImg {
+        height: 500px;
+        width: 100%;
+        border-left: 1px solid #e0e0e0e0;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 975px) {
+    .hiddenContainer {
+        flex-direction: column;
+    }
+
+    .contactoContainer {
+        width: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid #5b5b5b6c;
+    }
+
+    .contactoContainer .parteIcon {
+        flex-direction: row-reverse;
+    }
+
+    .contactoContainer .parteIcon svg {
+        margin-right: 5px !important;
+        margin-left: 0 !important;
+    }
+
+    .hiddenImgContainer {
+        width: 600px;
+        height: 850px;
+        bottom: 465px;
+    }
+
+    .moreInfo {
+        width: 100%;
+    }
+}
+
+@media (max-width: 782px) {
+    .active-card {
+        top: 135px;
+    }
+}
+
+@media (max-width: 765px) {
+    .parteIcon.infoDireccion {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .parteIcon.infoDireccion label {
+        display: flex !important;
+    }
+
+    .parteIcon.infoDireccion svg {
+        display: none;
+    }
+
+    .parteIcon.infoDireccion .direccion {
+        margin-top: 0 !important;
+    }
+
+    .hiddenImgContainer {
+        bottom: 470px;
+    }
+}
+
+@media (max-width: 720px) {
+    .hiddenImgContainer {
+        bottom: 495px;
+    }
+}
+
+@media (max-width: 655px) {
+
+    .hiddenImgContainer,
+    .hiddenImgContainer .hiddenImg {
+        min-width: 200px;
+        width: 100%;
+    }
+
+    .hiddenImgContainer {
+        width: calc(100% - 40px);
+    }
+
+    .hiddenContainer {
+        bottom: -10px;
+    }
+
+    .active-card {
+        overflow-y: auto;
+    }
+
+    .active-card::-webkit-scrollbar {
+        width: 4px;
+        background-color: #000;
+    }
+
+    .active-card::-webkit-scrollbar-thumb {
+        background: linear-gradient(to bottom, #444, #222);
+        border-radius: 6px;
+    }
+}
 
 @media (max-width: 575px) {
     .card {
         min-width: 100% !important;
         width: 100%;
+    }
+
+    .active-card .precio {
+        font-size: 14px;
+        top: 140px;
+        left: 20px;
+        padding: 10px 12px;
+    }
+
+    .hiddenImgContainer {
+        bottom: 455px;
+    }
+}
+
+.nombre {
+    width: calc(100% - 40px);
+}
+
+@media (max-width: 520px) {
+    .hiddenContainer {
+        bottom: -60px;
+        width: 100%;
+        left: 0;
+        bottom: -40px;
+        border-radius: 0;
+    }
+
+    .hiddenContainer .desc,
+    .hiddenContainer .parteIcon.infoDireccion .direccion {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 3;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-height: calc(1.5em * 3);
+    }
+
+    .hiddenContainer .parteIcon.infoDireccion .direccion {
+        -webkit-line-clamp: 2;
+        max-height: calc(1.5em * 2);
     }
 }
 
@@ -442,7 +614,28 @@ body {
         bottom: 130px;
     }
 
-    .card:hover .infoContainer .detallesContainer .cardDetalle:nth-child(1) {
+    .card:hover .infoContainer .detallesContainer .cardDetalle:nth-child(1):not(.active-card:hover .infoContainer .detallesContainer .cardDetalle:nth-child(1)) {
         margin-bottom: 15px;
+    }
+
+    .active-card .infoContainer .detallesContainer .cardDetalle:nth-child(1) {
+        margin-bottom: 15px;
+    }
+
+    .active-card .precio {
+        top: 80px;
+        left: inherit;
+    }
+}
+
+@media (max-width: 360px) {
+    .hiddenContainer {
+        bottom: -60px;
+    }
+
+    .active-card .nombre {
+        font-size: 30px !important;
+        text-align: left;
+        top: 26px;
     }
 }
