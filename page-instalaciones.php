@@ -14,14 +14,25 @@
             <div class="card">
                 <p class="precio">$750 MXN</p>
                 <h1 class="nombre">Alberca El Pueblito</h1>
+                <div class="hiddenImgContainer">
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/alberca_1.jpg" alt="Alberca El Pueblito UAQ" />
+                    </div>
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/alberca_2.jpg" alt="Alberca El Pueblito UAQ" />
+                    </div>
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/alberca_4.jpg" alt="Alberca El Pueblito UAQ" />
+                    </div>
+                </div>
                 <div class="hiddenContainer">
                     <div class="moreInfo">
                         <div class="parteMoreInfo">
-                            <label>Descripcion</label>
+                            <label>Descripción</label>
                             <p class="desc">Clases para niños y adultos. Se cuenta con distintos horarios</p>
                         </div>
                         <div class="parteMoreInfo">
-                            <label>Características </label>
+                            <label>Características</label>
                             <p class="caracteristicas">10 carriles en curso largo y 20 en curso corto</p>
                         </div>
                         <div class="parteIcon infoDireccion">
@@ -75,7 +86,52 @@
             </div>
             <div class="card">
                 <p class="precio">$750 MXN</p>
-                <h1 class="nombre">Estadio C.U.</h1>
+                <h1 class="nombre">Estadio Centro Universitario</h1>
+                <div class="hiddenImgContainer">
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/estadio_cu_2.jpg" alt="Estadio Centro Universitario" />
+                    </div>
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/estadio_cu_3.jpg" alt="Estadio Centro Universitario" />
+                    </div>
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/estadio_cu_4.jpg" alt="Estadio Centro Universitario" />
+                    </div>
+                </div>
+                <div class="hiddenContainer">
+                    <div class="moreInfo">
+                        <div class="parteMoreInfo">
+                            <label>Descripción</label>
+                            <p class="desc">Clases academicas de facultades, entrenamientos de la selección Universitaria de Soccer Varonil y Femenil y Juegos de Soccer de la Copa Valores</p>
+                        </div>
+                        <div class="parteMoreInfo">
+                            <label>Características</label>
+                            <p class="caracteristicas">Gradas, butacas, techo, y empastado</p>
+                        </div>
+                        <div class="parteIcon infoDireccion">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <p class="direccion">Cerro de las Campanas, s/n, Col. Las Campanas, Qro.</p>
+                        </div>
+                    </div>
+                    <div class="contactoContainer">       
+                        <label>Contacto</label>                           
+                        <div class="parteIcon">
+                            <p class="correo">correo@gmail.com</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>                            
+                        </div>
+                        <div class="parteIcon">
+                            <p class="tel">555-555-5555</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>                          
+                        </div>
+                    </div>
+                </div>
                 <div class="imgContainer">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/estadio_cu_1.jpg" alt="Instalaciones UAQ" />
                 </div>
@@ -104,6 +160,51 @@
             <div class="card">
                 <p class="precio">$750 MXN</p>
                 <h1 class="nombre">Gimnasio Exprepa Centro</h1>
+                <div class="hiddenImgContainer">
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
+                    </div>
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
+                    </div>
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
+                    </div>
+                </div>
+                <div class="hiddenContainer">
+                    <div class="moreInfo">
+                        <div class="parteMoreInfo">
+                            <label>Descripción</label>
+                            <p class="desc">Clases academicas de facultades, entrenamientos de la selección Universitaria de Basquetbol Varonil y Femenil y Juegos de Liga ABE</p>
+                        </div>
+                        <div class="parteMoreInfo">
+                            <label>Características</label>
+                            <p class="caracteristicas">2 tableros, duela, y gradas de aluminio</p>
+                        </div>
+                        <div class="parteIcon infoDireccion">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <p class="direccion">C. Ignacio Manuel Altamirano Sur 24, La Santa Cruz, 36, Centro, Qro.</p>
+                        </div>
+                    </div>
+                    <div class="contactoContainer">       
+                        <label>Contacto</label>                           
+                        <div class="parteIcon">
+                            <p class="correo">correo@gmail.com</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>                            
+                        </div>
+                        <div class="parteIcon">
+                            <p class="tel">555-555-5555</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>                          
+                        </div>
+                    </div>
+                </div>
                 <div class="imgContainer">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_1.webp" alt="Instalaciones UAQ" />
                 </div>
@@ -132,6 +233,51 @@
             <div class="card">
                 <p class="precio">$750 MXN</p>
                 <h1 class="nombre">Gimnasio Campus Aeropuerto</h1>
+                <div class="hiddenImgContainer">
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_2.webp" alt="Gimnasio Campus Aeropuerto" />
+                    </div>
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_2.webp" alt="Gimnasio Campus Aeropuerto" />
+                    </div>
+                    <div class="hiddenImg">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_2.webp" alt="Gimnasio Campus Aeropuerto" />
+                    </div>
+                </div>
+                <div class="hiddenContainer">
+                    <div class="moreInfo">
+                        <div class="parteMoreInfo">
+                            <label>Descripción</label>
+                            <p class="desc">Clases academicas de facultades, entrenamientos de la selección Universitaria de Voleibol Varonil y Femenil</p>
+                        </div>
+                        <div class="parteMoreInfo">
+                            <label>Características</label>
+                            <p class="caracteristicas">2 tableros, duela, foro, y gradas</p>
+                        </div>
+                        <div class="parteIcon infoDireccion">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z" />
+                            </svg>
+                            <p class="direccion">Carretera a Chichimequillas s/n, Ejido Bolaños, 76140 Santiago de Querétaro, Qro.</p>
+                        </div>
+                    </div>
+                    <div class="contactoContainer">       
+                        <label>Contacto</label>                           
+                        <div class="parteIcon">
+                            <p class="correo">correo@gmail.com</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
+                            </svg>                            
+                        </div>
+                        <div class="parteIcon">
+                            <p class="tel">555-555-5555</p>
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
+                            </svg>                          
+                        </div>
+                    </div>
+                </div>
                 <div class="imgContainer">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_2.webp" alt="Instalaciones UAQ" />
                 </div>
@@ -165,9 +311,14 @@
     <script>
         $(document).ready(function() {
             $('body').on('click', '.card', function() {
-                let $card = $(this);
+                showDetalles($(this));
+            });
+
+            function showDetalles($card) {                
                 let $hiddenContainer = $card.closest('.card').find('.hiddenContainer');
                 let $btnCerrar = $card.closest('.card').find('.cardDetalle.btnMas');
+
+                $card.closest('.card').find('.hiddenImgContainer').css({'z-index': '10'});
 
                 $('.card').removeClass('active-card');
                 $card.addClass('active-card');
@@ -180,6 +331,15 @@
                     'transform': 'translateY(0)',
                 });
 
+                $card.closest('.card').find('.hiddenImg').each(function(index) {                
+                    let delay = 0.2 + (index * 0.1);
+                    
+                    $(this).css({
+                        'transition': '0.45s',
+                        'transition-delay': delay + 's'
+                    });
+                });
+
                 $btnCerrar.empty();
                 $btnCerrar.html(`
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -189,7 +349,7 @@
                
                 // Manejar el clic en el botón cerrar
                 $btnCerrar.off('click').on('click', function(e) {
-                    e.stopPropagation(); // Evita que el clic se propague
+                    e.stopPropagation(); // Evita que el clic se propague                    
 
                     // Animar opacidad al quitar la clase active-card
                     $card.addClass('inactive-card'); // Reduce opacidad a 0
@@ -198,6 +358,12 @@
                     $card.one('transitionend', function() {
                         $card.removeClass('active-card inactive-card'); // Elimina clases
                         $card.css('display', 'flex'); // Cambia a display: none al final
+                        $btnCerrar.empty();
+                    $btnCerrar.html(`
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
+                        </svg>
+                    `);
                     });
 
                     $hiddenContainer.css({
@@ -207,8 +373,14 @@
                         'opacity': '0',
                         'transform': 'translateY(600px)',
                     });
+
+                    $('.hiddenImg').css({
+                        'transition': '0s',
+                    });
+
+                    $card.closest('.card').find('.hiddenImgContainer').css({'z-index': '-1'});
                 });
-            });
+            }
         });
     </script>
 </body>
