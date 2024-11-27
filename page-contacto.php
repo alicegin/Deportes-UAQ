@@ -59,11 +59,12 @@
                 <div class="infoContacto">
                     <h2>Lic. Ana Guadalupe Arguello Mejia </h2>
                     <p>464 205 95 54<br> armejana@gmail.com</p>
-                </div>                
+                </div>
+                <p class="infoPuesto"><strong>Responsable del área de Nutrición</strong></p>               
             </article>
             <article class="infoContent">
                 <div class="infoContacto">
-                    <h2>Juan González Jayme</h2>
+                    <h2>Mtro. Juan González Jayme</h2>
                     <p>442 411 0004<br> psicologiawolfsburg@gmail.com</p>
                 </div>
                 <p class="infoPuesto"><strong>Responsable del área de Psicologia Deportiva</strong></p>

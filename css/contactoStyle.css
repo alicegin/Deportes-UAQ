@@ -76,13 +76,7 @@ main .infoContainer .infoContent:nth-child(even) {
     align-items: flex-end;
 }
 
-main .infoContainer .infoContent:nth-child(6) {
-    justify-content: center !important;
-}
 
-main .infoContainer .infoContent:nth-child(6) p {
-    text-align: center;
-}
 
 .infoContent {
     display: flex;
