@@ -95,95 +95,85 @@ get_template_part('template-parts/header');
             }
 
             function llenarMedallistas(data, container, year) {
-                let urlLogo = `<?php echo get_template_directory_uri(); ?>/img/un/un_${year}.png`;
+                let urlLogo = `http://deportesuaq.mx/wp-content/uploads/2024/11/un_${year}.png`;
 
-                let $parteWinners = $(`<article class="parteMedallistas"></article>`); // Declarar aquí
+                // Crear el contenedor principal
+                let $parteWinners = $(`<article class="parteMedallistas"></article>`);
                 let $infoContainer = $('<div class="infoMedallista"></div>');
                 let $imgContainer = $('<div class="imgContainer"></div>');
 
                 // Establecer un índice inicial para este carrusel
                 currentIndexes[year] = 0;
 
-                // Verificar si la imagen existe
-                $.ajax({
-                    url: urlLogo,
-                    type: 'HEAD',
-                    success: function () {
-                        // Si la imagen existe, agregar logo y título
-                        $parteWinners.append(`
-                            <div class="headerParteM">                        
-                                <div class="logoUNContainer">
-                                    <img src="${urlLogo}" alt="Universidad Nacional ${year}" />
-                                </div>
-                                <h1>Universidad Nacional ${year}</h1>
-                            </div>
-                        `);
-                    },
-                    error: function () {
-                        // Si no existe, solo agregar el título
-                        $parteWinners.append(`
-                            <div class="headerParteM">                        
-                                <h1>Universidad Nacional ${year}</h1>
-                            </div>
-                        `);
-                    },
-                    complete: function () {
-                        // Continuar agregando el resto del contenido después de la comprobación
-                        let $carruselContainer = $(`
-                            <div class="carruselImgContainer">
-                                <button id="btnAnterior-${year}" class="btnCarrusel anterior">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
-                                    </svg>
-                                </button>
-                                <button id="btnSiguiente-${year}" class="btnCarrusel siguiente">
-                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
-                                    </svg>
-                                </button>
-                            </div>
-                        `);
+                // Generar el encabezado sin verificar la imagen
+                let headerHTML = `
+                    <div class="headerParteM">
+                        <img class="logoUNContainer" src="${urlLogo}" alt="Universidad Nacional ${year}" onerror="this.style.display='none'" />
+                        <h1>Universidad Nacional ${year}</h1>
+                    </div>`;
+                $parteWinners.append(headerHTML);
 
-                        $.each(data, function (index, medallista) {
-                            let imgHTML = `<img src="${safeValue(medallista.c_url_img)}" alt="${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} Medallista UAQ" class="medallistaImg ${index === 0 ? 'active' : 'inactive'}">`;
-                            $imgContainer.append(imgHTML);
+                // Crear el contenedor del carrusel
+                let $carruselContainer = $(`
+                    <div class="carruselImgContainer">
+                        <button id="btnAnterior-${year}" class="btnCarrusel anterior">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5"></path>
+                            </svg>
+                        </button>
+                        <button id="btnSiguiente-${year}" class="btnCarrusel siguiente">
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5"></path>
+                            </svg>
+                        </button>
+                    </div>
+                `);
 
-                            let medalClass;
-                            switch (safeValue(medallista.c_medalla)) {
-                                case 'ORO':
-                                    medalClass = 'medal-gold';
-                                    break;
-                                case 'PLATA':
-                                    medalClass = 'medal-silver';
-                                    break;
-                                case 'BRONCE':
-                                    medalClass = 'medal-bronze';
-                                    break;
-                                default:
-                                    medalClass = ''; // Clase vacía si no es ninguno de los anteriores
-                                    break;
-                            }
+                // Agregar medallistas al contenedor
+                $.each(data, function (index, medallista) {
+                    let imgHTML = `<img src="${safeValue(medallista.c_url_img)}" alt="${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} Medallista UAQ" class="medallistaImg ${index === 0 ? 'active' : 'inactive'}">`;
+                    $imgContainer.append(imgHTML);
 
-                            let infoHtml = `
-                                <div class="parteText ${index === 0 ? 'active' : ''}">
-                                    <i id="${medalClass}" class="fa-solid fa-medal"></i>
-                                    <div class="parteInfoText">
-                                        <h1 class="nombreMedallista ${medalClass}">${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} ${safeValue(medallista.c_apellido_materno)}</h1>
-                                        <h4 class="nombreDeporte">${safeValue(medallista.c_deporte)} <span class="separador"> | </span> ${safeValue(medallista.c_deporte_categoria)}</h4>
-                                    </div>                        
-                                </div>`;
-                            $infoContainer.append(infoHtml);
-                        });
-
-                        $carruselContainer.append($imgContainer);
-                        $parteWinners.append($carruselContainer);
-                        $parteWinners.append($infoContainer);
-                        container.append($parteWinners);
-
-                        // Activar el carrusel después de agregar todos los elementos
-                        activarCarrusel(year, $imgContainer, $infoContainer, $carruselContainer);
+                    let medalClass;
+                    let medalTxt;
+                    switch (safeValue(medallista.c_medalla)) {
+                        case 'ORO':
+                            medalClass = 'medal-gold';
+                            medalTxt = 'ORO';
+                            break;
+                        case 'PLATA':
+                            medalClass = 'medal-silver';
+                            medalTxt = 'PLATA';
+                            break;
+                        case 'BRONCE':
+                            medalClass = 'medal-bronze';
+                            medalTxt = 'BRONCE';
+                            break;
+                        default:
+                            medalClass = ''; // Clase vacía si no es ninguno de los anteriores
+                            break;
                     }
+
+                    let infoHtml = `
+                        <div class="parteText ${index === 0 ? 'active' : ''}">
+                            <h1 class="txtMedal ${medalClass}">${medalTxt}</h1>
+                            <i id="${medalClass}" class="fa-solid fa-medal"></i>
+                            <div class="parteInfoText">
+                                <h1 class="nombreMedallista ${medalClass}">${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} ${safeValue(medallista.c_apellido_materno)}</h1>
+                                <h4 class="nombreDeporte">${safeValue(medallista.c_deporte)} <span class="separador"> | </span> ${safeValueCat(medallista.c_deporte_categoria)}</h4>
+                            </div>                        
+                        </div>`;
+                    $infoContainer.append(infoHtml);
                 });
+
+                // Finalizar el contenido y agregar al DOM
+                $carruselContainer.append($imgContainer);
+                $parteWinners.append($carruselContainer);
+                $parteWinners.append($infoContainer);
+                container.append($parteWinners);
+
+                // Activar el carrusel después de agregar todos los elementos
+                activarCarrusel(year, $imgContainer, $infoContainer, $carruselContainer);
             }
 
             function llenarTablaMedallistas(data, year) {
@@ -304,6 +294,10 @@ get_template_part('template-parts/header');
 
             function safeValue(value) {
                 return (value === null || value === 'null' || value === undefined) ? '' : value;
+            }
+
+            function safeValueCat(value) {
+                return (value === null || value === 'null' || value === undefined) ? 'Sin categoría' : value;
             }
 
             function safeNA(value) {

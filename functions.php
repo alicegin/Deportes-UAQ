@@ -90,4 +90,13 @@ function extract_block_content($blocks, $block_name) {
     return $contents;
 }
 
+function custom_cors_headers() {
+    if (isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN'] === 'http://deportes-uaq.local') {
+        header("Access-Control-Allow-Origin: http://deportes-uaq.local");
+        header("Access-Control-Allow-Methods: GET, POST, OPTIONS");
+        header("Access-Control-Allow-Headers: Content-Type");
+    }
+}
+add_action('init', 'custom_cors_headers');
+
 ?>
