@@ -18,7 +18,7 @@ get_template_part('template-parts/header');
         </div>
         <section class="mainMedallistas"></section>
         <div class="btnViejosContainer">
-            <button id="btnViejos">Ver los medallistas más antiguos</button>
+            <button id="btnViejos">Ver los Medallistas Anteriores</button>
         </div>
         <section class="tablesMedallistas" style="display: none;"></section>
     </main>
