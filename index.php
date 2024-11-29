@@ -55,9 +55,7 @@
                 </div>
             </div>
     
-            <div class="espacio">
-    
-            </div>
+           
             
             <div class="trigger">
                 <div class="trigger-container">

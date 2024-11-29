@@ -46,9 +46,9 @@
 
 <main>
     <div class="imagenPrincipal">
-        <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/D3.jpg">
+        <img class="imgPortada" src="http://deportesuaq.mx/wp-content/uploads/2024/10/D3.jpg">
         <article class="banners">
-            <div> <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/CAD-15.png"></div>
+            <div> <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/gs.png"></div>
             <a>Selecciones Universitarias</a>
             <div>ED</div>
         </article>

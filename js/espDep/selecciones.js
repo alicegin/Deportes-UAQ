@@ -182,7 +182,7 @@ function seleccion(tipoSeleccion){
                     console.log(voluntario);
                     datosDeporteXmostrarHTML+=`
                     <div class="entrenador"> <br>
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/account_circle_24dp_000000_FILL0_wght400_GRAD0_opsz24.png">
+                    
                     <div>
                     <h1>ENTRENADOR</h1>
                     <h2>${entrenador.nombre}</h>

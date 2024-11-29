@@ -23,11 +23,6 @@ get_template_part('template-parts/header');
         garantizar el bienestar físico, psicológico y mental de los atletas, asegurando que reciban el apoyo necesario de manera gratuita. Con un enfoque holístico, el equipo de CAD trabaja 
         para optimizar el rendimiento deportivo, prevenir lesiones y promover hábitos de vida saludables, contribuyendo así al desarrollo integral de los estudiantes deportistas.
         </p>
-        <div class="info">
-            <h3>
-                +INFO
-            </h3>
-        </div>
         <h1>¿Cómo acceder a ellas?</h1>
         <p>
         Las Ciencias Aplicadas ofrecen un beneficio gratuito para todas nuestras selecciones. Si estás interesado en acceder a alguno de estos servicios, deberás solicitar un "Pase de 

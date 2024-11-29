@@ -4,39 +4,56 @@ get_template_part('template-parts/headerDPT');
 ?>
 <main>
     <div class="contenedorPrincipal">
-        <h1>
-            ¿Qué es INDET?
-        </h1>
-    </div>
-    <div class="contenedorPrincipal">
-        <h4>Instituto del Deporte de los Trabajadores</h4>
-    </div>
-    <div class="contenedorPrincipal fila">
-        <p>
-            Su objetivo es mejorar la salud y fomentar la integración familiar a través del deporte y la actividad física.
-        </p>
-        <p>
-            Organismo Oficial del Congreso del Trabajo, encargado de promover la actividad física y el deporte entre los trabajadores y sus familias.
-        </p>
-    </div>
+        <div class="headerContenedor fila">
+            <h2>¿Qué es INDET?</h2>
+        </div>
+        <div class="fila">
+            <div>
+                <a href="https://indet.org.mx">
 
-    <div class="contenedorPrincipal">
-        <h3> Páginas oficiales de INDET:</h3>
-    </div>
-    <div class="contenedorPrincipal">
-        <article class="contenedor-imgINDET">
-        <a href="https://indet.org.mx">
-            <img class="imgINDET" src="http://deportesuaq.mx/wp-content/uploads/2024/10/INDET-foto.png"/>
-        </a>
-            <article class="redes">
-                <a href="https://www.facebook.com/INDETMXOFICIAL/?locale=es_LA" class="icono">
-                    <img src="<?php  echo get_template_directory_uri() . '/assets/facebook.png' ?>">
+                    <h2> Instituto del Deporte de los Trabajadores </h2>
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/indet_logo.png">
                 </a>
-                <a href="https://x.com/indetmexico?lang=es"class="icono">
-                    <img src="<?php  echo get_template_directory_uri() . '/assets/twitter.png' ?>">
-                </a>
-            </article>
-                
-        </article>
+            </div>
+        </div>
+        <br> <br> <br> <br>
+        <div class="fila">
+            <iframe style="" src="https://lottie.host/embed/db9cd394-89ad-47ba-82c4-697b4c4b8780/aMwuWmgoWh.lottie"></iframe>
+            <p>Organismo oficial del Congreso del Trabajo encargado de promover la actividad física y el deporte entre los trabajadores y sus familias.
+                Cuyo objetivo es enriquecer la calidad de vida de los trabajadores de México mediante la práctica regular de la activasión física y el deporte.
+            </p>   
+        </div>
+        <br> <br> <br> <br>
+        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/indet.jpg">
+        <br> <br> <br> <br>
+        <div class="headerContenedor">
+            <h2>Páginas oficiales</h2>
+        </div>
+        <div class="fila">
+            <a href="https://indet.org.mx">
+                    <h2>Sitio Oficial</h2>
+                    <div class="contenedorImagen">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/indet_logo.png">
+                    </div>
+            </a>
+            <a href="https://www.facebook.com/INDETMXOFICIAL/">
+                <h2>Facebook</h2>
+                <div class="contenedorImagen">
+                    <img class="imagenRed" src=<?php echo get_template_directory_uri() . '/img/header/facebook.svg' ?>>
+                </div>   
+            </a>
+            <a href="https://www.instagram.com/indetmexico/">
+                <h2>Instagram</h2>
+                <div class="contenedorImagen">
+                    <img class="imagenRed" src=<?php echo get_template_directory_uri() . '/img/header/instagram.svg' ?>>
+                </div>
+            </a>
+            <a href="https://x.com/indetmexico">
+                <h2>X</h2>
+                <div class="contenedorImagen">
+                    <img class="imagenRed" src=<?php echo get_template_directory_uri() . '/img/header/x.svg' ?>>
+                </div>
+            </a>
+        </div>
     </div>
 </main>
