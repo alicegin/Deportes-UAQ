@@ -12,7 +12,7 @@
     <main>
         <section class="cardContainer">
             <div class="card">
-                <p class="precio">$750 MXN</p>
+                <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Alberca El Pueblito</h1>
                 <div class="hiddenImgContainer">
                     <div class="hiddenImg">
@@ -86,7 +86,7 @@
                 </div>
             </div>
             <div class="card">
-                <p class="precio">$750 MXN</p>
+                <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Estadio Centro Universitario</h1>
                 <div class="hiddenImgContainer">
                     <div class="hiddenImg">
@@ -160,7 +160,7 @@
                 </div>
             </div>
             <div class="card">
-                <p class="precio">$750 MXN</p>
+                <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Gimnasio Exprepa Centro</h1>
                 <div class="hiddenImgContainer">
                     <div class="hiddenImg">
@@ -234,7 +234,7 @@
                 </div>                           
             </div>
             <div class="card">
-                <p class="precio">$750 MXN</p>
+                <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Gimnasio Campus Aeropuerto</h1>
                 <div class="hiddenImgContainer">
                     <div class="hiddenImg">
