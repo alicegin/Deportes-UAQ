@@ -1,60 +1,126 @@
-.fila{
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-.fila p{
-    min-width: 200px;
-    flex: 1;
-    padding-left: 4vw;
-    padding-right: 4vw;
-}
+body{
+    background-color: #121212;
+    color: #e0e0e0;
+  }
 
-.contenedor-imgINDET{
-    position:relative;
-    height: 80vh;
-    width: 80vh;
-}
-
-.imgINDET {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    height: 80%;
-    width: 80%;
-    object-fit: cover;
-    object-position: center;
-    background-color: black;
-}
-
-
-.imgINDET:hover{
-    filter: brightness(50%);
-}
-
-
-.redes{
-    position: absolute;
-    padding-left: 10%;
-    padding-right: 10%;
-    gap: 3vw;
-    right: 0;
-    bottom: 5%;
-    height: 15%;
-    max-width: 100%;
-    background-color: black;
-    border-radius: 20px;
-    align-content: center;
+  main{
+    display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+
+  .contenedorPrincipal {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    max-width: 1200px;
+    padding-top: 80px;
+}
+
+.contenedorPrincipal h1, 
+.contenedorPrincipal h2 {
+    font-family: "Futura-Medium";
+    width: 100%;
+    margin: 20px 0;
+    width: fit-content;
+}
+
+.contenedorPrincipal h2,
+.deportesContainer h2,
+main .contenedorPrincipal h5 {
+    font-family: "Teko-Regular";
+}
+
+.headerContenedor h2 {
+    font-size: clamp(55px, 2vw, 45vw);
+    margin: 0;
+}
+
+.contenedorPrincipal p,
+.contenedorPrincipal h3 {
+    font-size: clamp(24px, 2vw, 26px) !important;
+    font-family: 'Futura-Regular' !important;
+}
+
+.contenedorPrincipal p {
+    margin-top: 10px;
+    flex:1;
+}
+
+.contenedorPrincipal h3 {
+    font-weight: 350 !important;
+}
+
+.headerContenedor {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.fila{
+    width: 100%;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content:center;
+    gap:30px;
+}
+.fila h2{
+    align-self: center;
+    margin-bottom: 70px;
+}
+.fila img{
+    width: 40%;
+    object-fit: contain;
+}
+.divisor{
+    margin:20px 0;
+    width: 100%;
+    border-top: 1px solid #e0e0e0;
+ }
+.red, .fila a{
+    display: flex;
+    flex-direction: column;
+    flex:1 ;
+    border: 1px solid #1f1f1f;
+    padding: 10px;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 10px black;
+    text-align:center;
+    text-decoration: none;
+    color: #e0e0e0;
+}
+.indet{
+    text-decoration: none;
+    color:#e0e0e0;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 10px black;
+    border: 1px solid #1f1f1f;
+
+}
+.red:hover, .fila a:hover, .indet{
+    transform: translateY(-10%) ;
+    cursor: pointer;
+}
+.contenedorImagen{
+    flex:1;
+    justify-content: center;
+    align-content: center;
     display: flex;
 }
-
-.icono{
+.red img, .fila a img{
+    width: 70%;
+    height: auto;
+    object-fit: cover;
     align-self: center;
-    height: 65%;
-    width: 65%;
+    justify-self: center;
 }
 
-.icono:hover{
-    filter: brightness(50%);
+
+.imagenRed{
+    filter: invert(75%);
 }

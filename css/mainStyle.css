@@ -7,7 +7,7 @@
 }
 
 section{
-    height:500vh;
+    height:250vh;
     background-color: black;
     position: relative;
     overflow: hidden;
@@ -96,7 +96,7 @@ a{
 }
 .uaqDeportes{
     width: auto;
-    height: 25vh;
+    height: clamp(100px, 10vh, 25vh);
     align-self: center;
 }
 .trigger{

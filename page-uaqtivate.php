@@ -4,117 +4,116 @@ get_template_part('template-parts/headerDPT');
 ?>
 
 <main>
-
     <div class="contenedorPrincipal">
-        <h1>
-            ¿En qué consiste UAQtívate?
-        </h1>
-    </div>
-
-    <div class="contenedorPrincipal">
-        <div class="contenido">
-            <p>
-                Es un programa permanente de activación física para combatir el sedentarismo y fomentar el deporte recreativo.
-            </p>
-            <p class="centrar">
-                Se ofrece en dos formas:
-            </p>
-            <div class="contenidoR">
-                <li class="centrar">
-                    presencial
-                </li>
-                <li class="centrar">
-                    virtual
-                </li>         
+        <div class="portada">
+            <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/imagen-stock-scaled.jpg">
+            <div class="botones">
+                <a id="video">Video Informativo</a>
+                <a href="#UAQtivate">¿Qué es UAQtívate?</a>
             </div>
         </div>
-    </div>
-
-    <div class="contenedorPrincipal">
-        <div class="contenedorPrincipal">
-            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/widgetDPT.jpeg">
-        </div>
-        <div class="contenedorPrincipal">
-
-            <div class="centrar">
-                <span class="word medium">PROMOVER</span>
-                <span class="word small">Sesiones</span>
-                <span class="word large">VIDA</span>
-                <span class="word large">SALUDABLE</span>
-                <span class="word medium">Actividad</span>
-                <span class="word medium">Física</span>
-                <span class="word small">PRESENCIAL</span>
-                <span class="word medium">Eventos</span>
-                <span class="word small">VIRTUAL</span>
-                <span class="word x-large">COMUNIDAD</span>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="contenedorPrincipal centrar">
-        <h1>
-            Virtual
-        </h1>
-    </div>
-
-    <div class="contenedorPrincipal centrar">
-        <h1>
-            UAQ DEPORTES
-        </h1>
-    </div>
-    <div class="contenedorPrincipal" id="Virtual">
-        <div class="contenedorPrincipal">
-            <div style="position: relative; width: 100%; height: 0; padding-bottom: 56.25%;">
-                <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fuaqdeportes%2Fvideos%2F403585499432456%2F&show_text=false&width=560&t=0" 
-                style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; overflow: hidden;" 
-                scrolling="no" frameborder="0" allowfullscreen="true" 
-                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" 
-                allowFullScreen="true"></iframe>
-            </div>
-
-        </div>
-        <div class="contenedorPrincipal paginaUAQ">
-            <div class="centrar">
-                <div class="word">
-                    <iframe 
-                        src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fuaqdeportes&tabs&width=340&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId=1835712586922845" 
-                        width="340" 
-                        height="130" 
-                        style="border:none;overflow:hidden" 
-                        scrolling="no" 
-                        frameborder="0" 
-                        allowfullscreen="true" 
-                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share">
-                    </iframe>
+        <div class="desarrollo" id="UAQtivate">
+            <div class="texto">
+                <div class="headerContenedor">
+                    <h2>¿Qué es UAQtívate?</h2>
                 </div>
+                <p>
+                    Es un programa de activación física dirigido a la comunidad universitaria <strong>de forma permanente</strong>. <br>
+                    Se busca unificar los esfuerzos dedicados a erradicar el sedentarismo y fomentar el deporte recreativo por medio de sesiones de 15 a 20 minutos.<br> <br>
+                    Es un espacio para fomentar la actividad física dirigido tanto a los alumnos, maestros y/o personal administrativo.
+                </p>
+                <div class="divisor"></div>
+                <div clas="headerContenedor">
+                    <h2>¿Cómo funciona?</h2>
+                </div>
+                <p>Existen 3 modalidades de UAQtívate:</p>
+                <br>
+                <div class="modalidades">
+                    <div class="modalidad">
+                        <a href="#eventos">
+                            <h3>Presencial</h3>
+                        </a>
+                            <iframe  id="" src="https://lottie.host/embed/faf32035-0d65-4130-ab67-33b7cabe65c9/JaCoPNI2dT.lottie"></iframe>
+                        <p>Campus donde puede tomar lugar la sesión:</p>
+                        <li>Campus Aeropuerto</li>
+                        <li>Centro Universitario</li>
+                    </div>
+                    <div class="modalidad">
+                        <a href="https://www.facebook.com/uaqdeportes">
+                            <h3>En línea</h3>
+                        </a>
+                        <iframe src="https://lottie.host/embed/870f310d-9902-46b3-8dd0-6c7a8f5e33a6/uuBvb8dbWO.lottie"></iframe>
+                        <p>Mediante redes sociales se irán subiendo videos para la comunidad.</p>
+                    </div>
+                    <div class="modalidad">
+                        <a href="https://www.youtube.com/watch?v=FZZMHvvcGhs&list=PLZwYFmRC9CrG-XTXDjE2aLyTUNk8tfpjV">
+                            <h3>En demanda</h3>
+                        </a>
+                        <iframe src="https://lottie.host/embed/08519f96-2c98-49b6-a0fa-e9eee6cfa5bd/tq1uFMekut.lottie"></iframe>
+                        <p>Lista de videos de activación física en YouTube.</p>
+                    </div>
+                </div>
+                <div class="divisor"></div>
+                <div clas="headerContenedor" id="eventos">
+                    <h2>Eventos pasados</h2>
+                </div>
+                    <div class="eventos">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/Infouaqtivate.jpg">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/465740916_873822894854085_8977676216218552027_n.jpg">
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/463970646_864662599103448_8987194232595754543_n.jpg">
+                    </div>
+                <div class="divisor"></div>
+                <div clas="headerContenedor" id="eventos">
+                    <h2>Videos</h2>
+                </div>
+                <p>Recuerda que los demás videos están en <a href="https://www.facebook.com/uaqdeportes">la página de Facebook</a></p>
+                <p>O bien también puedes consultar la rutina en YouTube: <a href="https://www.youtube.com/watch?v=FZZMHvvcGhs&list=PLZwYFmRC9CrG-XTXDjE2aLyTUNk8tfpjV">Haz tu Rutina</a></p>
+                <div class="videos">
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fuaqdeportes%2Fvideos%2F403585499432456%2F&show_text=false&width=560&t=0" width="90%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                    <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fuaqdeportes%2Fvideos%2F1677695079744635%2F&show_text=false&width=560&t=0" width="90%" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
+                </div>
+                
+            </div>
+            
         </div>
-
+        <div class="ventanaVideo">
+            <div class="cerrarV">
+                <img src="<?php echo get_template_directory_uri(). '/assets/close.svg'?>">
+            </div>
+            <iframe src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fuaq.mx%2Fvideos%2F1272814063878065%2F&show_text=false&width=560&t=0" width="70%"  style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowFullScreen="true"></iframe>
         </div>
-
     </div>
+    
 
-    <div class="contenedorPrincipal" id="Presencial">
-        <h1>
-            Presencial
-        </h1>
-    </div>
-
-    <div class="contenedorPrincipal">
-        <div class="contenedorPrincipal">
-            <h3> ¡Recuerda! </h3>
-        </div>
-        <div class="contenedorPrincipal">
-            <p>
-                La activación se considera una vez cada quince días y duración de 15 a 20 minutos
-            </p>
-        </div>
-    </div>
-    <div class="contenedorPrincipal">
-        <div class="contenido">
-            <p>
-                La siguiente sesión es: <span class="negritas small"> 3 de septiembre de 2024 </span>
-            </p>
-        </div>
-    </div>
 </main>
+
+<script>
+    botonC = document.querySelector(".cerrarV");
+    ventanaVideo=document.querySelector(".ventanaVideo");
+    video=document.querySelector("#video");
+    body=document.querySelector("body");
+
+    botonC.addEventListener('click', function() {
+        ventanaVideo.style.zIndex = -1;
+        body.style.overflow = 'auto';
+    })
+
+    video.addEventListener('click', function() {
+        window.scrollTo({
+        top: 0,
+        behavior: 'smooth' 
+    });
+        ventanaVideo.style.zIndex=10;
+        body.style.overflow = 'hidden';
+
+    })
+
+    function ajustarAlturaIframes() {
+            var iframes = document.querySelectorAll("iframe");
+            iframes.forEach(function(iframe) {
+                iframe.style.height = (iframe.offsetWidth * 9) / 16 + "px"; // Relación 16:9
+            });
+        }
+  window.addEventListener("resize", ajustarAlturaIframes);
+  window.addEventListener("load", ajustarAlturaIframes);
+</script>
