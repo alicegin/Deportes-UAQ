@@ -42,4 +42,3 @@ get_template_part('template-parts/header');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src=<?php echo get_template_directory_uri() . '/js/espDep/inicio.js'?> ></script>
 </main>
-

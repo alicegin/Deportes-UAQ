@@ -44,4 +44,3 @@ gsap.to(".elementosScroll",{
       scrub:true,
   }
 });
-
