@@ -177,7 +177,8 @@
     /* Color para la medalla de oro */
 }
 
-.nombreMedallista.medal-gold {
+.nombreMedallista.medal-gold,
+.txtMedal.medal-gold {
     color: gold;
 }
 
@@ -186,7 +187,8 @@
     /* Color para la medalla de plata */
 }
 
-.nombreMedallista.medal-silver {
+.nombreMedallista.medal-silver,
+.txtMedal.medal-silver {
     color: silver;
 }
 
@@ -195,10 +197,14 @@
     /* Color para la medalla de bronce */
 }
 
-.nombreMedallista.medal-bronze {
+.nombreMedallista.medal-bronze,
+.txtMedal.medal-bronze {
     color: #cd7f32;
 }
 
+.txtMedal {
+    margin-right: 20px;
+}
 
 .parteMedallistas {
     display: flex;
@@ -230,6 +236,7 @@
 }
 
 .parteMedallistas .parteText {
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -337,6 +344,7 @@ td img {
     width: fit-content;
     padding: 0;
     padding-left: 20px;
+    padding-right: 20px;
     margin-top: 18px;
 }
 

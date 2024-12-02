@@ -234,6 +234,7 @@ body {
     position: absolute;
     width: 100%;
     height: calc(100% - 150px);
+    min-height: 810px;
     top: 120px;
     z-index: 10 !important;
     border: 0;
@@ -431,6 +432,7 @@ body {
 @media (max-width: 1515px) {
     .active-card {
         height: calc(100% + 40px) !important;
+        min-height: 1000px;
     }
 
     .hiddenImgContainer {
@@ -442,6 +444,7 @@ body {
 @media (max-width: 1015px) {
     .active-card {
         height: calc(100% + 540px) !important;
+        min-height: 1500px;
     }
 
     .hiddenImgContainer {
@@ -528,7 +531,6 @@ body {
 }
 
 @media (max-width: 655px) {
-
     .hiddenImgContainer,
     .hiddenImgContainer .hiddenImg {
         min-width: 200px;
@@ -540,7 +542,11 @@ body {
     }
 
     .hiddenContainer {
-        bottom: -10px;
+        bottom: -40px;
+        width: 100%;
+        left: 0;
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;        
     }
 
     .active-card {

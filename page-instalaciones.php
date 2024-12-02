@@ -12,17 +12,17 @@
     <main>
         <section class="cardContainer">
             <div class="card">
-                <p class="precio">$750 MXN</p>
+                <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Alberca El Pueblito</h1>
                 <div class="hiddenImgContainer">
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/alberca_1.jpg" alt="Alberca El Pueblito UAQ" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/alberca_1.jpg" alt="Alberca El Pueblito UAQ" />
                     </div>
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/alberca_2.jpg" alt="Alberca El Pueblito UAQ" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/alberca_2.jpg" alt="Alberca El Pueblito UAQ" />
                     </div>
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/alberca_4.jpg" alt="Alberca El Pueblito UAQ" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/alberca_4.jpg" alt="Alberca El Pueblito UAQ" />
                     </div>
                 </div>
                 <div class="hiddenContainer">
@@ -61,7 +61,7 @@
                     </div>
                 </div>
                 <div class="imgContainer">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/alberca_3.jpg" alt="Instalaciones UAQ" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/alberca_3.jpg" alt="Instalaciones UAQ" />
                 </div>
                 <div class="infoContainer">                    
                     <div class="detallesContainer">
@@ -86,17 +86,17 @@
                 </div>
             </div>
             <div class="card">
-                <p class="precio">$750 MXN</p>
+                <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Estadio Centro Universitario</h1>
                 <div class="hiddenImgContainer">
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/estadio_cu_2.jpg" alt="Estadio Centro Universitario" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/estadio_cu_2.jpg" alt="Estadio Centro Universitario" />
                     </div>
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/estadio_cu_3.jpg" alt="Estadio Centro Universitario" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/estadio_cu_3.jpg" alt="Estadio Centro Universitario" />
                     </div>
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/estadio_cu_4.jpg" alt="Estadio Centro Universitario" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/estadio_cu_4.jpg" alt="Estadio Centro Universitario" />
                     </div>
                 </div>
                 <div class="hiddenContainer">
@@ -135,7 +135,7 @@
                     </div>
                 </div>
                 <div class="imgContainer">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/estadio_cu_1.jpg" alt="Instalaciones UAQ" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/estadio_cu_1.jpg" alt="Instalaciones UAQ" />
                 </div>
                 <div class="infoContainer">                    
                     <div class="detallesContainer">
@@ -160,17 +160,17 @@
                 </div>
             </div>
             <div class="card">
-                <p class="precio">$750 MXN</p>
+                <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Gimnasio Exprepa Centro</h1>
                 <div class="hiddenImgContainer">
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
                     </div>
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
                     </div>
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
                     </div>
                 </div>
                 <div class="hiddenContainer">
@@ -209,7 +209,7 @@
                     </div>
                 </div>
                 <div class="imgContainer">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_1.webp" alt="Instalaciones UAQ" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_1.webp" alt="Instalaciones UAQ" />
                 </div>
                 <div class="infoContainer">                    
                     <div class="detallesContainer">
@@ -234,17 +234,17 @@
                 </div>                           
             </div>
             <div class="card">
-                <p class="precio">$750 MXN</p>
+                <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Gimnasio Campus Aeropuerto</h1>
                 <div class="hiddenImgContainer">
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_2.webp" alt="Gimnasio Campus Aeropuerto" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_2.webp" alt="Gimnasio Campus Aeropuerto" />
                     </div>
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_2.webp" alt="Gimnasio Campus Aeropuerto" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_2.webp" alt="Gimnasio Campus Aeropuerto" />
                     </div>
                     <div class="hiddenImg">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_2.webp" alt="Gimnasio Campus Aeropuerto" />
+                        <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_2.webp" alt="Gimnasio Campus Aeropuerto" />
                     </div>
                 </div>
                 <div class="hiddenContainer">
@@ -283,7 +283,7 @@
                     </div>
                 </div>
                 <div class="imgContainer">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/prueba_2.webp" alt="Instalaciones UAQ" />
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_2.webp" alt="Instalaciones UAQ" />
                 </div>
                 <div class="infoContainer">                    
                     <div class="detallesContainer">
