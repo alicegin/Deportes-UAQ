@@ -22,8 +22,7 @@
           <span style="font-size: 25px;align-self: center;">
             &#9776; <!-- Símbolo de hamburguesa -->
           </span>
-          <p class="titulo-drawer">MENU</p>
-
+          <p class="titulo-drawer">MENÚ</p>
         </button>
         <div class="navbar-menu hideMenu menu-logos-principal">
           <a href="<?php echo home_url() ?>">
@@ -33,7 +32,6 @@
             <img class="logo" src="http://deportesuaq.mx/wp-content/uploads/2024/10/ED-LOGO-43.png">
           </a>
         </div>
-
         <div class="navbar-menu hideMenu menu-principal-header">
           <a class="link" href="<?php echo home_url('/conocenos'); ?>">Conócenos</a>
           <a class="link" href="<?php echo home_url('/condde'); ?>">CONDDE</a>
@@ -57,18 +55,14 @@
           </a>
         </div>
       </div>
-
-
-
+      <!-- inicio menu responsivo -->
       <div id="drawer" class="drawer">
         <button id="closeButton" class="close-btn">&#x2715;</button>
-        <p class="titulo-drawer">MENU</p>
-        <div>
-          <a href="<?php echo home_url() ?>">
-            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/LOGOTIPO-GS.png">
-          </a>
+        <p class="titulo-drawer">MENÚ</p>
+        <div class="logoMainContainer" onclick="window.location.href='<?php echo home_url() ?>'">
+          <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/LOGOTIPO-GS.png" />  
         </div>
-        <a class="link" href="<?php echo home_url('/especializacion-deportiva'); ?>">INICIO ED</a>
+        <a class="link" href="<?php echo home_url('/especializacion-deportiva'); ?>">INICIO E.D.</a>
         <a class="link" href="<?php echo home_url('/conocenos'); ?>">CONÓCENOS</a>
         <a class="link" href="<?php echo home_url('/condde'); ?>">CONDDE</a>
         <a class="link" href="<?php echo home_url('/ciencias-aplicadas') ?>">CIENCIAS APLICADAS</a>
@@ -76,7 +70,7 @@
         <a class="link" href="<?php echo home_url('/documentos'); ?>">DOCUMENTOS</a>
         <a class="link" href="<?php echo home_url('/contacto') ?>">CONTACTO</a>
       </div>
-
+      <!-- fin menu responsivo -->
       <div id="backdrop" class="backdrop"></div>
     </nav>
   </header>
