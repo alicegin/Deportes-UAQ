@@ -342,6 +342,10 @@ header {
   margin-top: 5px;
 }
 
+#drawer {
+  overflow-y: auto;
+}
+
 @media (max-width: 1198px) {
   .open-btn {
     display: flex
