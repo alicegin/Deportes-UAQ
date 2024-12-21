@@ -32,6 +32,7 @@ main header {
     padding: 80px;
     width: 100%;
     max-height: 350px;
+    z-index: -1;
 }
 
 main header::before {
@@ -87,18 +88,26 @@ main header .headerText button:hover {
 }
 
 .mainCardsContainer {
-    margin-top: 1400px;
+    margin-top: 1460px;
+    max-height: 1765px;
+    overflow-y: auto;
     width: fit-content;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    margin-left: -35px;
+    margin-left: -35px;    
 }
 
 .mainCardsContainer .mainCard {
     position: relative;
     margin-bottom: 405px;
+    width: 450px;
+    z-index: 10;
+}
+
+.mainCardsContainer .mainCard:last-child {
+    margin-bottom: 0;
 }
 
 .mainCard .imgContainer {
@@ -245,6 +254,142 @@ main #cardsContainer .cardsContent .card::after {
 
 main #cardsContainer .cardsContent .card:hover::after {
     color: #2b29a6;
+}
+
+.detallesProducto {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 750px;
+    background-color: #fdfdfd;
+    z-index: 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 5px;
+    transform: translate(-200%, -50%);
+    transition: 0.5s;
+}
+
+.detallesProducto .galeriaContainer {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.detallesProducto .galeriaContainer .activeImg {
+    width: 75%;
+    height: 100%;
+}
+
+.detallesProducto .galeriaContainer .activeImg {
+    border-right: 5px solid #fdfdfd;
+}
+
+.detallesProducto .galeriaContainer .galeriaPart {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+} 
+
+.detallesProducto .galeriaContainer .galeriaPart img {
+    height: 34%;
+}
+
+.detallesProducto .galeriaContainer .galeriaPart img:not(:last-child) {
+    border-bottom: 5px solid #fdfdfd;
+}
+
+.detallesProducto .contenidoDetalles {
+    width: 45%;
+    padding: 30px;
+    font-family: "Futura-Medium";
+}
+
+.detallesProducto .contenidoDetalles .nombre {
+    font-family: "Teko-Regular";
+    font-size: 50px;
+    margin-bottom: 0;
+}
+
+.detallesProducto .contenidoDetalles .genero {
+    margin-bottom: 0px;
+}
+
+.detallesProducto .contenidoDetalles .precio {
+    margin-bottom: 20px;
+    margin-top: 2px;
+    font-size: 20px;
+}
+
+.detallesProducto .contenidoDetalles .frase {
+    font-size: 18px;
+}
+
+.detallesProducto .contenidoDetalles .desc {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.contenidoDetalles .tallas,
+.contenidoDetalles .medidas {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contenidoDetalles .tallas .talla,
+.contenidoDetalles .medidas .medida {
+    font-family: 'Futura-Medium';
+    font-size: 16px;
+    border: 2px solid #2d2d2d;
+    padding: 12px;
+    margin-bottom: 15px;
+}
+
+.contenidoDetalles .tallas .talla:not(:last-child),
+.contenidoDetalles .medidas .medida:not(:last-child)  {
+    margin-right: 15px;
+}
+
+.contenidoDetalles .colores {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.contenidoDetalles .colores .color {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #cfcfcf;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenidoDetalles .colores .color:not(:last-child) {
+    margin-right: 8px;
+}
+
+.contenidoDetalles .colores .color .circulo {
+    width: 20px;
+    height: 20px;    
+    border-radius: 100px;
+    background-color: #000;
+}
+
+.overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: #000000ad;
+    backdrop-filter: blur(5px);
+    z-index: 8;
 }
 
 @media (max-width: 1007px) {
