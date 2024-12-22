@@ -204,6 +204,7 @@ main #cardsContainer .cardsContent .card {
     border-bottom: 2px solid #000;
     padding: 10px;
     border-radius: 0;
+    transition: 0.3s;
 }
 
 main #cardsContainer .cardsContent .card:nth-child(4n),
@@ -252,18 +253,22 @@ main #cardsContainer .cardsContent .card::after {
     content: "Detalles";
     position: absolute;
     padding: 12px 16px;
-    background-color: #fdfdfd;
+    background-color: #000;
     border-top-left-radius: 2px;
     border-bottom-right-radius: 5px;
     cursor: pointer;
     opacity: 0;
-    transition: 0.2s;
+    transition: 0.3s;
 }
 
 main #cardsContainer .cardsContent .card:hover::after {
     color: #e0e0e0;
     opacity: 1;
     background-color: #000;
+}
+
+main #cardsContainer .cardsContent .card:hover {
+    background-color: #0000000c;    
 }
 
 .detallesProducto {
@@ -415,6 +420,13 @@ main #cardsContainer .cardsContent .card:hover::after {
 
 .btnCerrarModal:hover svg {
     stroke: #2b29a6;
+}
+
+main #cardsContainer .cardsContent .card:nth-child(1),
+main #cardsContainer .cardsContent .card:nth-child(2),
+main #cardsContainer .cardsContent .card:nth-child(3),
+main #cardsContainer .cardsContent .card:nth-child(4) {
+    border-top: 2px solid #000 !important;
 }
 
 @media (max-width: 1840px) {

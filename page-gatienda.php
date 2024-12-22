@@ -52,9 +52,9 @@
         </header>
         <section id="cardsContainer">
             <section class="etiquetasContainer">
-                <label class="etiqueta">Todos</label>
-                <label class="etiqueta">Ropa deportiva</label>
-                <label class="etiqueta">Accesorios</label>
+                <label id="todos" class="etiqueta">Todos</label>
+                <label id="deportiva" class="etiqueta">Ropa deportiva</label>
+                <label id="accesorios" class="etiqueta">Accesorios</label>
             </section>
             <section class="cardsContent"></section>
         </section>
@@ -99,7 +99,23 @@
 
             $('body').on('click', '.btnCerrarModal', function() {
                 closeModal($modal, $overlay);
-            })
+            });
+
+            $('body').on('click', '.etiqueta', function() {
+                categoria = $(this).attr('id');
+
+                $('.etiqueta').css({
+                    'background-color': 'transparent',
+                    'color': '#000',
+                });
+
+                $(this).css({
+                    'background-color': '#000030',
+                    'color': '#fdfdfd',
+                });
+
+                mostrarCategoria(categoria);
+            });
 
             function inicio() {
                 $.ajax({
@@ -151,7 +167,7 @@
 
                 $.each(todos, function(index, producto) {
                     let $card = `                        
-                        <article class="card" data-id="${producto.id}">                        
+                        <article class="card" data-id="${producto.id}" data-categoria="${producto.categoria}">                        
                             <div class="imgContainer">
                                 <img src="<?php echo get_template_directory_uri(); ?>${producto.img}" alt="GATIENDA ${producto.nombre}">
                             </div>
@@ -229,6 +245,15 @@
             function closeModal($modal, $overlay) {
                 $modal.css('transform', 'translate(-200%, -50%)');
                 $overlay.css('display', 'none');
+            }
+
+            function mostrarCategoria(categoria) {
+                if (categoria == "todos") {
+                    $('.card').show();
+                } else {
+                    $('.card').hide();
+                    $(`.card[data-categoria='${categoria}']`).show();
+                }
             }
         });
     </script>
