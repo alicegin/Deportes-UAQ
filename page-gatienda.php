@@ -22,23 +22,49 @@
         </div>
         <section class="galeriaContainer">
             <div class="activeImg">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                <div class="scrollPartGaleria" style="display: none;">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                </div>
             </div>
-            <div class="galeriaPart">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="">            
+            <div class="galeriaPart show">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
             </div>
         </section>
         <section class="contenidoDetalles">
             <p class="genero">Unisex</p>
             <h1 class="nombre">Gadeportiva</h1>
             <h5 class="precio">$599.00 MXN</h5>
-            <p class="frase">Comodidad para cada entrenamiento</p>
-            <h4 class="desc">Pantalón deportivo ajustado para entrenar</h4>
+            <div class="fraseContainer">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
+                </svg>
+                <p class="frase">Comodidad para cada entrenamiento</p>
+            </div>
+            <h1 class="tituloDetalles">Características del producto</h1>
+            <h4 class="desc"></h4>
             <div class="colores"></div>
             <div class="tallas"></div>
             <div class="medidas"></div>
+        </section>
+        <section class="galeriaContainer parteAbajo">
+            <div class="activeImg">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                <div class="scrollPartGaleria" style="display: none;">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                </div>
+            </div>
+            <div class="galeriaPart">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+            </div>
         </section>
     </div>
     <main>        
@@ -46,8 +72,13 @@
             <section class="mainCardsContainer"></section>
             <article class="headerText">
                 <h1>GATIENDA</h1>
-                <p>Ven a visitarnos y conoce nuestros productos universitarios</p>
-                <button onclick="window.location='#cardsContainer'">Ver productos</button>
+                <p>Descubre nuestros Productos Universitarios</p>
+                <button onclick="window.location='#cardsContainer'">
+                    Ver productos 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                    </svg>
+                </button>
             </article>
         </header>
         <section id="cardsContainer">
@@ -64,33 +95,14 @@
     <script>
         $(document).ready(function() {
             let productos = {};
+            
             let $modal = $('.detallesProducto');
             let $overlay = $('.overlay');
 
             inicio();
 
             $('body').on('click', '.card', function() {
-                let $card = $(this);
-                
-                let $tallasContainer = $('.tallas');
-                let $medidasContainer = $('.medidas');
-                let $coloresContainer = $('.colores');
-
-                let id = $card.data('id');            
-                let producto = productos.find(p => p.id == id);
-               
-                $modal.find('.genero').text(producto.genero);
-                $modal.find('.nombre').text(producto.nombre);
-                $modal.find('.precio').text('$' + producto.precio + '.00 MXN');
-                $modal.find('.frase').text(producto.frase);
-                $modal.find('.desc').text(producto.desc);
-
-                llenarMedidas($tallasContainer, producto.tallas); 
-                llenarMedidas($medidasContainer, producto.medidas); 
-                llenarColores($coloresContainer, producto.colores); 
-                
-                $modal.css('transform', 'translate(-50%, -50%)');
-                $overlay.css('display', 'flex');
+                llenarModal($(this));
             });
 
             $('body').on('click', '.overlay', function() {
@@ -114,7 +126,24 @@
                     'color': '#fdfdfd',
                 });
 
+                $('.card').addClass('cardBorderRight');
+
+                $('.cardsContent').css({
+                    'border-left': '2px solid',
+                });
+
                 mostrarCategoria(categoria);
+            });
+
+            $('body').on('click', '.color' , function() {
+                let productoNombre = $(this).closest('.contenidoDetalles').find('.nombre').text();
+                let color = $(this).data('color');
+                let galeriaIMG = $(this).closest('.detallesProducto').find('.galeriaPart.show img');
+
+                cambiarGaleria(productoNombre, color, galeriaIMG);     
+                
+                $(this).closest('.contenidoDetalles').find('.color').css({'border-color': '#cfcfcf'});
+                $(this).css({'border-color': '#00000070'});
             });
 
             function inicio() {
@@ -147,7 +176,7 @@
                     let $card = `
                         <article class="mainCard">
                             <div class="imgContainer">
-                                <img src="<?php echo get_template_directory_uri(); ?>${reciente.img}" alt="GATIENDA">
+                                <img src="<?php echo get_template_directory_uri(); ?>${reciente.img}" alt="GATIENDA ${reciente.nombre}" loading="lazy">
                             </div>
                             <section class="infoCard">
                                 <h1>${reciente.nombre}</h1>
@@ -169,7 +198,7 @@
                     let $card = `                        
                         <article class="card" data-id="${producto.id}" data-categoria="${producto.categoria}">                        
                             <div class="imgContainer">
-                                <img src="<?php echo get_template_directory_uri(); ?>${producto.img}" alt="GATIENDA ${producto.nombre}">
+                                <img src="<?php echo get_template_directory_uri(); ?>${producto.img}" alt="GATIENDA ${producto.nombre}" loading="lazy">
                             </div>
                             <section class="infoCard">
                                 <h1>${producto.nombre}</h1>
@@ -220,26 +249,80 @@
                         $container.css('display', 'flex');
                     }
 
-                    if (typeof(colores) == 'object') {
+                    if (typeof(colores) != 'object') {
+                        $color = `
+                            <div class="color" data-color="${colores}">
+                                <div class="circulo" style="background-color: #${colores}"></div>
+                            </div>
+                        `;
+                        $container.append($color);
+                    } else {                
                         $.each(colores, function(index, color) {
                             $color = `
-                                <div class="color">
-                                    <div class="circulo" style="background-color:${color} !important;"></div>
+                                <div class="color" data-color="${color}">
+                                    <div class="circulo" style="background-color: #${color} !important;"></div>
                                 </div>
                             `; 
                             $container.append($color);    
                         });
-                    } else {
-                        $color = `
-                            <div class="color">
-                                <div class="circulo"></div>
-                            </div>
-                        `;
-                        $container.append($color);
                     }                                                                          
                 } else {
                     $container.css('display', 'none');
                 }       
+            }
+
+            function llenarGaleria(productoNombre, colores, galeriaIMG) {
+                if (typeof(colores) != 'object') {    
+                    imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + colores + '_1.jpg';
+                    $('.activeImg img').attr('src', imgURL);
+
+                    $.each(galeriaIMG, function(index, img) {
+                        index = index + 2;
+
+                        imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + colores + '_' + index + '.jpg';
+                        $(this).attr('src', imgURL);                    
+                    });
+                } else {
+                    imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + colores[0] + '_1.jpg';
+                    $('.activeImg img').attr('src', imgURL);
+
+                    $.each(galeriaIMG, function(index, img) {
+                        index = index + 2;
+
+                        imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + colores[0] + '_' + index + '.jpg';
+                        $(this).attr('src', imgURL);                    
+                    });
+                }
+            }
+
+            function llenarModal($card) {                
+                let $tallasContainer = $('.tallas');
+                let $medidasContainer = $('.medidas');
+                let $coloresContainer = $('.colores');
+
+                let imgURL = '';
+                let id = $card.data('id');            
+                let producto = productos.find(p => p.id == id);
+                let galeriaIMG = $('.detallesProducto .galeriaContainer .galeriaPart img');                
+               
+                $modal.find('.genero').text(producto.genero);
+                $modal.find('.nombre').text(producto.nombre);
+                $modal.find('.precio').text('$' + producto.precio + '.00 MXN');
+                $modal.find('.frase').text(producto.frase);
+                $modal.find('.desc').text(producto.desc);
+
+                llenarMedidas($tallasContainer, producto.tallas); 
+                llenarMedidas($medidasContainer, producto.medidas); 
+                llenarColores($coloresContainer, producto.colores);
+                llenarGaleria(producto.nombre, producto.colores, galeriaIMG);
+                                
+                $modal.css('transform', 'translate(-50%, -50%)');
+            
+                if ($(window).width() <= 595) {
+                    $overlay.css('display', 'none');
+                } else {
+                    $overlay.css('display', 'flex');
+                }
             }
 
             function closeModal($modal, $overlay) {
@@ -254,6 +337,18 @@
                     $('.card').hide();
                     $(`.card[data-categoria='${categoria}']`).show();
                 }
+            }
+
+            function cambiarGaleria(productoNombre, color, galeriaIMG) {
+                imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + color + '_1.jpg';
+                $('.activeImg img').attr('src', imgURL);
+
+                $.each(galeriaIMG, function(index, img) {
+                    index = index + 2;
+
+                    imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + color + '_' + index + '.jpg';
+                    $(this).attr('src', imgURL);                  
+                });
             }
         });
     </script>

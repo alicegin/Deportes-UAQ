@@ -44,6 +44,8 @@ foreach ($sheets as $sheet) {
                 if (isset($data['colores']) && strpos($data['colores'], ',') !== false) {
                     $colores = array_map('trim', explode(',', $data['colores']));
                     $data['colores'] = array_map('textToHexColor', $colores);
+                } else {
+                    $data['colores'] = textToHexColor(trim($data['colores']));
                 }
 
                 $sheetData[] = $data;
@@ -73,15 +75,15 @@ echo $response;
 
 function textToHexColor($colorName) {
     $colorMap = [
-        'azul' => '#0000FF',
-        'negro' => '#000000',
-        'gris' => '#808080',
-        'blanco' => '#FFFFFF',
-        'rojo' => '#FF0000',
-        'verde' => '#008000',
-        'amarillo' => '#FFFF00',
-        'rosa' => '#FFC0CB',
-        'plata' => '#C0C0C0'       
+        'azul' => '0000FF',
+        'negro' => '000000',
+        'gris' => '808080',
+        'blanco' => 'FFFFFF',
+        'rojo' => 'FF0000',
+        'verde' => '008000',
+        'amarillo' => 'FFFF00',
+        'rosa' => 'FFC0CB',
+        'plata' => 'C0C0C0'       
     ];
 
     $colorName = strtolower(trim($colorName));
