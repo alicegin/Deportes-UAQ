@@ -126,6 +126,7 @@ main header .headerText button:hover svg {
     width: 440px;
     margin-bottom: 380px;
     z-index: 10;
+    cursor: pointer;
 }
 
 .mainCardsContainer .mainCard:last-child {
@@ -428,6 +429,7 @@ main #cardsContainer .cardsContent .card:hover {
 .detallesProducto .contenidoDetalles .desc {
     font-size: 18px;
     margin-top: 20px;
+    line-height: 1.5;
     margin-bottom: 0 !important;
 }
 
@@ -550,16 +552,21 @@ main #cardsContainer .cardsContent {
     border-right: 2px solid #000 !important;
 }
 
-.detallesProducto .galeriaContainer .activeImg .scrollPartGaleria {
-    position: absolute;
+.detallesProducto .galeriaContainer .activeImg .scrollPartGaleria {   
+    width: 25%;
+    height: 100%;
+    max-height: 100%;
     display: flex;
     flex-direction: column;
-    max-height: 100%;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria img {
-    min-height: 740px;
+    height: 34%;
+}
+
+.detallesProducto .galeriaContainer .activeImg .scrollPartGaleria img:not(:last-child) {
+    margin-bottom: 5px;
 }
 
 .contenidoDetalles .colores .color {
@@ -569,6 +576,27 @@ main #cardsContainer .cardsContent {
 
 .contenidoDetalles .colores .color:hover {
     border-color: #00000070;
+}
+
+.detallesProducto .galeriaContainer .activeImg {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.detallesProducto .galeriaContainer .activeImg .mainImgGaleria {
+    position: relative;
+    width: 75%;
+    height: 100%;
+    margin-right: 5px;
+}
+
+.detallesProducto .galeriaContainer .activeImg .mainImgGaleria img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }
 
 @media (max-width: 1840px) {
@@ -635,6 +663,8 @@ main #cardsContainer .cardsContent {
         height: auto;
         overflow-x: scroll;
         height: 525px;
+        border: 0;
+        padding: 0;
     }
 
     .mainCardsContainer .mainCard {
@@ -690,6 +720,12 @@ main #cardsContainer .cardsContent {
         border-left: 0 !important;
         border-right: 2px solid #000 !important;
     }
+
+    .mainCard .infoCard p {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
 }
 
 @media (max-width: 944px) {
@@ -708,27 +744,35 @@ main #cardsContainer .cardsContent {
     }
 }
 
-@media (max-width: 795px) {
+@media (max-width: 895px) {
     .detallesProducto .galeriaContainer {
         width: 50%;
-    }
-
-    .detallesProducto .galeriaContainer .galeriaPart {
-        display: none;
-    }
-
-    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria {
-        display: flex !important;
-    }
-
-    .detallesProducto .galeriaContainer .activeImg {
-        width: 100%;
-        margin-right: 0;
-    }
+    }    
 
     .detallesProducto .contenidoDetalles {
         width: 50%;
         padding: 30px 20px;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg {
+        flex-direction: column;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg .mainImgGaleria {
+        height: 100%;
+        width: 100%;
+        min-height: 100%;
+        margin-right: 0;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria,
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria img {
+        min-height: 100%;
+        width: 100%;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria {
+        overflow-y: auto;
     }
 }
 
@@ -767,13 +811,108 @@ main #cardsContainer .cardsContent {
 
     .detallesProducto .galeriaContainer {
         width: 100%;
-        padding: 0 20px;
-        padding-bottom: 20px;
-        display: none;
-    }    
+        min-height: 100%;
+    }
 
-    .galeriaContainer.parteAbajo {
+    .btnCerrarModal {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 4px;
+        top: 5px;
+        right: 5px;
+        z-index: 10;
+        background-color: #fdfdfd;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg {
+        border-right: 0;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg,
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria {
+        flex-direction: row;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg .mainImgGaleria,
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria,
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria img {
+        min-width: 100%;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria img:not(:last-child) {
+        margin-bottom: 0;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria {
+        overflow-x: auto;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar,
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria::-webkit-scrollbar {
+        height: 4px;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-thumb,
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria::-webkit-scrollbar-thumb {
+        background-color: #d3d3d3;
+        border-radius: 10px;
+    }
+
+    .detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-track,
+    .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria::-webkit-scrollbar-track  {
+        background-color: transparent;
+    }
+
+    .contenidoDetalles .infoPrincipal {
+        position: absolute;
+        top: 80%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: calc(100% - 10px);
+        left: 5px;
+        padding: 20px;
+        background-color: #020132db;
+        color: #fdfdfd;
+    }
+
+    #btnDetalles {
+        display: flex !important;
+        position: absolute;
+        top: 0;
+        left: 0px;
+        display: flex;
+        background-color: #fdfdfd;
+        border: 2px solid #fdfdfd;
+        font-size: 16px;
+        width: fit-content;
+        height: fit-content;
+        color: #212529;
+        padding: 10px 14px;
+        padding-bottom: 9px;
+        transition: 0.3s;
+    }
+
+    #btnDetalles svg {
+        width: 20px;
+        height: 20px;
+        stroke: #212529;
+        stroke-width: 2px;
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+
+    #btnDetalles:hover {
+        color: #2b29a6;
+    }
+
+    #btnDetalles:hover svg {
+        stroke: #2b29a6;
+    }
+
+    .detallesProducto .contenidoDetalles .precio {
+        margin-bottom: 0;
     }
 }
 
@@ -787,5 +926,30 @@ main #cardsContainer .cardsContent {
     main #cardsContainer .etiquetasContainer {
         display: flex;
         overflow-x: auto;
+    }
+}
+
+@media (max-width: 425px) {
+    .contenidoDetalles .infoPrincipal {
+        top: 82%;
+    }
+
+    .detallesProducto .contenidoDetalles .nombre {
+        font-size: 40px;
+    }
+
+    .detallesProducto .contenidoDetalles .precio,
+    .detallesProducto .contenidoDetalles .genero {
+        font-size: 16px;
+    }
+
+    .contenidoDetalles .infoPrincipal button {
+        font-size: 15px;
+        padding-bottom: 7px;
+    }
+
+    .contenidoDetalles .infoPrincipal button svg {
+        height: 18px;
+        width: 18px;
     }
 }

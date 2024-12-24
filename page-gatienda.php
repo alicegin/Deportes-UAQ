@@ -22,50 +22,42 @@
         </div>
         <section class="galeriaContainer">
             <div class="activeImg">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-                <div class="scrollPartGaleria" style="display: none;">
+                <div class="mainImgGaleria">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
+                </div>
+                <div class="scrollPartGaleria">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
                     <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
                 </div>
-            </div>
-            <div class="galeriaPart show">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-            </div>
+            </div>            
         </section>
         <section class="contenidoDetalles">
-            <p class="genero">Unisex</p>
-            <h1 class="nombre">Gadeportiva</h1>
-            <h5 class="precio">$599.00 MXN</h5>
+            <button id="btnDetalles" style="display: none;">
+                Detalles 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                </svg>
+            </button>
+            <div class="infoPrincipal">
+                <div class="parteInfoPrincipal">
+                    <p class="genero">Unisex</p>
+                    <h1 class="nombre">Gadeportiva</h1>
+                    <h5 class="precio">$599.00 MXN</h5>
+                </div>                
+            </div>
             <div class="fraseContainer">
                 <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M9.813 15.904 9 18.75l-.813-2.846a4.5 4.5 0 0 0-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 0 0 3.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 0 0 3.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 0 0-3.09 3.09ZM18.259 8.715 18 9.75l-.259-1.035a3.375 3.375 0 0 0-2.455-2.456L14.25 6l1.036-.259a3.375 3.375 0 0 0 2.455-2.456L18 2.25l.259 1.035a3.375 3.375 0 0 0 2.456 2.456L21.75 6l-1.035.259a3.375 3.375 0 0 0-2.456 2.456ZM16.894 20.567 16.5 21.75l-.394-1.183a2.25 2.25 0 0 0-1.423-1.423L13.5 18.75l1.183-.394a2.25 2.25 0 0 0 1.423-1.423l.394-1.183.394 1.183a2.25 2.25 0 0 0 1.423 1.423l1.183.394-1.183.394a2.25 2.25 0 0 0-1.423 1.423Z" />
                 </svg>
                 <p class="frase">Comodidad para cada entrenamiento</p>
-            </div>
+            </div>                       
             <h1 class="tituloDetalles">Características del producto</h1>
             <h4 class="desc"></h4>
             <div class="colores"></div>
             <div class="tallas"></div>
             <div class="medidas"></div>
-        </section>
-        <section class="galeriaContainer parteAbajo">
-            <div class="activeImg">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-                <div class="scrollPartGaleria" style="display: none;">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-                </div>
-            </div>
-            <div class="galeriaPart">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/gatienda/IMG_0002.jpg" alt="" loading="lazy">
-            </div>
-        </section>
+        </section>        
     </div>
     <main>        
         <header class="headerGatienda" style="background-image: url(http://deportesuaq.mx/wp-content/uploads/2024/10/fondoHeader.jpeg);">
@@ -105,6 +97,10 @@
                 llenarModal($(this));
             });
 
+            $('body').on('click', '.mainCard', function() {
+                llenarModal($(this));
+            })
+
             $('body').on('click', '.overlay', function() {
                 closeModal($modal, $overlay);
             });
@@ -135,11 +131,19 @@
                 mostrarCategoria(categoria);
             });
 
+            $('body').on('click', '#btnDetalles', function() {
+                let $detallesProducto = $('.detallesProducto');
+
+                $detallesProducto.animate(
+                    { scrollTop: $detallesProducto[0].scrollHeight }, 600
+                );
+            });
+
             $('body').on('click', '.color' , function() {
                 let productoNombre = $(this).closest('.contenidoDetalles').find('.nombre').text();
                 let color = $(this).data('color');
-                let galeriaIMG = $(this).closest('.detallesProducto').find('.galeriaPart.show img');
-
+                let galeriaIMG = $(this).closest('.detallesProducto').find('.galeriaContainer .activeImg .scrollPartGaleria img');
+               
                 cambiarGaleria(productoNombre, color, galeriaIMG);     
                 
                 $(this).closest('.contenidoDetalles').find('.color').css({'border-color': '#cfcfcf'});
@@ -174,9 +178,9 @@
 
                 $.each(recientes, function(index, reciente) {
                     let $card = `
-                        <article class="mainCard">
+                        <article class="mainCard" data-id="${reciente.id}">
                             <div class="imgContainer">
-                                <img src="<?php echo get_template_directory_uri(); ?>${reciente.img}" alt="GATIENDA ${reciente.nombre}" loading="lazy">
+                                <img src="<?php echo get_template_directory_uri(); ?>${reciente.img}" alt="GATIENDA ${reciente.nombre}" loading="lazy" data-id="${reciente.id}">
                             </div>
                             <section class="infoCard">
                                 <h1>${reciente.nombre}</h1>
@@ -303,7 +307,7 @@
                 let imgURL = '';
                 let id = $card.data('id');            
                 let producto = productos.find(p => p.id == id);
-                let galeriaIMG = $('.detallesProducto .galeriaContainer .galeriaPart img');                
+                let galeriaIMG = $('.galeriaContainer .activeImg .scrollPartGaleria img');                
                
                 $modal.find('.genero').text(producto.genero);
                 $modal.find('.nombre').text(producto.nombre);
@@ -341,7 +345,7 @@
 
             function cambiarGaleria(productoNombre, color, galeriaIMG) {
                 imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + color + '_1.jpg';
-                $('.activeImg img').attr('src', imgURL);
+                $('.activeImg .mainImgGaleria img').attr('src', imgURL);
 
                 $.each(galeriaIMG, function(index, img) {
                     index = index + 2;
