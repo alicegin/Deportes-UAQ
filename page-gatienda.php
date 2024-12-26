@@ -160,7 +160,7 @@
                     success: function(res) {
                         if (res.success === 1 && typeof res.data == 'object') {
                             productos = res.data['productos'];
-
+                            console.log(productos)
                             llenarRecientes(productos);
                             llenarTodos(productos);
                         }
@@ -180,7 +180,7 @@
                     let $card = `
                         <article class="mainCard" data-id="${reciente.id}">
                             <div class="imgContainer">
-                                <img src="<?php echo get_template_directory_uri(); ?>${reciente.img}" alt="GATIENDA ${reciente.nombre}" loading="lazy" data-id="${reciente.id}">
+                                <img src="${reciente.img}" alt="GATIENDA ${reciente.nombre}" loading="lazy" data-id="${reciente.id}">
                             </div>
                             <section class="infoCard">
                                 <h1>${reciente.nombre}</h1>
@@ -202,7 +202,7 @@
                     let $card = `                        
                         <article class="card" data-id="${producto.id}" data-categoria="${producto.categoria}">                        
                             <div class="imgContainer">
-                                <img src="<?php echo get_template_directory_uri(); ?>${producto.img}" alt="GATIENDA ${producto.nombre}" loading="lazy">
+                                <img src="${producto.img}" alt="GATIENDA ${producto.nombre}" loading="lazy">
                             </div>
                             <section class="infoCard">
                                 <h1>${producto.nombre}</h1>
@@ -277,23 +277,23 @@
 
             function llenarGaleria(productoNombre, colores, galeriaIMG) {
                 if (typeof(colores) != 'object') {    
-                    imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + colores + '_1.jpg';
+                    imgURL = 'http://deportesuaq.mx/wp-content/uploads/2024/12/' + productoNombre + '_' + colores + '_1-scaled.jpg';
                     $('.activeImg img').attr('src', imgURL);
 
                     $.each(galeriaIMG, function(index, img) {
                         index = index + 2;
 
-                        imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + colores + '_' + index + '.jpg';
+                        imgURL = 'http://deportesuaq.mx/wp-content/uploads/2024/12/' + productoNombre + '_' + colores + '_' + index + '-scaled.jpg';
                         $(this).attr('src', imgURL);                    
                     });
                 } else {
-                    imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + colores[0] + '_1.jpg';
+                    imgURL = 'http://deportesuaq.mx/wp-content/uploads/2024/12/' + productoNombre + '_' + colores[0] + '_1-scaled.jpg';
                     $('.activeImg img').attr('src', imgURL);
 
                     $.each(galeriaIMG, function(index, img) {
                         index = index + 2;
 
-                        imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + colores[0] + '_' + index + '.jpg';
+                        imgURL = 'http://deportesuaq.mx/wp-content/uploads/2024/12/' + productoNombre + '_' + colores[0] + '_' + index + '-scaled.jpg';
                         $(this).attr('src', imgURL);                    
                     });
                 }
@@ -344,13 +344,13 @@
             }
 
             function cambiarGaleria(productoNombre, color, galeriaIMG) {
-                imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + color + '_1.jpg';
+                imgURL = 'http://deportesuaq.mx/wp-content/uploads/2024/12/' + productoNombre + '_' + color + '_1-scaled.jpg';
                 $('.activeImg .mainImgGaleria img').attr('src', imgURL);
 
                 $.each(galeriaIMG, function(index, img) {
                     index = index + 2;
 
-                    imgURL = '<?php echo get_template_directory_uri(); ?>' + '/img/gatienda/' + productoNombre + '_' + color + '_' + index + '.jpg';
+                    imgURL = 'http://deportesuaq.mx/wp-content/uploads/2024/12/' + productoNombre + '_' + color + '_' + index + '-scaled.jpg';
                     $(this).attr('src', imgURL);                  
                 });
             }

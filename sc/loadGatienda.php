@@ -83,7 +83,8 @@ function textToHexColor($colorName) {
         'verde' => '008000',
         'amarillo' => 'FFFF00',
         'rosa' => 'FFC0CB',
-        'plata' => 'C0C0C0'       
+        'plata' => 'C0C0C0',
+        'naranja' => 'FFA500' 
     ];
 
     $colorName = strtolower(trim($colorName));

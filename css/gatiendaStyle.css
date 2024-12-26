@@ -121,6 +121,10 @@ main header .headerText button:hover svg {
     overflow-y: auto;
 }
 
+.contenidoDetalles .colores .color:nth-child(1) {
+    border-color: rgba(0, 0, 0, 0.4);
+}
+
 .mainCardsContainer .mainCard {
     position: relative;
     width: 440px;
@@ -471,7 +475,7 @@ main #cardsContainer .cardsContent .card:hover {
 .fraseContainer svg {
     width: 22px;
     height: 22px;
-    margin-right: 6px;
+    margin-right: 5px;
 }
 
 .contenidoDetalles .tallas .talla,
