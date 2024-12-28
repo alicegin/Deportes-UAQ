@@ -63,7 +63,10 @@
         <header class="headerGatienda" style="background-image: url(http://deportesuaq.mx/wp-content/uploads/2024/10/fondoHeader.jpeg);">
             <section class="mainCardsContainer"></section>
             <article class="headerText">
-                <h1>GATIENDA</h1>
+                <div class="logoContainer">
+                    <h1>GATIENDA</h1>
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/GS-44.png" alt="Gatos Salvajes UAQ" loading="lazy"/>
+                </div>
                 <p>Descubre nuestros Productos Universitarios</p>
                 <button onclick="window.location='#cardsContainer'">
                     Ver productos 
@@ -140,7 +143,7 @@
             });
 
             $('body').on('click', '.color' , function() {
-                let productoNombre = $(this).closest('.contenidoDetalles').find('.nombre').text();
+                let productoNombre = limpiarNombre($(this).closest('.contenidoDetalles').find('.nombre').text());                
                 let color = $(this).data('color');
                 let galeriaIMG = $(this).closest('.detallesProducto').find('.galeriaContainer .activeImg .scrollPartGaleria img');
                
@@ -160,7 +163,7 @@
                     success: function(res) {
                         if (res.success === 1 && typeof res.data == 'object') {
                             productos = res.data['productos'];
-                            console.log(productos)
+
                             llenarRecientes(productos);
                             llenarTodos(productos);
                         }
@@ -305,6 +308,7 @@
                 let $coloresContainer = $('.colores');
 
                 let imgURL = '';
+                let nombreLimpio = '';
                 let id = $card.data('id');            
                 let producto = productos.find(p => p.id == id);
                 let galeriaIMG = $('.galeriaContainer .activeImg .scrollPartGaleria img');                
@@ -318,7 +322,9 @@
                 llenarMedidas($tallasContainer, producto.tallas); 
                 llenarMedidas($medidasContainer, producto.medidas); 
                 llenarColores($coloresContainer, producto.colores);
-                llenarGaleria(producto.nombre, producto.colores, galeriaIMG);
+
+                nombreLimpio = limpiarNombre(producto.nombre);
+                llenarGaleria(nombreLimpio, producto.colores, galeriaIMG);
                                 
                 $modal.css('transform', 'translate(-50%, -50%)');
             
@@ -353,6 +359,13 @@
                     imgURL = 'http://deportesuaq.mx/wp-content/uploads/2024/12/' + productoNombre + '_' + color + '_' + index + '-scaled.jpg';
                     $(this).attr('src', imgURL);                  
                 });
+            }
+
+            function limpiarNombre(nombre) {
+                const sinAcentos = nombre.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                const sinEspacios = sinAcentos.replace(/ /g, "-");
+            
+                return sinEspacios;
             }
         });
     </script>
