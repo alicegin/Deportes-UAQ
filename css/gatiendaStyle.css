@@ -235,14 +235,16 @@ main #cardsContainer .cardsContent {
 
 main #cardsContainer .cardsContent::-webkit-scrollbar,
 .mainCardsContainer::-webkit-scrollbar,
-.detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar {
+.detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar,
+.detallesProducto .contenidoDetalles::-webkit-scrollbar {
     width: 4px;
     /* Ancho de la barra de desplazamiento */
 }
 
 main #cardsContainer .cardsContent::-webkit-scrollbar-thumb,
 .mainCardsContainer::-webkit-scrollbar-thumb,
-.detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-thumb {
+.detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-thumb,
+.detallesProducto .contenidoDetalles::-webkit-scrollbar-scrollbar-thumb {
     background: rgba(128, 128, 128, 0.5);
     /* Color gris transparente */
     border-radius: 4px;
@@ -251,14 +253,16 @@ main #cardsContainer .cardsContent::-webkit-scrollbar-thumb,
 
 main #cardsContainer .cardsContent::-webkit-scrollbar-thumb:hover,
 .mainCardsContainer::-webkit-scrollbar-thumb:hover,
-.detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-thumb:hover {
+.detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-thumb:hover,
+.detallesProducto .contenidoDetalles::-webkit-scrollbar-scrollbar-thumb:hover {
     background: rgba(128, 128, 128, 0.7);
     /* Color más oscuro al pasar el mouse */
 }
 
 main #cardsContainer .cardsContent::-webkit-scrollbar-track,
 .mainCardsContainer::-webkit-scrollbar-track,
-.detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-track {
+.detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-track,
+.detallesProducto .contenidoDetalles::-webkit-scrollbar-track {
     background: #ffffff;
     /* Fondo blanco */
     border-radius: 4px;
@@ -359,6 +363,7 @@ main #cardsContainer .cardsContent .card:hover {
     transform: translate(-50%, -50%);
     width: 70%;
     height: 750px;
+    max-height: 100dvh;
     background-color: #fdfdfd;
     z-index: 12;
     display: flex;
@@ -405,6 +410,7 @@ main #cardsContainer .cardsContent .card:hover {
     width: 45%;
     height: 100%;
     padding: 30px;
+    overflow-y: auto;
 }
 
 .detallesProducto .contenidoDetalles .nombre {
@@ -824,11 +830,13 @@ main #cardsContainer .cardsContent {
     .detallesProducto .contenidoDetalles {
         width: 100%;
         padding-bottom: 20px;
+        overflow-y: visible;
     }
 
     .detallesProducto .galeriaContainer {
         width: 100%;
         min-height: 100%;
+        min-height: 870px;
     }
 
     .btnCerrarModal {
@@ -885,7 +893,7 @@ main #cardsContainer .cardsContent {
 
     .contenidoDetalles .infoPrincipal {
         position: absolute;
-        top: 80%;
+        top: 710px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
