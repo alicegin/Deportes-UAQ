@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eSports UAQ</title>
+    <?php  /* Template Name: eSports */ ?>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/eSports.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <section class="mainContainer">
+        <div class="fondoContainer">
+            <video id="fondoVideo" autoplay muted>
+                <source src="<?php echo get_template_directory_uri(); ?>/img/eSports/background.mp4" type="video/mp4">
+                Tu navegador no soporta videos HTML5.
+            </video>
+        </div>
+        <div class="mainPart">
+            <div class="mainTitle">
+                <h1>eSports UAQ</h1>
+            </div>
+            <div class="msgSocial">
+                <div class="linea"></div>
+                <p>Síguenos en</p>
+                <div class="linea"></div>
+            </div>
+            <div class="socialMedia">
+                <a href="https://discord.gg/AH7wzejsfz" target="_blank">
+                    <i class="fab fa-discord"></i>
+                </a>
+                <a href="https://www.facebook.com/esportsUAQ" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitch.tv/esports_uaq" target="_blank">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a href="https://x.com/eSportsUAQ" target="_blank">
+                    <i class="fab fa-x"></i>
+                </a>
+                <a href="https://www.instagram.com/esportsuaq/" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@eSportsUAQ" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <p class="mainInfo">Los <span>eSports</span> como <span>eGames</span> son competencias Deportivas que se llevan a cabo de manera virtual a través de: consolas de videojuegos, equipos de Cómputo dedicados al Gaming (PC Gamer) o por medio de teléfonos mobiles con características Gamer. A través de las competencias virtuales se promueve el trabajo en equipo, la creatividad, el desarrollo de habilidades, sentido de pertenencia y creación de comunidades sanas dentro de la Universidad</p>
+        </div>
+    </section>
+</body>
+
+</html>
