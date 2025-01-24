@@ -5,6 +5,10 @@
     padding: 0;
     
 }
+html::-webkit-scrollbar{
+    display: none;
+    visibility: hidden;
+}
 
 section{
     height:250vh;

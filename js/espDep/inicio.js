@@ -1,46 +1,33 @@
-const races= document.querySelector(".elementosScroll");
-let racesWidth= races.offsetWidth;
-let amountToScroll = racesWidth-window.innerWidth;
-gsap.to(".cuerpo",{
-  backgroundColor:"black",
-  scrollTrigger:{
-    trigger:".scroll",
-    start:"top top",
-    end:"+="+ amountToScroll,
-    scrub:5,
+const races = document.querySelector(".scroll");
+
+function getScrollAmount(){
+  let racesWidth =races.scrollWidth;
+  return -(racesWidth-window.innerWidth);
 }
-});
-gsap.to(".elementosScroll",{
-    x:-amountToScroll,
-    backgroundColor:"black",
-    duration:1,
-    ease:"none",
-    scrollTrigger:{
-        trigger:".scroll",
-        start:"top top",
-        end:"+="+ amountToScroll,
-        pin:true,
-        scrub:2
-    }
-});
-gsap.to(".elementosScroll h1",{
-  color:"white",
+
+const tween = gsap.to(races,{
+  x:getScrollAmount,
+  color:'#e0e0e0',
   duration:3,
-  ease:"none",
-  scrollTrigger:{
-      trigger:".scroll",
-      start:"top top",
-      end:"+="+ amountToScroll,
-      scrub:1,
-  }
+  ease:"none"
 });
 
-gsap.to(".elementosScroll",{
-  height:"20vh",
-  scrollTrigger:{
-      trigger:".scroll",
-      start:"top top",
-      end:"+="+ amountToScroll,
-      scrub:true,
-  }
+ScrollTrigger.create({
+  trigger:".cajita",
+  start:"top 20%",
+  end:() => `+=${getScrollAmount()*-1}`,
+  pin:true,
+  animation:tween,
+  scrub:1,
+  invalidateOnRefresh:true,
+});
+
+gsap.to("main",{
+backgroundColor:"#121212",
+scrollTrigger:{
+  trigger:".cajita",
+  start:"top 20%",
+  end:() => `+=${getScrollAmount()*-1}`,
+  scrub:1,
+}
 });

@@ -122,11 +122,13 @@ switch ($valor) {
     <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/Ciencias-Aplicadas-al-Deporte-18.png" class="caLogo">
     <div class="primeraParte">
         <article class="contenedor-area">
-            <p class="area" style="background-color:<?php echo $arreglo[7]?>"><?php echo $arreglo[2]?></p>
+            <a href="#semblanza">
+                <p class="area" style="background-color:<?php echo $arreglo[7]?>">+ INFO</p>
+            </a>
         </article>
         <div class="contenedorFoto">
             <img class="fotoResponsable" src="<?php echo $arreglo[0]?>">
-            <button class="btnfoto" onclick="location.href='#semblanza'" style="background-color:white;">Ver semblanza</button>
+            
             </div>
         
         <article class="datosResponsable">
@@ -146,7 +148,7 @@ switch ($valor) {
     </div>
     <div class="contenidoR" id="semblanza">
             <h3 class="info" style="background-color: <?php echo $arreglo[7]?>">
-                +INFO
+            <?php echo $arreglo[2]?>
             </h3>
         </div>
     <div class="semblanza">

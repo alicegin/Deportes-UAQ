@@ -12,7 +12,7 @@ get_template_part('template-parts/header');
         <div class="subtitulo">
         <h1>¿Qué es el CONDDE?</h1>
         <a href="https://www.condde.org.mx/web/">
-            <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/D2.jpeg"class="logo">
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/CONDDE.png"class="logo">
         </a>
         </div>
         <p>

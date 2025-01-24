@@ -68,7 +68,31 @@
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
     <script src=<?php echo get_template_directory_uri() . '/js/inicio/script.js'?> ></script>
     <script src=<?php echo get_template_directory_uri() . '/js/drawer.js'?> ></script>
+
+    <script>
+  $(document).ready(function () {
+    // Asegurar que siempre inicie en la parte superior
+    $(window).on('load', function () {
+      $('html, body').scrollTop(0);
+    });
+
+    // Función de scroll automático hacia abajo
+    function autoScroll() {
+      $('html, body').animate(
+        { scrollTop: $(document).height() - $(window).height() },
+        1000, // Tiempo en milisegundos (10 segundos en este caso)
+        'linear'
+      );
+    }
+
+    autoScroll(); // Iniciar el scroll automático
+  });
+</script>
+
+
+
 </body>
 </html>
