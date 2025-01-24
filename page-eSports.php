@@ -50,6 +50,17 @@
             <p class="mainInfo">Los <span>eSports</span> como <span>eGames</span> son competencias Deportivas que se llevan a cabo de manera virtual a través de: consolas de videojuegos, equipos de Cómputo dedicados al Gaming (PC Gamer) o por medio de teléfonos mobiles con características Gamer. A través de las competencias virtuales se promueve el trabajo en equipo, la creatividad, el desarrollo de habilidades, sentido de pertenencia y creación de comunidades sanas dentro de la Universidad</p>
         </div>
     </section>
+    <section class="plataformasContainer">
+        <div class="card">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/pc.jpg" alt="eSports UAQ" />
+        </div>
+        <div class="card">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/xbox.jpg" alt="eSports UAQ" />
+        </div>
+        <div class="card">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/play.jpg" alt="eSports UAQ" />
+        </div> 
+    </section>
 </body>
 
 </html>
