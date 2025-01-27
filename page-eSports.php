@@ -53,14 +53,59 @@
     <section class="plataformasContainer">
         <div class="card">
             <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/pc.jpg" alt="eSports UAQ" />
+            <div class="partCard">    
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/pcLogo.png" alt="Plataformas eSports UAQ"/>
+                <p>PC</p>
+            </div>
         </div>
         <div class="card">
             <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/xbox.jpg" alt="eSports UAQ" />
+            <div class="partCard"> 
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/xboxLogo.png" alt="Plataformas eSports UAQ"/>
+                <p>XBOX</p>
+            </div>
         </div>
         <div class="card">
             <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/play.jpg" alt="eSports UAQ" />
+            <div class="partCard"> 
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/playLogo.png" alt="Plataformas eSports UAQ"/>
+                <p>PLAYSTATION</p>
+            </div>
         </div> 
+        <div class="card">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/nintendo.jpg" alt="eSports UAQ" />
+            <div class="partCard"> 
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/nintendoLogo.png" alt="Plataformas eSports UAQ"/>
+                <p>NINTENDO</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/mobile.jpg" alt="eSports UAQ" />
+            <div class="partCard"> 
+            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/mobileLogo.png" alt="Plataformas eSports UAQ"/>
+                <p>MOBILE</p>
+            </div>
+        </div>
     </section>
-</body>
+    <h1 class="title">Equipos Representativos</h1>
+    <section class="juegosContainer">
+        <div class="partJuegos inpar">
+            <div class="card">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/lolG.avif" alt="Juegos eSports UAQ" />
+            </div>
+            <div class="card">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/valorantG.jpg" alt="Juegos eSports UAQ" />
+            </div>
+        </div>
+        <div class="partJuegos par">
+            <div class="card">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/rocketLeagueG.jpg" alt="Juegos eSports UAQ" />
+            </div>
+            <div class="card">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/superSmashG.avif" alt="Juegos eSports UAQ" />
+            </div>
+        </div>
+    </section>
+</body> 
 
 </html>

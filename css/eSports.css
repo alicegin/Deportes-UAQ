@@ -18,7 +18,8 @@
     src: url('../assets/fonts/Teko-Regular.ttf') format('opentype');
 }
 
-html, body {
+html,
+body {
     position: absolute;
     top: 0;
     left: 0;
@@ -27,6 +28,12 @@ html, body {
     border: 0;
     margin: 0;
     padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .mainContainer {
@@ -152,17 +159,142 @@ html, body {
 }
 
 .plataformasContainer .card {
-    /* width: 250px;
-    height: 380px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 200px;
     height: 350px;
     margin: 0 6px;
-    border-radius: 8px;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 .plataformasContainer .card img {
+    position: absolute;
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 8px;
+    z-index: -1;
+}
+
+.plataformasContainer .card .partCard {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    border-radius: 8px;
+}
+
+.plataformasContainer .card:nth-child(2) .partCard {
+    background-color: #107C10db;
+}
+
+.plataformasContainer .card:nth-child(3) .partCard {
+    background-color: #0a3ae2db;
+}
+
+.plataformasContainer .card:nth-child(1) .partCard {
+    background-color: #352f39db;
+}
+
+.plataformasContainer .card:nth-child(4) .partCard {
+    background-color: #fe044cdb;
+}
+
+.plataformasContainer .card:nth-child(5) .partCard {
+    background-color: #5f5851db;
+}
+
+.plataformasContainer .card .partCard img {
+    position: relative;
+    width: 80px;
+    -webkit-filter: grayscale(100%);
+    z-index: 1;
+}
+
+.plataformasContainer .card:nth-child(1) .partCard img,
+.plataformasContainer .card:nth-child(2) .partCard img {
+    height: 80px;
+}
+
+.plataformasContainer .card:nth-child(3) .partCard img {
+    height: 65px;
+}
+
+.plataformasContainer .card:nth-child(4) .partCard img {
+    height: 70px;
+}
+
+.plataformasContainer .card:nth-child(5) .partCard img {
+    width: 100px;
+    height: 56px;
+}
+
+.plataformasContainer .card:hover .partCard {
+    top: 0;
+}
+
+.plataformasContainer .card p {
+    font-family: 'Teko-Regular';
+    margin: 0;
+    margin-top: 8px;
+    font-size: 32px;
+    color: #fdfdfd;
+}
+
+.juegosContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: calc(85%);
+    height: fit-content;
+    margin: 0;
+    padding: 20px 0;
+}
+
+.juegosContainer .card {
+    position: relative;
+    height: 400px;
+    margin: 6px;
+}
+
+.juegosContainer .partJuegos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.juegosContainer .partJuegos.inpar .card:nth-child(1),
+.juegosContainer .partJuegos.par .card:nth-child(2) {
+    width: 40%;
+}
+
+.juegosContainer .partJuegos.inpar .card:nth-child(2),
+.juegosContainer .partJuegos.par .card:nth-child(1) {
+    width: 60%;
+}
+
+.juegosContainer .card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.title {
+    font-family: 'Teko-Regular';
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 55px;
+    color: #0a3ae2db;
 }
