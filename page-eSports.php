@@ -14,7 +14,7 @@
     <section class="mainContainer">
         <div class="fondoContainer">
             <video id="fondoVideo" autoplay muted>
-                <source src="<?php echo get_template_directory_uri(); ?>/img/eSports/background.mp4" type="video/mp4">
+                <source src="http://deportesuaq.mx/wp-content/uploads/2025/01/background.mp4" type="video/mp4">
                 Tu navegador no soporta videos HTML5.
             </video>
         </div>
@@ -58,37 +58,37 @@
     </section>
     <section id="plataformasContainer" class="plataformasContainer">
         <div class="card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/pc.jpg" alt="eSports UAQ" />
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/pc.jpg" alt="eSports UAQ" />
             <div class="partCard">    
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/pcLogo.png" alt="Plataformas eSports UAQ"/>
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/pcLogo.png" alt="Plataformas eSports UAQ"/>
                 <p>PC</p>
             </div>
         </div>
         <div class="card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/xbox.jpg" alt="eSports UAQ" />
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/xbox.jpg" alt="eSports UAQ" />
             <div class="partCard"> 
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/xboxLogo.png" alt="Plataformas eSports UAQ"/>
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/xboxLogo.png" alt="Plataformas eSports UAQ"/>
                 <p>XBOX</p>
             </div>
         </div>
         <div class="card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/play.jpg" alt="eSports UAQ" />
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/play.jpg" alt="eSports UAQ" />
             <div class="partCard"> 
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/playLogo.png" alt="Plataformas eSports UAQ"/>
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/playLogo.png" alt="Plataformas eSports UAQ"/>
                 <p>PLAYSTATION</p>
             </div>
         </div> 
         <div class="card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/nintendo.jpg" alt="eSports UAQ" />
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/nintendo.jpg" alt="eSports UAQ" />
             <div class="partCard"> 
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/nintendoLogo.png" alt="Plataformas eSports UAQ"/>
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/nintendoLogo.png" alt="Plataformas eSports UAQ"/>
                 <p>NINTENDO</p>
             </div>
         </div>
         <div class="card">
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/mobile.jpg" alt="eSports UAQ" />
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/mobile.jpg" alt="eSports UAQ" />
             <div class="partCard"> 
-            <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/mobileLogo.png" alt="Plataformas eSports UAQ"/>
+            <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/mobileLogo.png" alt="Plataformas eSports UAQ"/>
                 <p>MOBILE</p>
             </div>
         </div>
@@ -98,18 +98,18 @@
     <section class="juegosContainer">
         <div class="partJuegos inpar">
             <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/lolG.avif" alt="Juegos eSports UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/lolG.avif" alt="Juegos eSports UAQ" />
             </div>
             <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/valorantG.jpg" alt="Juegos eSports UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/valorantG.jpg" alt="Juegos eSports UAQ" />
             </div>
         </div>
         <div class="partJuegos par">
             <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/rocketLeagueG.jpg" alt="Juegos eSports UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/rocketLeagueG.jpg" alt="Juegos eSports UAQ" />
             </div>
             <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/superSmashG.avif" alt="Juegos eSports UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/superSmashG.avif" alt="Juegos eSports UAQ" />
             </div>
         </div>
     </section>
@@ -118,23 +118,23 @@
     <section class="juegosContainer last">
         <div class="partJuegos inpar">
             <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/warzoneG.jpg" alt="Juegos eSports UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/warzoneG.jpg" alt="Juegos eSports UAQ" />
             </div>
             <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/fortniteG.jpg" alt="Juegos eSports UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/fortniteG.jpg" alt="Juegos eSports UAQ" />
             </div>
         </div>
         <div class="partJuegos par">
             <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/freeFireG.webp" alt="Juegos eSports UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/freeFireG.webp" alt="Juegos eSports UAQ" />
             </div>
             <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/codMobileG.jpg" alt="Juegos eSports UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/codMobileG.jpg" alt="Juegos eSports UAQ" />
             </div>
         </div>
         <div class="partJuegos inpar only">
             <div class="card">
-                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/marvelG.png" alt="Juegos eSports UAQ" />
+                <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/marvelG.png" alt="Juegos eSports UAQ" />
             </div>            
         </div>
     </section>
