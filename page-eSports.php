@@ -48,9 +48,15 @@
                 </a>
             </div>
             <p class="mainInfo">Los <span>eSports</span> como <span>eGames</span> son competencias Deportivas que se llevan a cabo de manera virtual a través de: consolas de videojuegos, equipos de Cómputo dedicados al Gaming (PC Gamer) o por medio de teléfonos mobiles con características Gamer. A través de las competencias virtuales se promueve el trabajo en equipo, la creatividad, el desarrollo de habilidades, sentido de pertenencia y creación de comunidades sanas dentro de la Universidad</p>
+            <a class="btnDetalles" href="#plataformasContainer">
+                <p>Descubre más</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                </svg>
+            </a>
         </div>
     </section>
-    <section class="plataformasContainer">
+    <section id="plataformasContainer" class="plataformasContainer">
         <div class="card">
             <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/pc.jpg" alt="eSports UAQ" />
             <div class="partCard">    
@@ -87,7 +93,8 @@
             </div>
         </div>
     </section>
-    <h1 class="title">Equipos Representativos</h1>
+    <h1 class="title animated-gradient-text only">EQUIPOS eSPORTS UAQ</h1> 
+    <h4 class="subtitle">Competencia y Profesionalismo</h4>
     <section class="juegosContainer">
         <div class="partJuegos inpar">
             <div class="card">
@@ -104,6 +111,31 @@
             <div class="card">
                 <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/superSmashG.avif" alt="Juegos eSports UAQ" />
             </div>
+        </div>
+    </section>
+    <h1 class="title animated-gradient-text">EQUIPOS eGAMES UAQ</h1>
+    <h4 class="subtitle">Competencia recreativa sin carácter formal</h4>
+    <section class="juegosContainer last">
+        <div class="partJuegos inpar">
+            <div class="card">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/warzoneG.jpg" alt="Juegos eSports UAQ" />
+            </div>
+            <div class="card">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/fortniteG.jpg" alt="Juegos eSports UAQ" />
+            </div>
+        </div>
+        <div class="partJuegos par">
+            <div class="card">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/freeFireG.webp" alt="Juegos eSports UAQ" />
+            </div>
+            <div class="card">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/codMobileG.jpg" alt="Juegos eSports UAQ" />
+            </div>
+        </div>
+        <div class="partJuegos inpar only">
+            <div class="card">
+                <img src="<?php echo get_template_directory_uri(); ?>/img/eSports/marvelG.png" alt="Juegos eSports UAQ" />
+            </div>            
         </div>
     </section>
 </body> 
