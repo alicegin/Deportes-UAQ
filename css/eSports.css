@@ -1,0 +1,424 @@
+@font-face {
+    font-family: 'Futura-Regular';
+    src: url('../assets/fonts/Futura\ Regular.ttf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Futura-Medium';
+    src: url('../assets/fonts/Futura\ Medium.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Futura-Bold';
+    src: url('../assets/fonts/Futura\ Bold.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Teko-Regular';
+    src: url('../assets/fonts/Teko-Regular.ttf') format('opentype');
+}
+
+html,
+body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btnDetalles {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-top: 55px;
+    border: 1px solid #fdfdfd4c;
+    padding: 16px 18px;
+    background-color: #fdfdfd0b;
+    border-radius: 6px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.btnDetalles:hover {
+    border: 1px solid #fdfdfd7c;
+    background-color: #fdfdfd2b;
+}
+
+.btnDetalles p {
+    font-family: 'Futura-Medium';
+    font-size: 16px;
+    letter-spacing: 1px;
+    color: #fdfdfdbd;
+    margin: 0;
+    transition: 0.3s;
+}
+
+.btnDetalles:hover p {
+    color: #fdfdfd;
+}
+
+.btnDetalles svg {
+    width: 19px;
+    stroke: #fdfdfdbd;
+    stroke-width: 2px;
+    margin-top: 2px;
+    margin-left: 6px;
+    transition: 0.3s;
+}
+
+.btnDetalles:hover svg {
+    stroke: #fdfdfd;
+}
+
+.mainContainer {
+    position: relative;
+    width: 100%;
+    height: 100dvh;
+    min-height: 585px;
+    background-color: #00000050;
+}
+
+.mainContainer .mainTitle {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.mainContainer .mainTitle h1 {
+    font-family: 'Teko-Regular';
+    font-size: 65px;
+    color: #f8f8f8;
+    margin: 0;
+}
+
+.mainContainer .mainTitle img {
+    width: 80px;
+    margin-right: 8px;
+}
+
+.mainPart {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.mainPart .mainInfo {
+    width: 60%;
+    font-family: 'Futura-Medium';
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    color: #f8f8f8;
+    margin-top: 50px;
+    font-weight: 100;
+}
+
+.mainPart .mainInfo span {
+    font-weight: 600;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialMedia a {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #f8f8f8;
+    padding: 14px 16px;
+    margin: 4px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.socialMedia a:hover {
+    background-color: #fdfdfd2b;
+}
+
+.socialMedia i {
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+}
+
+.fondoContainer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.fondoContainer #fondoVideo {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.msgSocial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 22px;
+    margin-top: 12px;
+}
+
+.msgSocial .linea {
+    margin-top: 2px;
+    height: 1px;
+    width: 40px;
+    background-color: #fdfdfd6b;
+}
+
+.msgSocial p {
+    font-family: 'Futura-Medium';
+    color: #f8f8f8;
+    margin: 0 12px;
+    letter-spacing: 1px;
+    font-size: 14px;
+}
+
+.plataformasContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+
+.plataformasContainer .card {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 350px;
+    margin: 0 6px;
+    overflow: hidden;    
+}
+
+.plataformasContainer .card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 12px;
+    z-index: -1;
+    transition: 0.3s;
+}
+
+.plataformasContainer .card .partCard {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.3s;
+    border-radius: 12px;
+}
+
+.plataformasContainer .card:nth-child(2) .partCard {
+    background-color: #107c10db;
+}
+
+.plataformasContainer .card:nth-child(3) .partCard {
+    background-color: #0a3ae2db;
+}
+
+.plataformasContainer .card:nth-child(1) .partCard {
+    background-color: #352f39db;
+}
+
+.plataformasContainer .card:nth-child(4) .partCard {
+    background-color: #fe044cdb;
+}
+
+.plataformasContainer .card:nth-child(5) .partCard {
+    background-color: #5f5851db;
+}
+
+.plataformasContainer .card .partCard img {
+    position: relative;
+    width: 80px;
+    -webkit-filter: grayscale(100%);
+    z-index: 1;
+}
+
+/* .plataformasContainer .card:hover .partCard,
+.plataformasContainer .card:hover img:not(.plataformasContainer .card .partCard img) {
+    border-radius: 100px;
+} */
+
+.plataformasContainer .card:nth-child(1) .partCard img,
+.plataformasContainer .card:nth-child(2) .partCard img {
+    height: 80px;
+}
+
+.plataformasContainer .card:nth-child(3) .partCard img {
+    height: 65px;
+}
+
+.plataformasContainer .card:nth-child(4) .partCard img {
+    height: 70px;
+}
+
+.plataformasContainer .card:nth-child(5) .partCard img {
+    width: 100px;
+    height: 56px;
+}
+
+.plataformasContainer .card:hover .partCard {
+    top: 0;
+}
+
+.plataformasContainer .card p {
+    font-family: 'Teko-Regular';
+    margin: 0;
+    margin-top: 8px;
+    font-size: 32px;
+    color: #fdfdfd;
+}
+
+.juegosContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1500px;
+    height: fit-content;
+    margin: 0;
+}
+
+.juegosContainer .card {
+    position: relative;
+    height: 400px;
+}
+
+.juegosContainer .partJuegos {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.juegosContainer .partJuegos .card:nth-child(1) {
+    margin: 0 6px;
+    margin-bottom: 6px;
+}
+
+.juegosContainer .partJuegos .card:nth-child(2) {
+    margin-right: 6px;
+    margin-bottom: 6px;
+}
+
+.juegosContainer .partJuegos.inpar .card:nth-child(1),
+.juegosContainer .partJuegos.par .card:nth-child(2) {
+    width: 40%;
+}
+
+.juegosContainer .partJuegos.inpar .card:nth-child(2),
+.juegosContainer .partJuegos.par .card:nth-child(1) {
+    width: 60%;
+}
+
+.juegosContainer .card img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 8px; */
+}
+
+.title {
+    width: 100%;
+    max-width: calc(1500px - 12px);
+    font-family: 'Teko-Regular';    
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin: 0;
+    margin-top: 5px;
+}
+
+.title:nth-of-type(2) {
+    margin-top: 75px;
+}
+
+.title,
+.subtitle {
+    text-align: center;
+}
+
+.partJuegos.inpar.only .card {
+    width: 100% !important;
+}
+
+.animated-gradient-text {     
+    background: linear-gradient(90deg, #ff0000d6, #b700ffb9, #404de0);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-animation 3s infinite;
+    text-align: center;
+}
+
+.subtitle {
+    width: 100%;
+    max-width: calc(1500px - 12px);
+    font-family: 'Futura-Medium';
+    font-size: 26px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #2b2b2b;
+    margin: 0;
+    margin-bottom: 75px;
+}
+
+.juegosContainer.last {
+    padding-bottom: 75px;
+}
+
+@keyframes gradient-animation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@media (max-width: 1500px) {
+    .juegosContainer.last {
+        padding-bottom: 0px;
+    }
+}

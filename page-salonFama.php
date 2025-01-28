@@ -65,7 +65,7 @@ get_template_part('template-parts/header');
 
             function inicio() {
                 $.ajax({
-                    url: '<?php echo get_template_directory_uri(); ?>/sc/pruebaMedallistas.php',
+                    url: '<?php echo get_template_directory_uri(); ?>/sc/loadMedallistas.php',
                     type: 'POST',
                     data: false,
                     processData: false,
@@ -130,7 +130,7 @@ get_template_part('template-parts/header');
                 `);
 
                 // Agregar medallistas al contenedor
-                $.each(data, function (index, medallista) {
+                $.each(data, function(index, medallista) {
                     let imgHTML = `<img src="${safeValue(medallista.c_url_img)}" alt="${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} Medallista UAQ" class="medallistaImg ${index === 0 ? 'active' : 'inactive'}">`;
                     $imgContainer.append(imgHTML);
 
