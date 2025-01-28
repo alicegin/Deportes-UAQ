@@ -46,7 +46,7 @@
         </nav>
         <section>
             <div class="pineada">
-                <img class="atletas" src="http://deportesuaq.mx/wp-content/uploads/2024/11/banner-inicio-web.png">
+                <img class="atletas" src="http://deportesuaq.mx/wp-content/uploads/2025/01/W_-banner-selecciones.png">
                 <div class="dentro-pineada">
                     <img class="imagen" src="http://deportesuaq.mx/wp-content/uploads/2024/10/UAQ2.jpg">
                     <div class="caja">
