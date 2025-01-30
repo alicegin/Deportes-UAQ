@@ -243,6 +243,10 @@
                 showDetalles($(this));
             });
 
+            $('.hiddenImg').click(function() {
+                imgZoom($(this));
+            });
+
             function showDetalles($card) {                
                 let $hiddenContainer = $card.closest('.card').find('.hiddenContainer');
                 let $btnCerrar = $card.closest('.card').find('.cardDetalle.btnMas');
@@ -309,6 +313,15 @@
 
                     $card.closest('.card').find('.hiddenImgContainer').css({'z-index': '-1'});
                 });
+            }
+
+            function imgZoom(img) {
+                img.css({
+                    'position': 'absolute',
+                    'height': '100vh',
+                    'width': '100%',
+                    'z-index': '2',
+                })
             }
         });
     </script>

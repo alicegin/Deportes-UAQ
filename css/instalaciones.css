@@ -9,12 +9,18 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    height: 100vh;
+    overflow-y: auto;
+}
+
+.cardContainer::-webkit-scrollbar {
+    display: none;
 }
 
 .card {
     position: relative;
-    width: 500px;
-    min-width: 500px;
+    width: 800px;
+    min-width: 800px;
     height: 500px;
     display: flex;
     justify-content: center;
@@ -233,7 +239,7 @@ body {
 .active-card {
     position: absolute;
     width: 100%;
-    height: calc(100% - 150px);
+    height: 100vh;
     min-height: 810px;
     top: 120px;
     z-index: 10 !important;
@@ -463,7 +469,10 @@ body {
 
 @media (max-width: 975px) {
     .hiddenContainer {
+        width: 100%;
         flex-direction: column;
+        left: 0;
+        bottom: 0px !important;
     }
 
     .contactoContainer {
@@ -492,6 +501,13 @@ body {
 
     .moreInfo {
         width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    .cardContainer .card {
+        width: 100%;
+        min-width: 500px;
     }
 }
 
@@ -574,6 +590,10 @@ body {
         background: linear-gradient(to bottom, #444, #222);
         border-radius: 6px;
     }
+
+    .card.active-card .hiddenContainer {
+        bottom: -40px !important;
+    }
 }
 
 @media (max-width: 575px) {
@@ -591,6 +611,10 @@ body {
 
     .hiddenImgContainer {
         bottom: 455px;
+    }
+
+    .card.active-card .hiddenContainer {
+        bottom: -80px !important;
     }
 }
 
@@ -620,6 +644,12 @@ body {
     .hiddenContainer .parteIcon.infoDireccion .direccion {
         -webkit-line-clamp: 2;
         max-height: calc(1.5em * 2);
+    }
+}
+
+@media (max-width: 475px) {
+    .card.active-card .hiddenContainer {
+        bottom: -135px !important;
     }
 }
 
