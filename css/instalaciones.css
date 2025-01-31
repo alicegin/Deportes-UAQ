@@ -2,6 +2,11 @@ html,
 body {
     background-color: #121212;
     color: #e0e0e0;
+    margin: 0 !important;
+}
+
+#wpadminbar {
+    display: none !important;
 }
 
 .cardContainer {
@@ -236,17 +241,32 @@ body {
     pointer-events: none;
 }
 
+/* .overlay {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000000db;
+    z-index: 10;
+} */
+
 .active-card {
     position: absolute;
     width: 100%;
     height: 100vh;
-    min-height: 810px;
-    top: 120px;
+    min-height: 950px;
+    top: 90px;
     z-index: 10 !important;
     border: 0;
     cursor: default !important;
     transition: 0.3s;
     opacity: 1;
+    overflow-y: auto;
+    cursor: default !important;
+}
+
+.active-card::-webkit-scrollbar {
+    display: none;
 }
 
 .active-card .imgContainer::after {
@@ -311,7 +331,7 @@ body {
 
 .hiddenContainer label {
     font-size: 28px;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     font-family: "Teko-Regular";
 }
 
@@ -365,10 +385,6 @@ body {
     margin-top: 4px;
 }
 
-.parteIcon .direccion {
-    margin-top: 2.3px !important;
-}
-
 .parteIcon.infoDireccion {
     margin-top: 18px;
 }
@@ -380,20 +396,24 @@ body {
     justify-content: center;
     align-items: center;
     width: calc(100% - 40px);
-    height: 350px;
+    height: 480px;
     z-index: -1;
 }
 
 .hiddenImgContainer .hiddenImg {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
     position: relative;
     width: 500px;
     height: 100%;
-    flex: 1;
     border-top: 1px solid #e0e0e0e0;
     border-right: 1px solid #e0e0e0e0;
     border-bottom: 1px solid #e0e0e0e0;
     opacity: 0;
     transition: 0.45s;
+    cursor: zoom-in;
 }
 
 .hiddenImgContainer .hiddenImg:first-child {
@@ -433,6 +453,24 @@ body {
     width: 100%;
     height: 100%;
 }
+
+.imgZoomIn {
+    position: fixed !important;
+    top: 0;
+    height: 100vh !important;
+    width: 100vw !important;
+    background: #000000bd;
+    z-index: 2;
+    cursor: zoom-out !important;
+    transition: 0.5s !important;
+}
+
+.imgZoomInContent {
+    width: 80% !important;
+    height: 80% !important;
+    transition: 0.5s !important;
+}
+
 /* fin de estilos */
 
 @media (max-width: 1515px) {
@@ -451,6 +489,10 @@ body {
     .active-card {
         height: calc(100% + 540px) !important;
         min-height: 1500px;
+    }
+
+    .imgZoomIn {
+        top: -5px;
     }
 
     .hiddenImgContainer {
@@ -472,7 +514,7 @@ body {
         width: 100%;
         flex-direction: column;
         left: 0;
-        bottom: 0px !important;
+        bottom: -38px !important;
     }
 
     .contactoContainer {
@@ -511,12 +553,6 @@ body {
     }
 }
 
-@media (max-width: 782px) {
-    .active-card {
-        top: 135px;
-    }
-}
-
 @media (max-width: 765px) {
     .parteIcon.infoDireccion {
         flex-direction: column;
@@ -548,17 +584,14 @@ body {
 
 @media (max-width: 705px) {
     .card.active-card .hiddenContainer {
-        bottom: 0 !important;
+        bottom: -38px !important;
         width: 100%;
         left: 0;
-    }
-
-    .hiddenContainer {
-        bottom: 0 !important;
     }
 }
 
 @media (max-width: 655px) {
+
     .hiddenImgContainer,
     .hiddenImgContainer .hiddenImg {
         min-width: 200px;
@@ -570,11 +603,11 @@ body {
     }
 
     .hiddenContainer {
-        bottom: -40px;
+        bottom: -38px;
         width: 100%;
         left: 0;
         border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;        
+        border-bottom-right-radius: 0;
     }
 
     .active-card {
@@ -592,7 +625,7 @@ body {
     }
 
     .card.active-card .hiddenContainer {
-        bottom: -40px !important;
+        bottom: -38px !important;
     }
 }
 
@@ -627,7 +660,7 @@ body {
         bottom: -60px;
         width: 100%;
         left: 0;
-        bottom: -40px;
+        bottom: -38px;
         border-radius: 0;
     }
 
