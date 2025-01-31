@@ -7,27 +7,6 @@ gsap.from("section",{
         scrub:1,
         pin:".pineada",
     }
-})
-
-
-gsap.from(".caja",{
-    y:-window.innerHeight,
-    scrollTrigger:{
-        trigger:"section",
-        start:"top top",
-        end: "90% bottom",
-        scrub:1
-    }
-})
-
-gsap.from(".imagen", {
-    y:-100,
-    scrollTrigger: {
-        trigger: "body",
-        start: "top top", 
-        end: "bottom top", 
-        scrub: true 
-    }
 });
 
 gsap.from(".atletas",{
@@ -38,6 +17,19 @@ gsap.from(".atletas",{
         end:"bottom bottom",
         scrub:1,
     }
-})
+});
+
+gsap.from(".caja",{
+    y:-window.innerHeight,
+    scrollTrigger:{
+        trigger:"section",
+        start:"top top",
+        end: "90% bottom",
+        scrub:1
+    }
+});
+
+
+
 
 
