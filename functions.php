@@ -7,7 +7,6 @@ function deportesuaq_enqueue_styles() {
     // Estilo para el header, lo hace para todas las paginas
     wp_enqueue_style('headerStyle', get_template_directory_uri() . '/css/headerStyle.css');
 
-    wp_enqueue_style('footerStyle', get_template_directory_uri() . '/css/footerStyle.css');
 
     // Si estás en la página "index"
     if (is_home()||is_front_page()) {
@@ -63,32 +62,13 @@ function deportesuaq_enqueue_styles() {
 }
 add_action('wp_enqueue_scripts', 'deportesuaq_enqueue_styles', 20);
 
-//Función para insertar los scripts
-function deportesUAQ_register_scripts(){
-
-    wp_enqueue_script('carouselScript',"https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js");
-    
-}
-
-add_action('wp_enqueue_scripts', 'deportesUAQ_register_scripts');
 
 function titulo_personalizado($texto) {
     $titulo= get_the_title();
     return $texto . ' ' . $titulo;
 }
 
-function extract_block_content($blocks, $block_name) {
-    $contents = [];
-    foreach ($blocks as $block) {
-        if ($block['blockName'] === $block_name) {
-            $contents[] = $block['innerHTML'];
-        }
-        if (!empty($block['innerBlocks'])) {
-            $contents = array_merge($contents, extract_block_content($block['innerBlocks'], $block_name));
-        }
-    }
-    return $contents;
-}
+
 
 function custom_cors_headers() {
     if (isset($_SERVER['HTTP_ORIGIN']) && $_SERVER['HTTP_ORIGIN'] === 'http://deportes-uaq.local') {

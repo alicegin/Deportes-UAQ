@@ -28,7 +28,7 @@
                     <a href="<?php echo home_url('/deportes-para-todes'); ?>">DEPORTES PARA TODES</a>
                     <a class="link" href="<?php echo home_url('/salon-de-la-fama'); ?>">SALÓN DE LA FAMA</a>
                     <a href="<?php echo home_url('/instalaciones'); ?>">INSTALACIONES</a>
-                    <a href="">e-SPORTS</a>
+                    <a href="<?php echo home_url('/e-sports'); ?>">e-SPORTS</a>
                 </div>
                            
             </div>
@@ -39,7 +39,7 @@
           <a class="link" href="<?php echo home_url('/deportes-para-todes'); ?>">DEPORTES PARA TODES</a>
           <a class="link" href="<?php echo home_url('/salon-de-la-fama'); ?>">SALÓN DE LA FAMA</a>
           <a class="link" href="<?php echo home_url('/instalaciones'); ?>">INSTALACIONES</a>
-          <a class="link" href="">e-SPORTS</a>
+          <a class="link" href="<?php echo home_url('/e-sports'); ?>">e-SPORTS</a>
       </div>
       
       <div id="backdrop" class="backdrop"></div>
