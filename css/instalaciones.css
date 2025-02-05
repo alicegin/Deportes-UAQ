@@ -1,6 +1,6 @@
 html,
 body {
-    background-color: #121212;
+    background-color: #000 !important;
     color: #e0e0e0;
     margin: 0 !important;
 }
@@ -572,13 +572,13 @@ body {
     }
 
     .hiddenImgContainer {
-        bottom: 512px;
+        bottom: 480px;
     }
 }
 
 @media (max-width: 720px) {
     .hiddenImgContainer {
-        bottom: 518px;
+        bottom: 480px;
     }
 }
 

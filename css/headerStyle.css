@@ -18,6 +18,15 @@
   src: url('../assets/fonts/Teko-Regular.ttf') format('opentype');
 }
 
+#wpadminbar {
+  display: none !important;
+}
+
+html,
+body {
+  margin: 0 !important;
+}
+
 header:not(.headerGatienda),
 .navbar-content {
   max-height: 100px !important;
@@ -126,13 +135,13 @@ header {
   color: black;
 }
 
-.drawer div{
+.drawer div {
   display: flex;
   text-align: center;
   justify-content: center;
 }
 
-.drawer div img{
+.drawer div img {
   width: clamp(150px, 20vw, 300px);
   object-fit: scale-down;
 }
@@ -289,7 +298,8 @@ header {
   background-color: #121212;
 }
 
-.drawer a, #drawer .link {
+.drawer a,
+#drawer .link {
   color: #e0e0e0;
   font-family: "Futura-Medium";
 }

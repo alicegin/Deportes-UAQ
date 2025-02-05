@@ -28,8 +28,11 @@ main {
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
-    max-width: 1200px;
-    padding-top: 80px;
+    max-width: 1100px;
+    padding: 0;
+    padding-top: 180px;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #202020;
 }
 
 .contenedorPrincipal h1, 
@@ -59,6 +62,7 @@ main .contenedorPrincipal h5 {
 
 .contenedorPrincipal p {
     margin-top: 10px;
+    margin-bottom: 0;
 }
 
 .contenedorPrincipal h3 {
@@ -70,7 +74,6 @@ main .contenedorPrincipal h5 {
     width: 100%;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
 }
 
 .deportesContainer {
@@ -101,7 +104,7 @@ main .contenedorPrincipal h5 {
 .imgDeporteContainer .deporteCard {
     flex: 1;
     width: 280px;
-    min-width: 335px;
+    min-width: 372px;
     max-width: 280px;
     border: 5px solid #121212;
     position: relative;
@@ -132,12 +135,12 @@ main .contenedorPrincipal h5 {
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-end;
-    background: linear-gradient(to bottom, #12121200, #121212);
+    background: linear-gradient(to bottom, #ffffff00, #000000);
 }
 
 .imgDeporteContainer .deporteCard .infoContainer .nombreDeporte {
     margin-bottom: 0;
-    font-size: clamp(50px, 2vw, 50px);
+    font-size: clamp(45px, 2vw, 50px);
 }
 
 .imgDeporteContainer .deporteCard .infoContainer .tipoCompetencia {
@@ -156,7 +159,7 @@ main .contenedorPrincipal h5 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 50px;
+    margin-top: 80px;
 }
 
 .deportesContainer .parteDeportesContainer h2 {
@@ -170,7 +173,11 @@ main .contenedorPrincipal h5 {
 } 
 
 .deportesContainer .parteDeportesContainer:nth-child(2) {
-    margin-top: 50px;
+    margin-top: 80px;
+}
+
+#contenedorFacultades {
+    padding-top: 80px;
 }
 
 main .contenedorPrincipal h5 {
@@ -183,7 +190,7 @@ main .contenedorPrincipal h5 {
     display: flex;
     flex-direction: column;
     background-color: #f2f2f2 !important;
-    padding: 5px;
+    padding: 4px;
     margin-bottom: 90px !important;
 }
 
@@ -193,8 +200,24 @@ main .contenedorPrincipal h5 {
     font-size: clamp(19px, 2vw, 19px) !important;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1188px) {
+    .contenedorPrincipal {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+@media (max-width: 525px) {
+    .contenedorPrincipal {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .imgDeporteContainer .deporteCard {
-        min-width: 280px;
+        min-width: 100%;
+    }
+
+    .contenedorPrincipal {
+        padding-top: 160px;
     }
 }
