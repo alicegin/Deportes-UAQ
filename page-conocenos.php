@@ -27,7 +27,12 @@
     <main>
         <div class="contenedorCentrar">
             <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/C1.png">
-            <a id="btnVerMas" href="#principalContent">Conoce Nuestra Historia</a>
+            <a id="btnVerMas" href="#principalContent">
+                Conoce Nuestra Historia 
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 5.25 7.5 7.5 7.5-7.5m-15 6 7.5 7.5 7.5-7.5" />
+                </svg>
+            </a>
         </div>
         <section id="principalContent" class="mainRow">
             <h2 id="mainTitle" style="margin-top: 150px;">¿Quiénes SOMOS?</h2>

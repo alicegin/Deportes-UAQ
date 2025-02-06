@@ -1,15 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
-    <?php wp_head(); wp_footer(); ?>
+    <?php 
+        wp_head();
+        wp_footer(); 
+    ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/instalaciones.css">
 </head>
+
 <body>
-    <?php /* Template Name: Instalaciones */ get_template_part('template-parts/header'); ?>
+    <?php 
+        /* Template Name: Instalaciones */ 
+        get_template_part('template-parts/header'); 
+    ?>
     <main>
+        <div class="overlay"></div>
         <section class="cardContainer">
             <div class="card">
                 <p class="precio">Contáctanos</p>
@@ -44,26 +53,26 @@
                             <p class="direccion">Cerro de las Campanas, s/n, Col. Las Campanas, Qro.</p>
                         </div>
                     </div>
-                    <div class="contactoContainer">       
-                        <label>Contacto</label>                           
+                    <div class="contactoContainer">
+                        <label>Contacto</label>
                         <div class="parteIcon">
                             <p class="correo">correo@gmail.com</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                            </svg>                            
+                            </svg>
                         </div>
                         <div class="parteIcon">
                             <p class="tel">555-555-5555</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                            </svg>                          
+                            </svg>
                         </div>
                     </div>
                 </div>
                 <div class="imgContainer">
                     <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/estadio_cu_1.jpg" alt="Instalaciones UAQ" />
                 </div>
-                <div class="infoContainer">                    
+                <div class="infoContainer">
                     <div class="detallesContainer">
                         <div class="cardDetalle">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -80,7 +89,7 @@
                         <div class="cardDetalle btnMas">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>                                                      
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -118,26 +127,26 @@
                             <p class="direccion">C. Ignacio Manuel Altamirano Sur 24, La Santa Cruz, 36, Centro, Qro.</p>
                         </div>
                     </div>
-                    <div class="contactoContainer">       
-                        <label>Contacto</label>                           
+                    <div class="contactoContainer">
+                        <label>Contacto</label>
                         <div class="parteIcon">
                             <p class="correo">correo@gmail.com</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                            </svg>                            
+                            </svg>
                         </div>
                         <div class="parteIcon">
                             <p class="tel">555-555-5555</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                            </svg>                          
+                            </svg>
                         </div>
                     </div>
                 </div>
                 <div class="imgContainer">
                     <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_1.webp" alt="Instalaciones UAQ" />
                 </div>
-                <div class="infoContainer">                    
+                <div class="infoContainer">
                     <div class="detallesContainer">
                         <div class="cardDetalle">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -154,10 +163,10 @@
                         <div class="cardDetalle btnMas">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>                                                      
+                            </svg>
                         </div>
                     </div>
-                </div>                           
+                </div>
             </div>
             <div class="card">
                 <p class="precio">Contáctanos</p>
@@ -192,26 +201,26 @@
                             <p class="direccion">Carretera a Chichimequillas s/n, Ejido Bolaños, 76140 Santiago de Querétaro, Qro.</p>
                         </div>
                     </div>
-                    <div class="contactoContainer">       
-                        <label>Contacto</label>                           
+                    <div class="contactoContainer">
+                        <label>Contacto</label>
                         <div class="parteIcon">
                             <p class="correo">correo@gmail.com</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" />
-                            </svg>                            
+                            </svg>
                         </div>
                         <div class="parteIcon">
                             <p class="tel">555-555-5555</p>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 1.5H8.25A2.25 2.25 0 0 0 6 3.75v16.5a2.25 2.25 0 0 0 2.25 2.25h7.5A2.25 2.25 0 0 0 18 20.25V3.75a2.25 2.25 0 0 0-2.25-2.25H13.5m-3 0V3h3V1.5m-3 0h3m-3 18.75h3" />
-                            </svg>                          
+                            </svg>
                         </div>
                     </div>
                 </div>
                 <div class="imgContainer">
                     <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_2.webp" alt="Instalaciones UAQ" />
                 </div>
-                <div class="infoContainer">                    
+                <div class="infoContainer">
                     <div class="detallesContainer">
                         <div class="cardDetalle">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
@@ -228,7 +237,7 @@
                         <div class="cardDetalle btnMas">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25" />
-                            </svg>                                                      
+                            </svg>
                         </div>
                     </div>
                 </div>
@@ -244,14 +253,22 @@
             });
 
             $('.hiddenImg').click(function() {
-                imgZoom($(this));
+                let $img = $(this);
+                
+                if ($img.hasClass("imgZoomIn")) {
+                    imgZoomOut($img);
+                } else {
+                    imgZoomIn($img);
+                }
             });
 
-            function showDetalles($card) {                
+            function showDetalles($card) {
                 let $hiddenContainer = $card.closest('.card').find('.hiddenContainer');
                 let $btnCerrar = $card.closest('.card').find('.cardDetalle.btnMas');
 
-                $card.closest('.card').find('.hiddenImgContainer').css({'z-index': '10'});
+                $card.closest('.card').find('.hiddenImgContainer').css({
+                    'z-index': '10'
+                });
 
                 $('.card').removeClass('active-card');
                 $card.addClass('active-card');
@@ -264,9 +281,9 @@
                     'transform': 'translateY(0)',
                 });
 
-                $card.closest('.card').find('.hiddenImg').each(function(index) {                
+                $card.closest('.card').find('.hiddenImg').each(function(index) {
                     let delay = 0.2 + (index * 0.1);
-                    
+
                     $(this).css({
                         'transition': '0.45s',
                         'transition-delay': delay + 's'
@@ -279,7 +296,7 @@
                         <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 4.5-15 15m0 0h11.25m-11.25 0V8.25" />
                     </svg>
                 `);
-               
+
                 // Manejar el clic en el botón cerrar
                 $btnCerrar.off('click').on('click', function(e) {
                     e.stopPropagation(); // Evita que el clic se propague                    
@@ -292,7 +309,7 @@
                         $card.removeClass('active-card inactive-card'); // Elimina clases
                         $card.css('display', 'flex'); // Cambia a display: none al final
                         $btnCerrar.empty();
-                    $btnCerrar.html(`
+                        $btnCerrar.html(`
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                             <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"></path>
                         </svg>
@@ -311,19 +328,37 @@
                         'transition': '0s',
                     });
 
-                    $card.closest('.card').find('.hiddenImgContainer').css({'z-index': '-1'});
+                    $card.closest('.card').find('.hiddenImgContainer').css({
+                        'z-index': '-1'
+                    });
                 });
             }
 
-            function imgZoom(img) {
-                img.css({
-                    'position': 'absolute',
-                    'height': '100vh',
-                    'width': '100%',
-                    'z-index': '2',
-                })
+            function imgZoomIn(img) {
+                let header = $('header');
+                let imgContent = img.find('img');
+
+                header.css({
+                    'z-index': '1',
+                });
+
+                img.addClass("imgZoomIn");
+                imgContent.addClass("imgZoomInContent");
+            }
+
+            function imgZoomOut(img) {
+                let header = $('header');
+                let imgContent = img.find('img');
+
+                header.css({
+                    'z-index': '1000',
+                });
+
+                img.removeClass("imgZoomIn");
+                imgContent.removeClass("imgZoomInContent");
             }
         });
     </script>
 </body>
+
 </html>

@@ -1,20 +1,21 @@
 * {
-    margin:0;
+    margin: 0;
     padding: 0;
 }
 
 main {
     display: flex;
-    height: 100vh;
-    overflow: hidden;
+    height: calc(100vh - 90px);
+    min-height: 680px;
+    margin-top: 90px;
+    overflow: auto;
 }
 
 main .mainPart {
-    flex: 1;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: fit-content;
+    width: 50%;
+    height: 100%;
+    min-height: 680px;
 }
 
 main .mainPart.manPartInfo {
@@ -29,16 +30,17 @@ main .mainPart.manPartInfo .infoContainer {
 }
 
 main .mainPart.manPartInfo .infoContainer h1 {
-    margin-bottom: 30px;
-    font-family: 'Futura-Medium';
+    font-family: 'Teko-Regular';
+    font-size: 55px;
     color: #E0E0E0;
 }
 
 main .mainPart.manPartInfo .infoContainer p {
-    border-left: 1px solid #E0E0E0;
-    padding-left: 12px;
-    font-weight: 400;
+    font-family: 'Futura-Medium';
     font-size: clamp(18px, 2vw, 20px);
+    letter-spacing: 1px;
+    border-left: 2px solid #E0E0E02B;
+    padding-left: 12px;
     /* max-width: 500px; */
     text-align: left;
     color: #E0E0E0;
@@ -59,7 +61,7 @@ main .mainPart .imgContainer::before {
     left: 0;
     top: 0;
     z-index: 1;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(2px);
 }
 
 main .mainPart .imgContainer img {
@@ -80,15 +82,16 @@ main .mainPart article {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
+    width: 50%;
     border-bottom: 1px solid #f2f2f2;
+    flex: 1;
+    min-width: 280px;
 }
 
 main .mainPart article .imgContainerDPT {
     position: relative;
     width: 100%;
-    align-items: 100%;
+    height: 100%;
     border-left: 1px solid #f2f2f2;
 }
 
@@ -101,7 +104,7 @@ main .mainPart article .imgContainerDPT::before {
     left: 0;
     top: 0;
     z-index: 1;
-    backdrop-filter: blur(5px);
+    backdrop-filter: blur(0px);
 }
 
 main .mainPart article .imgContainerDPT img {
@@ -112,19 +115,19 @@ main .mainPart article .imgContainerDPT img {
 
 main .mainPart article h2 {
     position: absolute;
-    z-index: 2;
-    color: #121212;
-    background-color: #f2f2f2;
-    padding: 20px;
+    font-size: 20px;
     font-weight: 400;
-    border-radius: 10px;
-    font-size: 21px;
+    color: #E0E0E0;
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #ffffff2c;
+    border-radius: 10px;
     margin: 0;
+    padding: 20px;
     cursor: pointer;
     transition: 0.3s;
+    z-index: 2;
 }
 
 main .mainPart article h2:hover {
@@ -133,11 +136,11 @@ main .mainPart article h2:hover {
 }
 
 main .mainPart article h2 svg {
+    stroke: #E0E0E0;
     width: clamp(22px, 2vw, 22px);
     height: clamp(22px, 2vw, 22px);
     margin-left: 9px;
     margin-top: 1.5px;
-    stroke: #121212;
     transition: 0.3s;
 }
 
@@ -146,35 +149,81 @@ main .mainPart article h2:hover svg {
 }
 
 .mainPart.mainPartOpciones {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
     max-height: 100%;
+    min-height: 600px;
     overflow-y: auto;
-    min-height: 612px;
 }
 
 .mainPart.mainPartOpciones::-webkit-scrollbar {
     display: none;
 }
 
-@media (max-width: 785px) {
+@media (max-width: 1200px) {
+    .mainPart.mainPartOpciones {
+        width: 50%;
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 895px) {
+    main .mainPart.manPartInfo .infoContainer {
+        padding: 0 20px;
+    }
+}
+
+@media (max-width: 565px) {
     main {
         flex-direction: column;
     }
 
-    main .mainPart article .imgContainerDPT {
-        border: 0;
-        border-top: 5px solid #fdfdfd;
-       
-    }
-
-    main .mainPart article {
-        border-bottom: 0;
-    }
-
+    main .mainPart.manPartInfo,
     .mainPart.mainPartOpciones {
-        max-height: none;
+        width: 100%;
     }
 
     main .mainPart.manPartInfo {
-        max-height: 450px;
+        min-height: 350px;
+        background-color: #121212;
+        border: 1px solid #E0E0E0;
+        overflow-y: auto;
+    }
+
+    .mainPart.mainPartOpciones {
+        min-height: calc(100% - 1px);
+        border-right: 1px solid #E0E0E0;
+    }
+
+    main .mainPart .infoContainer {
+        position: relative;
+    }
+
+    main .mainPart .imgContainer {
+        display: none;
+    }
+
+    main .mainPart.manPartInfo .infoContainer p {
+        text-align: justify;
+        border: 0;
+        padding: 0;
+        margin-bottom: 0;
+    }
+
+    main .mainPart.manPartInfo .infoContainer h1 {
+        text-align: center;
+    }
+}
+
+@media (max-width: 365px) {
+    main .mainPart.manPartInfo {
+        align-items: flex-start;
+    }
+
+    main .mainPart.manPartInfo .infoContainer {
+        padding: 20px;
     }
 }

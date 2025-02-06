@@ -3,6 +3,8 @@
 get_template_part('template-parts/headerDPT');
 ?>
 
+<link rel="stylesheet" href="<? echo get_template_directory_uri(); ?>/css/copaValoresStyle.css">
+
 <main>
     <div class="contenedorPrincipal">
         <div class="headerContenedor">
@@ -158,7 +160,7 @@ get_template_part('template-parts/headerDPT');
             </div>
         </div>
     </div>
-    <div class="contenedorPrincipal">
+    <div id="contenedorFacultades" class="contenedorPrincipal">
         <h5>Participación de 13 facultades</h5>
         <div class="facultadContent" style="flex-wrap:wrap; display:flex; align-content:center; justify-content:center;">
             <div class="facultadContainer" style="background-color: gray; width:200px; height: 200px; display: flex; margin:10px 10px 10px 10px;">

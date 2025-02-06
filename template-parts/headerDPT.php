@@ -30,7 +30,7 @@
           </a>
         </div>
         <div class="navbar-menu hideMenu menuDPT">
-          <a class="link" href="<?php echo home_url('/copa-valores-universitarios'); ?>">Copa Valores</a>
+          <a class="link" href="<?php echo home_url('/copa-valores'); ?>">Copa Valores</a>
           <a class="link" href="<?php echo home_url('/uaqtivate'); ?>">UAQtívate</a>
           <a class="link" href="<?php echo home_url('/indet') ?>">INDET</a>
         </div>
