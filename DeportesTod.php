@@ -14,6 +14,8 @@
     ?>
 
     <main>
+        <!-- mainPart: agrugar los contenedores principales -->
+        <!-- manPartInfo: diferenciar el contenedor principal para mostrar información -->
         <section class="mainPart manPartInfo">
             <div class="imgContainer">
                 <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/widgetDPT.jpeg" alt="Deportes UAQ" />
@@ -23,6 +25,7 @@
                 <p>Promover una vida saludable entre la comunidad estudiantil y sociedad en general, a través de la organización de eventos que fomentan la práctica de actividad física y deportiva, tales como, Ligas Deportivas Escolares y eventos especiales</p>
             </div>
         </section>
+        <!-- mainPartOpciones: diferenciar el contenedor para las tarjetas principales -->
         <section class="mainPart mainPartOpciones">
             <article>
                 <div class="imgContainerDPT">
