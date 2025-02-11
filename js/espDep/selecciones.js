@@ -104,6 +104,7 @@ function seleccion(tipoSeleccion){
         carruselContainer = document.querySelector(".cardsContainer");
         deportes=document.querySelectorAll('.cardCarrusel');
         imagenes=document.querySelectorAll('#imagenCarrusel');
+        //botones para el movimiento del carrusel
         nextInd=document.querySelector("#nextInd");
         prevInd=document.querySelector("#prevInd");
 
@@ -114,8 +115,10 @@ function seleccion(tipoSeleccion){
         anchoDeportes = deportes[0].clientWidth + 2;
         anchocarrusel = carruselContainer.clientWidth;
 
+        //en inicialización el primer elemento que se muestra en pantalla es más grande que el resto y está a color
         deportes[0].style.transform='scale(1)';
         imagenes[0].style.filter='brightness(0.7)';
+        
         nextInd.onclick=function(){
             indexC = (indexC === deportes.length - 1) ? 0 : indexC + 1;
             mostrarInformacion(tipoResultado,indexC);
@@ -162,6 +165,7 @@ function seleccion(tipoSeleccion){
                 let voluntario;
 
                 //COMIENZA HTML
+                //Header de tarjeta informativa con imagen de Gatos Salvajes y nombre del deporte
                 let datosDeporteXmostrar =`
                     <div class="tituloED">
                         <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/GS-44.png">
@@ -173,7 +177,7 @@ function seleccion(tipoSeleccion){
                     <div class="ubicacion">
                         <div class="division">`;
                     
-
+                //En el caso que tenga entrenador asignado el deporte, se agrega el entrenador
                 if (entrenador){
                     if (entrenador.voluntario===1){
                         voluntario="Entrenador Voluntario";
@@ -191,6 +195,7 @@ function seleccion(tipoSeleccion){
                                 </div>`;
                 }
 
+                //Si hay información de los lugares de entrenamiento, los muestra
                 if(ubicacionesXmostrar.length!=0){
                     datosDeporteXmostrar+=`
                             <div class="entrenador">
@@ -209,7 +214,7 @@ function seleccion(tipoSeleccion){
                                 </div>`;
                     if(index===ubicacionesXmostrar.length -1 ){
                         datosDeporteXmostrar+=`
-                            </div>
+                                </div>
                             </div>`
                     }
 

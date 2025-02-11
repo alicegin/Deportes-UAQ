@@ -4,11 +4,11 @@
 <head>
   <meta charset="<?php bloginfo('charset'); ?>">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--Para que el nombre de la página que se estableció en WordPress-admin aparezca en el nombre de la pestaña-->
   <title><?php wp_title('|', true, 'right'); ?><?php bloginfo('name'); ?></title>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/headerStyle.css">
   <?php
+  //Para poner el css en la página actual
   wp_head();
-  wp_footer();
   ?>
 </head>
 <style>
@@ -18,12 +18,16 @@
   <header>
     <nav>
       <div class="navbar-content">
+
         <button id="openButton" class="open-btn">
           <span style="font-size: 25px;align-self: center;">
             &#9776; <!-- Símbolo de hamburguesa -->
           </span>
           <p class="titulo-drawer">MENÚ</p>
         </button>
+        <!--Logo de Gatos Salvajes para regresar a la página index y logo de
+         Especialización Deportiva para regresar a la página de Especialización Deportiva
+         Para ventanas de 1200px o más grandes-->
         <div class="navbar-menu hideMenu menu-logos-principal">
           <a href="<?php echo home_url() ?>">
             <img class="logo" src="http://deportesuaq.mx/wp-content/uploads/2024/10/GS-44.png">
@@ -32,6 +36,7 @@
             <img class="logo" src="http://deportesuaq.mx/wp-content/uploads/2024/10/ED-LOGO-43.png">
           </a>
         </div>
+        <!--Links de redireccionamiento a las demás páginas para ventanas de 1200px o más grandes-->
         <div class="navbar-menu hideMenu menu-principal-header">
           <a class="link" href="<?php echo home_url('/conocenos'); ?>">Conócenos</a>
           <a class="link" href="<?php echo home_url('/condde'); ?>">CONDDE</a>
@@ -40,6 +45,7 @@
           <a class="link" href="<?php echo home_url('/documentos'); ?>">Documentos</a>
           <a class="link" href="<?php echo home_url('/contacto') ?>">Contacto</a>
         </div>
+        <!--Redes sociales de UAQDeportes (funciona para cualquier dimensión de pantalla)-->
         <div class="navbar-menu hideMenu">
           <a href="https://www.facebook.com/uaqdeportes">
             <img class="redesHeader" src=<?php echo get_template_directory_uri() . '/img/header/facebook.svg' ?>>

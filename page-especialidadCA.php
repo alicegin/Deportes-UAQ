@@ -119,7 +119,9 @@ switch ($valor) {
     }
 </style>
 <main>
+    <!--Imagen de fondo-->
     <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/Ciencias-Aplicadas-al-Deporte-18.png" class="caLogo">
+    <!--Parte que contiene la foto y botón que lleva a ver más imformación-->
     <div class="primeraParte">
         <article class="contenedor-area">
             <a href="#semblanza">
@@ -146,6 +148,7 @@ switch ($valor) {
             </p>
         </article>
     </div>
+    <!--Semblanza del responsable de área-->
     <div class="contenidoR" id="semblanza">
             <h3 class="info" style="background-color: <?php echo $arreglo[7]?>">
             <?php echo $arreglo[2]?>

@@ -18,17 +18,20 @@ get_template_part('template-parts/header');
     <div class="contenido">
         <h1>¿Qué es ciencias aplicadas al deporte?</h1>
         <p>
-        Las Ciencias Aplicadas al Deporte (CAD) es un área especializada que cuenta con un equipo multidisciplinario compuesto por profesionales en fisioterapia, nutrición y psicología 
-        deportiva. Este equipo se dedica a proporcionar una cobertura integral que busca satisfacer las necesidades deportivas de cada seleccionado universitario. Su objetivo principal es 
-        garantizar el bienestar físico, psicológico y mental de los atletas, asegurando que reciban el apoyo necesario de manera gratuita. Con un enfoque holístico, el equipo de CAD trabaja 
-        para optimizar el rendimiento deportivo, prevenir lesiones y promover hábitos de vida saludables, contribuyendo así al desarrollo integral de los estudiantes deportistas.
+        Las Ciencias Aplicadas al Deporte (CAD) es un área especializada que cuenta con un equipo multidisciplinario compuesto 
+        por profesionales en fisioterapia, nutrición y psicología deportiva. Este equipo se dedica a proporcionar una cobertura 
+        integral que busca satisfacer las necesidades deportivas de cada seleccionado universitario. Su objetivo principal es 
+        garantizar el bienestar físico, psicológico y mental de los atletas, asegurando que reciban el apoyo necesario de manera 
+        gratuita. Con un enfoque holístico, el equipo de CAD trabaja para optimizar el rendimiento deportivo, prevenir lesiones y
+        promover hábitos de vida saludables, contribuyendo así al desarrollo integral de los estudiantes deportistas.
         </p>
         <h1>¿Cómo acceder a ellas?</h1>
         <p>
-        Las Ciencias Aplicadas ofrecen un beneficio gratuito para todas nuestras selecciones. Si estás interesado en acceder a alguno de estos servicios, deberás solicitar un "Pase de 
-        Ciencias Aplicadas". Para obtenerlo, tu entrenador deberá proporcionar algunos datos personales, especificar el servicio requerido y explicar el motivo de la solicitud.
-        Comunícate con el área correspondiente (fisioterapia, nutrición, psicología) para agendar una cita. Presenta tu pase cuando asistas con nuestros especialistas y recibirás la atención 
-        que necesitas.
+        Las Ciencias Aplicadas ofrecen un beneficio gratuito para todas nuestras selecciones. Si estás interesado en acceder a 
+        alguno de estos servicios, deberás solicitar un "Pase de Ciencias Aplicadas". Para obtenerlo, tu entrenador deberá 
+        proporcionar algunos datos personales, especificar el servicio requerido y explicar el motivo de la solicitud.
+        Comunícate con el área correspondiente (fisioterapia, nutrición, psicología) para agendar una cita. Presenta tu pase 
+        cuando asistas con nuestros especialistas y recibirás la atención que necesitas.
         </p>
     </div>
     <form>

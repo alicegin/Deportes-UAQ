@@ -88,16 +88,21 @@ get_template_part('template-parts/headerDPT');
 </main>
 
 <script>
+    //Las acciones son para cambiar las posiciones. Al iniciar la página, la ventana del video 
+    //queda por detrás del contenido principal y al dar clic al botón del video trae para adelante la ventana.
+    //Se mandan a llamar el botón para cerrar, el contenedor del video, el botón de video y el cuerpo del html
     botonC = document.querySelector(".cerrarV");
     ventanaVideo=document.querySelector(".ventanaVideo");
     video=document.querySelector("#video");
     body=document.querySelector("body");
 
+    //Se hacen cambio de posiciones, la ventana del video se pasa para atrás.
     botonC.addEventListener('click', function() {
         ventanaVideo.style.zIndex = -1;
         body.style.overflow = 'auto';
     })
 
+    //Pasa para adelante la ventana del video
     video.addEventListener('click', function() {
         window.scrollTo({
         top: 0,
@@ -108,6 +113,7 @@ get_template_part('template-parts/headerDPT');
 
     })
 
+    //Como el video es un embeded de Facebook, se busca que el video tenga una relación 16:9
     function ajustarAlturaIframes() {
             var iframes = document.querySelectorAll("iframe");
             iframes.forEach(function(iframe) {
