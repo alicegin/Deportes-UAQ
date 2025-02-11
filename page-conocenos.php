@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.dataTables.min.css" crossorigin="anonymous" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/valorCardStyle.css" crossorigin="anonymous" />
     <style>
+        /* estilo para dar margen al contender de las tarjetas de valores */
         .cardContainer {
             margin: 10px 15px;
         }
@@ -25,6 +26,7 @@
     ?>
 
     <main>
+        <!-- contenedorCentrar: apartado principal de la sección -->
         <div class="contenedorCentrar">
             <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/C1.png">
             <a id="btnVerMas" href="#principalContent">
@@ -34,6 +36,8 @@
                 </svg>
             </a>
         </div>
+        <!-- principalContent: diferenciar el apartado para mostrar la información de ¿Quiénes SOMOS? -->
+        <!-- mainRow: agrupar todos los contenedores principales de información -->
         <section id="principalContent" class="mainRow">
             <h2 id="mainTitle" style="margin-top: 150px;">¿Quiénes SOMOS?</h2>
             <p>
@@ -60,9 +64,12 @@
         </section>
         <section class="mainRow">
             <h2 style="margin-bottom: 22px;">NUESTROS VALORES</h2>
+            <!-- valoresContainer: contenedor para las tarjetas de los valores -->
             <section class="valoresContainer">
+                <!-- outer: agrupar los contenedores para las tarjetas de los diferentes valores -->
                 <div class="outer">
                     <div class="dot"></div>
+                    <!-- card: agrugar las tarjetas de información sobre los diferentes valores -->
                     <div class="card">
                         <div class="flip-card-inner">
                             <div class="flip-card-front">
@@ -80,7 +87,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -100,7 +106,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -120,7 +125,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -140,7 +144,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -160,7 +163,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -180,7 +182,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -200,7 +201,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -220,7 +220,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -240,7 +239,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -260,7 +258,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -280,7 +277,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="outer">
                     <div class="dot"></div>
                     <div class="card">
@@ -302,19 +298,11 @@
                 </div>
             </section>
         </section>
-
-        <!-- Feed de Facebook -->
-        <!-- <div class="facebook-feed"> -->
-        <!-- Pega aquí el código de embed proporcionado por Facebook -->
-        <!-- <div class="fb-page" data-href="https://www.facebook.com/uaqdeportes" data-tabs="timeline" data-width="" data-height="" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
-                <blockquote cite="https://www.facebook.com/uaqdeportes" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/uaqdeportes">UAQ Deportes</a></blockquote>
-            </div>
-        </div>
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v15.0" nonce="Tj4H5kMi"></script> -->
     </main>
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery-3.7.1.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/jquery.dataTables.min.js"></script>
+    <!-- ajusta la altura del contenedor principal del apartado de "¿Quiénes SOMOS?" cuando se da click al botón '#btnVerMas' -->
     <script>
         $(document).ready(function() {
             let $mainTitle = $('#mainTitle');

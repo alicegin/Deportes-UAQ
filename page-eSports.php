@@ -7,17 +7,21 @@
     <title>eSports UAQ</title>
     <?php  /* Template Name: eSports */ ?>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/eSports.css">
+    <!-- se carga este CSS para los iconos de las redes sociales -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 
 <body>
+    <!-- mainContainer: contendor principal donde se muestra la información relevante -->
     <section class="mainContainer">
+        <!-- fondoContainer: contenedor para el video de fondo -->
         <div class="fondoContainer">
             <video id="fondoVideo" autoplay muted>
                 <source src="http://deportesuaq.mx/wp-content/uploads/2025/01/background.mp4" type="video/mp4">
                 Tu navegador no soporta videos HTML5.
             </video>
         </div>
+        <!-- mainPart: contenedor para agrupar la información principal -->
         <div class="mainPart">
             <div class="mainTitle">
                 <h1>eSports UAQ</h1>
@@ -56,6 +60,7 @@
             </a>
         </div>
     </section>
+    <!-- plataformasContainer: contenedor donde se agrupan las tarjetas de las plataformas -->
     <section id="plataformasContainer" class="plataformasContainer">
         <div class="card">
             <img src="http://deportesuaq.mx/wp-content/uploads/2025/01/pc.jpg" alt="eSports UAQ" />
@@ -95,6 +100,7 @@
     </section>
     <h1 class="title animated-gradient-text only">EQUIPOS eSPORTS UAQ</h1>
     <h4 class="subtitle">Competencia y Profesionalismo</h4>
+    <!-- juegosContainer: contenedor donde se muestran los videojuegos que conforman los eSports -->
     <section class="juegosContainer">
         <div class="partJuegos inpar">
             <div class="card">
@@ -159,6 +165,7 @@
     </section>
     <h1 class="title animated-gradient-text">EQUIPOS eGAMES UAQ</h1>
     <h4 class="subtitle">Competencia recreativa sin carácter formal</h4>
+    <!-- juegosContainer: contenedor donde se muestran los videojuegos que conforman los eGames -->
     <section class="juegosContainer last">
         <div class="partJuegos inpar">
             <div class="card">

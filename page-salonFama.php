@@ -4,7 +4,9 @@ get_template_part('template-parts/header');
 ?>
 
 <head>
+    <!-- Estilos CSS para iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" crossorigin="anonymous" />
+    <!-- Estilos CSS para las tablas de DataTables -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/jquery.dataTables.min.css" crossorigin="anonymous" />
 </head>
 
@@ -16,10 +18,12 @@ get_template_part('template-parts/header');
                 <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 7.5-7.5 7.5 7.5" />
             </svg>
         </div>
+        <!-- mainMedallistas: contendor para agrugar todos los apartados de las diferentes competencias y años -->
         <section class="mainMedallistas"></section>
         <div class="btnViejosContainer">
             <button id="btnViejos">Ver los Medallistas Anteriores</button>
         </div>
+        <!-- tablesMedallistas: contenedor para agrupar todas las tablas con la informació de las diferentes competencias y años -->
         <section class="tablesMedallistas" style="display: none;"></section>
     </main>
 
@@ -63,8 +67,15 @@ get_template_part('template-parts/header');
                 $('html, body').animate({ scrollTop: 0 }, 200);
             });
 
+            /**
+             * Esta función obtiene la información del archivo de Excel y genera dinamicamentelos 
+             * elementos para mostrar la información en la interfaz.
+             */
             function inicio() {
                 $.ajax({
+                    /**
+                     *  URL del archivo backend para obtener la información del archivo de Excel
+                     */
                     url: '<?php echo get_template_directory_uri(); ?>/sc/loadMedallistas.php',
                     type: 'POST',
                     data: false,
@@ -72,11 +83,19 @@ get_template_part('template-parts/header');
                     contentType: false,
                     success: function(res) {
                         if (res.success === 1 && typeof res.data === 'object') {
+                            /**
+                             * contador se usa para mostrar los primeros cinco apartados de los medallistas por año,
+                             * para mostrar y diferenciar los apartados recientes de los anteriores.
+                             */
                             let contador = 0;
 
                             $.each(res.data, function(key, edicion) {
                                 let year = (key.match(/_(\d{4})_/) || [])[1];
 
+                                /**
+                                 * Esta condicional se usa para generar el apartado de recientes hasta que contador sea menor a cuatro,
+                                 * y cuando se llenen todos los recientes se genera el apartado de anteriores.
+                                 */
                                 if (contador <= 4) {
                                     llenarMedallistas(edicion, mainWinners, year);
                                     contador++;
@@ -94,6 +113,17 @@ get_template_part('template-parts/header');
                 });
             }
 
+            /** 
+             * Genera los objetos JQuery para mostrar las tarjetas de los medalliestas por su competencia y año.
+             * 
+             * Esta función toma la información de los medallistas obtenidos de una petición POST, 
+             * selecciona los index identificar las diferentes competencias y crea las tarjetas correspondientes para mostrarlas en la interfaz.
+             * 
+             * @param {Array} data - Información de las diferentes competencias y de los medallistas obtenida mediante una petición POST. Se espera un array de objetos con las siguientes propiedades: 
+             * 'c_url_img c_nombre', 'c_apellido_paterno', 'c_medalla', 'c_apellido_materno', 'c_deporte', y 'c_deporte_categoria'.
+             * @param {JQuery} container - Contenedor donde se actualizará el contenido.
+             * @param {string} year - Información del año en el cual se realizó la competencia.
+             */  
             function llenarMedallistas(data, container, year) {
                 let urlLogo = `http://deportesuaq.mx/wp-content/uploads/2024/11/un_${year}.png`;
 
@@ -178,10 +208,24 @@ get_template_part('template-parts/header');
                 activarCarrusel(year, $imgContainer, $infoContainer, $carruselContainer);
             }
 
+            /** 
+             * Genera los objetos JQuery para mostrar las tablas con la información de los medalliestas por su competencia y año.
+             * 
+             * Esta función toma la información de los medallistas obtenidos de una petición POST, 
+             * selecciona los index identificar las diferentes competencias, crea las tablas y apartados correspondientes para mostrarlas en la interfaz.
+             * 
+             * @param {Array} data - Información de las diferentes competencias y de los medallistas obtenida mediante una petición POST. Se espera un array de objetos con las siguientes propiedades: 
+             * 'c_url_img c_nombre', 'c_apellido_paterno', 'c_medalla', 'c_apellido_materno', 'c_deporte', y 'c_deporte_categoria'.
+             * @param {string} year - Información del año en el cual se realizó la competencia.
+             */  
             function llenarTablaMedallistas(data, year) {
                 if (data && data.length > 0) {
                     let tableID = `medallistas${year}`;
 
+                    /** 
+                     * articleHTML: guarda la plantilla del apartado para mostrar la información de los medallistas 
+                     * por las distintas competencias y diferenciarlas por su año.
+                     */
                     let articleHTML = `
                         <article class="parteTable">
                             <div class="tableTitle">
@@ -209,6 +253,9 @@ get_template_part('template-parts/header');
 
                     tablesMedallistas.append(articleHTML);
 
+                    /**
+                     * tableBody: guarda y crea la tabla por competencia y año con la información de los medallistas.
+                     */
                     let tableBody = '';
                     $.each(data, function(index, medallista) {
                         tableBody += `
@@ -229,6 +276,16 @@ get_template_part('template-parts/header');
                 }
             }
 
+            /** 
+             * Genera la funcionalidad para activar los controles de los distintos carruseles de los apartados de cada una de las competencias.
+             * 
+             * Esta función toma los obtejos JQuery de los diferentes apartados para agregar la funcionalidad de los carruseles.
+             * 
+             * @param {string} year - Información del año en el cual se realizó la competencia.
+             * @param {jQuery} $imgs - Objetos JQuery de todas la fotos de los medallistas donde se aplica el evento click.
+             * @param {jQuery} $infos - Objetos JQuery de todos los apartados con la información de los medallistas donde se aplica el evento click.
+             * @param {jQuery} $carruselImgContainer - Objeto JQuery donde se agrupar todas las fotos en un carrusel.
+             */ 
             function activarCarrusel(year, $imgs, $infos, $carruselImgContainer) {
                 let totalImgs = $imgs.find('.medallistaImg').length;
 
@@ -258,6 +315,16 @@ get_template_part('template-parts/header');
                     }
                 });
 
+                /**
+                 * Esta función genera la funcionalidad para ajustar el scroll de los carruseles cuando
+                 * se aplica el evento click en los botones del carrusel.
+                 * 
+                 * @param {string} year - Información del año en el cual se realizó la competencia.
+                 * @param {string} direccion - Ajusta la dirección del carrusel.
+                 * @param {jQuery} $imgs - Objetos JQuery de todas la fotos de los medallistas donde se aplica el evento click.
+                 * @param {jQuery} $infos - Objetos JQuery de todos los apartados con la información de los medallistas donde se aplica el evento click.
+                 * @param {jQuery} $carruselImgContainer - Objeto JQuery donde se agrupar todas las fotos en un carrusel.
+                 */ 
                 function cambiarSlide(year, direccion, $imgs, $infos, $carruselImgContainer) {
                     $imgs.find('.medallistaImg').eq(currentIndexes[year]).removeClass('active').addClass('inactive');
                     $infos.find('.parteText').eq(currentIndexes[year]).removeClass('active');
@@ -285,23 +352,32 @@ get_template_part('template-parts/header');
                     $imgs.animate({
                         scrollLeft: scrollPos
                     }, 300);
-
-                    // Consolas para depuración
-                    console.log("Posición de imagen activa:", imgPosition);
-                    console.log("Ancho de imagen activa:", imgWidth);
-                    console.log("Ancho del contenedor:", containerWidth);
-                    console.log("Posición de desplazamiento calculada:", scrollPos);
                 }
             }
 
+            /**
+             * Esta función trata la informaciób de los medallistas. Si la variable no contiene información se coloca como nula.
+             * 
+             * @param {string} value - Información de los medallistas
+             */
             function safeValue(value) {
                 return (value === null || value === 'null' || value === undefined) ? '' : value;
             }
 
+            /**
+             * Esta función trata la informaciób de los medallistas. Si la variable no contiene información se coloca como Sin categoría.
+             * 
+             * @param {string} value - Información de los medallistas
+             */
             function safeValueCat(value) {
                 return (value === null || value === 'null' || value === undefined) ? 'Sin categoría' : value;
             }
-
+            
+            /**
+             * Esta función trata la informaciób de los medallistas. Si la variable no contiene información se coloca como N/A.
+             * 
+             * @param {string} value - Información de los medallistas
+             */
             function safeNA(value) {
                 return (value === null || value === 'null' || value === undefined) ? 'N/A' : value;
             }

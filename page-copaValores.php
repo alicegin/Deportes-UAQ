@@ -6,6 +6,7 @@ get_template_part('template-parts/headerDPT');
 <link rel="stylesheet" href="<? echo get_template_directory_uri(); ?>/css/copaValoresStyle.css">
 
 <main>
+    <!-- contenedorPrincipal: contenedor principal con la información acerca del torneo -->
     <div class="contenedorPrincipal">
         <div class="headerContenedor">
             <h2>Desde 2006</h2>
@@ -13,7 +14,9 @@ get_template_part('template-parts/headerDPT');
         <h3 style="margin-top: 8px;"><strong>Con deportes individuales y colaborativos</strong></h3>
         <p>La <strong>Copa Valores Universitarios</strong> cuenta con su propósito de Fomentar el deporte y la activación física entre los miembros de esta Casa de Estudios, promoviendo un ambiente de sana competencia y colaboración. Con un espacio seguro que garantiza <span class="negritas">seguridad y respeto</span> de la orientación sexual, identidad de género o expresión de género</p>
     </div>
+    <!-- deportesContainer: contenedor para agrupar todas las tarjetas de los diferentes deportes -->
     <div class="deportesContainer">
+        <!-- parteDeportesContainer: separar los contenedores para las distintas categorias de deportivas -->
         <div class="parteDeportesContainer">
             <h2>Deportes Individuales</h2>
             <div class="imgDeporteContainer">
@@ -160,6 +163,7 @@ get_template_part('template-parts/headerDPT');
             </div>
         </div>
     </div>
+    <!-- contenedorFacultades: diferenciar el contenedor sobre las facultades participantes -->
     <div id="contenedorFacultades" class="contenedorPrincipal">
         <h5>Participación de 13 facultades</h5>
         <div class="facultadContent" style="flex-wrap:wrap; display:flex; align-content:center; justify-content:center;">
@@ -240,72 +244,5 @@ get_template_part('template-parts/headerDPT');
                 </h4>
             </div>
         </div>
-    </div>
-    <!-- <div class="contenedorPrincipal" id="Información">
-        <div class="contenedorPrincipal">
-            <div class="contenido">
-                <h1>
-                    Primera Fase
-                </h1>
-                <p>
-                    Se realizará en el semestre Julio-Diciembre del 2024
-                    Los deportes de conjunto se consideran:
-                </p>
-                <li>
-                    Básquetbol femenil y varonil
-                </li>
-                <li>
-                    Fútbol 5 varonil
-                </li>
-                <li>
-                    Fútbol 7 femenil
-                </li>
-                <li>
-                    Fútbol soccer varonil
-                </li>
-                <li>
-                    Handball varonil y femenil
-                </li>
-                <li>
-                    Tochito libre
-                </li>
-                <li>
-                    Voleibol femenil y varonil
-                </li>
-            </div>
-        </div>
-        <div class="contenedorPrincipal">
-            <div class="contenido">
-                <h1>
-                    Segunda Fase
-                </h1>
-                <p>
-                    Se realizará en el semestre Enero – Julio del 2025
-                    Los deportes Individuales se consideran:
-                </p>
-                <li>
-                    Ajedrez libre
-                </li>
-                <li>
-                    Atletismo femenil, varonil, relevos mixtos
-                </li>
-                <li>
-                    Natación femenil, varonil
-                </li>
-                <li>
-                    Squash femenil y varonil
-                </li>
-                <li>
-                    Tenis femenil y varonil
-                </li>
-                <li>
-                    Tenis de mesa femenil y varonil
-                </li>
-                <li>
-                    Voleibol femenil y varonil
-                </li>
-            </div>
-
-        </div>
-    </div> -->
+    </div>    
 </main>

@@ -9,6 +9,7 @@
         wp_head();
         wp_footer(); 
     ?>
+    <!-- Archivo CSS para el estilo de la sección -->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/instalaciones.css">
 </head>
 
@@ -19,7 +20,9 @@
     ?>
     <main>
         <div class="overlay"></div>
+        <!-- cardContainer: Contenedor que agrupa todas las tarjetas de las distintas instalaciones deportivas -->
         <section class="cardContainer">
+            <!-- card: Contendor que agrupa en una tarjeta la información de la instalación -->
             <div class="card">
                 <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Estadio Centro Universitario</h1>
@@ -97,6 +100,7 @@
             <div class="card">
                 <p class="precio">Contáctanos</p>
                 <h1 class="nombre">Gimnasio Exprepa Centro</h1>
+                <!-- hiddenImgContainer: Agrupa toda la información detallada de la instalación para ser mostrada cuando se genera el evento click sobre la tarjeta de la instalación -->
                 <div class="hiddenImgContainer">
                     <div class="hiddenImg">
                         <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
@@ -108,6 +112,7 @@
                         <img src="http://deportesuaq.mx/wp-content/uploads/2024/11/prueba_1.webp" alt="Gimnasio Exprepa Centro" />
                     </div>
                 </div>
+                <!-- hiddenContainer: Agrupa toda la información detallada de la instalación para ser mostrada cuando se genera el evento click sobre la tarjeta de la instalación -->
                 <div class="hiddenContainer">
                     <div class="moreInfo">
                         <div class="parteMoreInfo">
@@ -127,6 +132,7 @@
                             <p class="direccion">C. Ignacio Manuel Altamirano Sur 24, La Santa Cruz, 36, Centro, Qro.</p>
                         </div>
                     </div>
+                    <!-- contactoContainer: Contenedor que agrupa la información de contacto de la instalación -->
                     <div class="contactoContainer">
                         <label>Contacto</label>
                         <div class="parteIcon">
@@ -262,6 +268,12 @@
                 }
             });
 
+            /**
+             * Esta función genera la funcionalidad para el apartado de ver más detalles sobre la instalación.
+             * 
+             * @param {jQuery} $card - Objeto JQuery que almacena la tarjeta de la instalción de donde se obtiene 
+             * la información al iniciar el evento click para ver más detalles de la instalación.
+             */
             function showDetalles($card) {
                 let $hiddenContainer = $card.closest('.card').find('.hiddenContainer');
                 let $btnCerrar = $card.closest('.card').find('.cardDetalle.btnMas');
@@ -334,6 +346,11 @@
                 });
             }
 
+            /**
+             * Esta función genera la funcionalidad para aplicar zoom a la imagen de la galería seleccionada.
+             * 
+             * @param {jQuery} img - Objeto JQuery que almacena la imagen seleccionada.
+             */
             function imgZoomIn(img) {
                 let header = $('header');
                 let imgContent = img.find('img');
@@ -346,6 +363,11 @@
                 imgContent.addClass("imgZoomInContent");
             }
 
+            /**
+             * Esta función genera la funcionalidad para quitar el efecto de zoom a la imagen de la galería seleccionada.
+             * 
+             * @param {jQuery} img - Objeto JQuery que almacena la imagen seleccionada.
+             */
             function imgZoomOut(img) {
                 let header = $('header');
                 let imgContent = img.find('img');

@@ -18,9 +18,13 @@
     get_template_part('template-parts/header');
     ?>
     <main>
+        <!-- fondo de imagen para la sección -->
         <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/background_contacto-scaled.jpg" alt="deportes UAQ" />
+        <!-- infoContainer: contenedor principal de los contactos -->
         <section class="infoContainer">
+            <!-- infoContent: contenedor para cada uno de los contactos -->
             <article class="infoContent">
+                <!-- infoContacto: contenedor para la información del contacto -->
                 <div class="infoContacto">
                     <h2>Dra. Silvia Lorena Amaya Llano</h2>
                     <p> (442) 192-12-00, Extensión 3100</p>
@@ -78,8 +82,5 @@
             </article>
         </section>
     </main>
-
-
 </body>
-
 </html>
