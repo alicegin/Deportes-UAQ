@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Deportes para todes</title>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/deportesTodos.css">
 </head>
 <body>
     <?php
@@ -25,9 +26,19 @@
         <section class="mainPart mainPartOpciones">
             <article>
                 <div class="imgContainerDPT">
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/voleiball.jpg" alt="Copa Valores" />                    
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/VOLEIBOL_FEMENIL.jpg" alt="Copa Valores" />                    
                 </div>
-                <h2>Copa Valores 
+                <h2 onclick="window.location.href='copa-valores'">Copa Valores 
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
+                    </svg>
+                </h2>
+            </article>
+            <article>
+                <div class="imgContainerDPT">
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/UAQtivate-1.jpeg" alt="Copa Valores" />                    
+                </div>
+                <h2 onclick="window.location.href='uaqtivate'">Cultura Física 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                     </svg>
@@ -37,7 +48,7 @@
                 <div class="imgContainerDPT">
                     <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/voleiball.jpg" alt="Copa Valores" />                    
                 </div>
-                <h2>Cultura Física 
+                <h2 onclick="window.location.href='indet'">INDET 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                     </svg>
@@ -45,19 +56,9 @@
             </article>
             <article>
                 <div class="imgContainerDPT">
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/voleiball.jpg" alt="Copa Valores" />                    
+                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/12/Gatermo_FFFFFF_3-scaled.jpg" alt="Copa Valores" />                    
                 </div>
-                <h2>INDET 
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
-                    </svg>
-                </h2>
-            </article>
-            <article>
-                <div class="imgContainerDPT">
-                    <img src="http://deportesuaq.mx/wp-content/uploads/2024/10/voleiball.jpg" alt="Copa Valores" />                    
-                </div>
-                <h2>Gatienda 
+                <h2 onclick="window.location.href='gatienda'">Gatienda 
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 6H5.25A2.25 2.25 0 0 0 3 8.25v10.5A2.25 2.25 0 0 0 5.25 21h10.5A2.25 2.25 0 0 0 18 18.75V10.5m-10.5 6L21 3m0 0h-5.25M21 3v5.25" />
                     </svg>

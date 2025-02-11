@@ -1,6 +1,5 @@
 html,
 body {
-    margin: 0;
     border: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -675,7 +674,7 @@ main #cardsContainer .cardsContent {
     }
 
     .mainCardsContainer {
-        margin-top: 980px;
+        margin-top: 960px;
         width: 100%;
         flex-direction: row;
         position: absolute;
@@ -835,8 +834,7 @@ main #cardsContainer .cardsContent {
 
     .detallesProducto .galeriaContainer {
         width: 100%;
-        min-height: 100%;
-        min-height: 870px;
+        min-height: 100%;        
     }
 
     .btnCerrarModal {
@@ -877,28 +875,28 @@ main #cardsContainer .cardsContent {
 
     .detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar,
     .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria::-webkit-scrollbar {
-        height: 4px;
+        height: 4px !important;
     }
 
     .detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-thumb,
     .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria::-webkit-scrollbar-thumb {
-        background-color: #d3d3d3;
-        border-radius: 10px;
+        background-color: #d3d3d3 !important;
+        border-radius: 10px !important;
     }
 
     .detallesProducto .galeriaContainer .activeImg::-webkit-scrollbar-track,
     .detallesProducto .galeriaContainer .activeImg .scrollPartGaleria::-webkit-scrollbar-track  {
-        background-color: transparent;
+        background-color: transparent !important;
     }
 
     .contenidoDetalles .infoPrincipal {
         position: absolute;
-        top: 710px;
+        left: 5px;
+        bottom: 5px;
         display: flex;
         justify-content: space-between;
         align-items: flex-end;
         width: calc(100% - 10px);
-        left: 5px;
         padding: 20px;
         background-color: #020132db;
         color: #fdfdfd;
@@ -957,10 +955,6 @@ main #cardsContainer .cardsContent {
 }
 
 @media (max-width: 425px) {
-    .contenidoDetalles .infoPrincipal {
-        top: 82%;
-    }
-
     .detallesProducto .contenidoDetalles .nombre {
         font-size: 40px;
     }
@@ -978,5 +972,13 @@ main #cardsContainer .cardsContent {
     .contenidoDetalles .infoPrincipal button svg {
         height: 18px;
         width: 18px;
+    }
+}
+
+@media (max-width: 400px) {
+    .mainCardsContainer .mainCard {
+        width: 100%;
+        max-width: 100%;
+        min-width: 300px;
     }
 }

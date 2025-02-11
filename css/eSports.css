@@ -368,6 +368,7 @@ body {
 
 .title,
 .subtitle {
+    width: calc(100% - 12px);
     text-align: center;
 }
 
@@ -385,7 +386,6 @@ body {
 }
 
 .subtitle {
-    width: 100%;
     max-width: calc(1500px - 12px);
     font-family: 'Futura-Medium';
     font-size: 26px;
@@ -493,6 +493,10 @@ body {
     .mainPart .mainInfo {
         text-align: left;
         width: 75%;
+    }
+
+    .btnDetalles {
+        width: 65%;
     }
 }
 

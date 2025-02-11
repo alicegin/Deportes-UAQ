@@ -156,8 +156,10 @@ get_template_part('template-parts/header');
 
                     let infoHtml = `
                         <div class="parteText ${index === 0 ? 'active' : ''}">
-                            <h1 class="txtMedal ${medalClass}">${medalTxt}</h1>
-                            <i id="${medalClass}" class="fa-solid fa-medal"></i>
+                            <div class="partMedal">
+                                <h1 class="txtMedal ${medalClass}">${medalTxt}</h1>
+                                <i id="${medalClass}" class="fa-solid fa-medal"></i>
+                            </div>
                             <div class="parteInfoText">
                                 <h1 class="nombreMedallista ${medalClass}">${safeValue(medallista.c_nombre)} ${safeValue(medallista.c_apellido_paterno)} ${safeValue(medallista.c_apellido_materno)}</h1>
                                 <h4 class="nombreDeporte">${safeValue(medallista.c_deporte)} <span class="separador"> | </span> ${safeValueCat(medallista.c_deporte_categoria)}</h4>

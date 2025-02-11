@@ -155,15 +155,10 @@
 /* Estilos generales */
 .infoMedallista {
     position: relative;
-    height: 120px;
+    height: 140px;
     overflow: hidden;
     display: flex;
     align-items: center;
-}
-
-.nombreMedallista {
-    font-size: 1.8rem;
-    font-weight: bold;
 }
 
 .nombreDeporte {
@@ -202,16 +197,16 @@
     color: #cd7f32;
 }
 
-.txtMedal {
-    margin-right: 20px;
-}
-
 .parteMedallistas {
     display: flex;
     flex-direction: column;
-    margin-top: 80px;
+    margin-top: 70px;
     border-bottom: 2px solid #55555514;
     padding-bottom: 60px;
+}
+
+.parteMedallistas:nth-child(1) {
+    margin-top: 22px;
 }
 
 .parteMedallistas .headerParteM {
@@ -221,17 +216,16 @@
 
 .parteMedallistas .headerParteM h1,
 .tablesMedallistas .parteTable .tableTitle h1 {
-    width: calc(100%);
-    padding: 0 40px;
-    text-align: center;
-    font-weight: 350;
+    width: 100%;    
+    text-align: center;    
     margin-bottom: 0;
-    color: #5b5b5b;
+    color: #121212;
 }
 
-.parteMedallistas .headerParteM h1 {
-    font-family: "Teko-Regular";
-    font-size: 60px;
+.parteMedallistas .headerParteM h1,
+.tablesMedallistas .parteTable .tableTitle h1 {
+    font-family: "Futura-Medium" !important;
+    font-size: clamp(36px, 3vw, 40px) !important;
     color: #121212;
 }
 
@@ -243,27 +237,23 @@
 }
 
 .parteMedallistas .parteText i {
-    font-size: 42px;
+    font-size: 32px;
     color: #fdfdfd;
-    padding: 20px;
-    border-radius: 12px;
-    margin-right: 16px;
+    border-radius: 100px;
+    padding: 18px;
 }
 
 .parteMedallistas .parteText h1 {
-    font-size: clamp(46px, 2vw, 0px);
-    font-family: "Teko-Regular";
+    font-size: clamp(38px, 3vw, 48px);
+    font-family: "Futura-Regular";
     margin-bottom: 0;
 }
 
 .parteMedallistas .parteText h4 {
-    font-family: "Futura-Medium";
-    font-size: clamp(22px, 2vw, 24px);
-}
-
-.parteMedallistas .parteText h4 {
+    font-family: "Futura-Regular" !important;   
+    font-size: 28px !important;
+    margin-top: 12px;
     margin-bottom: 0;
-    font-weight: 400;
 }
 
 .parteMedallistas .parteText h1,
@@ -313,21 +303,21 @@ td img {
 }
 
 #btnViejos {
-    outline: none;
-    font-size: clamp(32px, 2vw, 0px);
-    font-weight: 450;
-    width: fit-content;
-    padding: 8px 16px;
-    border-radius: 8px;
-    border: 2px solid #0a0a0a;
-    background-color: #1a1a1a;
-    color: #fdfdfd;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: "Futura-Medium";
+    font-size: clamp(18px, 3vw, 22px);
+    color: #fdfdfd;
+    width: fit-content;
+    background-color: #1a1a1a;
+    padding: 8px 20px;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    border: 2px solid #0a0a0a;
+    border-radius: 8px;
+    outline: none;
     transition: 0.3s;
-    font-family: "Teko-Regular";
-    padding-top: 13px;
 }
 
 #btnViejos:hover {
@@ -367,7 +357,7 @@ td img {
 
 .separador {
     font-weight: 100 !important;
-    color: #cdcdcd;
+    color: #0000002c;
 }
 
 .btnTop {
@@ -399,6 +389,20 @@ td img {
     background-color: #000;
 }
 
+.partMedal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin-right: 30px;
+}
+
+.partMedal .txtMedal {
+    font-family: "Futura-Regular" !important;
+    font-size: 28px !important;
+    margin-top: 12px;
+}
+
 @media (max-width: 1280px) {
     .btnCarrusel.anterior,
     .btnCarrusel.siguiente {
@@ -410,11 +414,27 @@ td img {
     }
 } 
 
+@media (max-width: 1180px) {
+    .btnCarrusel {
+        background-color: #0000003c;
+    }
+
+    .btnCarrusel:hover {
+        background-color: rgb(0 0 0 / 60%);
+    }
+}
+
 @media (max-width: 900px) {
     .parteMedallistas .parteText {
         width: calc(100%);
         padding: 0 20px;
     }
+}
+
+@media (max-width: 835px) {
+    .partMedal {
+        flex-direction: column-reverse;
+    }    
 }
 
 @media (max-width: 765px) {
@@ -446,8 +466,7 @@ td img {
 
     .parteMedallistas .headerParteM h1 {
         padding: 0;
-        padding: 0 20px;
-        font-size: 55px;
+        padding: 0 20px;       
     }
 
     .parteMedallistas:nth-child(2) .headerParteM h1 {
@@ -469,14 +488,11 @@ td img {
     }
 
     .infoMedallista {
-        height: 240px;
-    }
+        height: 300px;
+    }  
 
-    .parteMedallistas .parteText i {
-        margin-right: 0;
-        margin-bottom: 25px;
-        font-size: 34px;
-        padding: 18px;
+    .parteInfoText {
+        margin-top: 28px;
     }
 
     .parteMedallistas .parteText h1,
@@ -496,10 +512,8 @@ td img {
     .btnCarrusel.siguiente {
         box-shadow: none !important;
     }
-}
 
-@media (max-width: 335px) {
-    .nombreMedallista {
-        font-size: 42px !important;
+    .partMedal {
+        margin-right: 0;
     }
 }
