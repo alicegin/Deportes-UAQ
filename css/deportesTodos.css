@@ -189,13 +189,13 @@ main .mainPart article h2:hover svg {
     main .mainPart.manPartInfo {
         min-height: 350px;
         background-color: #121212;
-        border: 1px solid #E0E0E0;
+        border: 0;
+        border-bottom: 1px solid #E0E0E0;
         overflow-y: auto;
     }
 
     .mainPart.mainPartOpciones {
-        min-height: calc(100% - 1px);
-        border-right: 1px solid #E0E0E0;
+        min-height: calc(100% - 1px);        
     }
 
     main .mainPart .infoContainer {
@@ -215,6 +215,13 @@ main .mainPart article h2:hover svg {
 
     main .mainPart.manPartInfo .infoContainer h1 {
         text-align: center;
+    }
+
+    .mainPart.mainPartOpciones,
+    main .mainPart article .imgContainerDPT {
+        border: 0 !important;
+        border-left: 0 !important;
+        border-right: 0 !important;
     }
 }
 

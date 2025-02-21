@@ -106,29 +106,25 @@
             <div class="card">
                 <picture>
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/lolP.webp"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/lolP.webp"
                         media="(max-width: 735px)"
                         type="image/webp" />
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/lolG.avif"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/lolG.avif"
                         type="image/avif" />
-                    <img
-                        src="http://deportesuaq.mx/wp-content/uploads/2025/01/lolG.avif"
-                        alt="Juegos eSports UAQ" />
+                    <img src="" alt="Juegos eSports UAQ" />
                 </picture>
             </div>
             <div class="card">
                 <picture>
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/valorantP.png"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/valorantP.png"
                         media="(max-width: 450px)"
                         type="image/png" />
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/valorantG.jpg"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/valorantG.jpg"
                         type="image/jpg" />
-                    <img
-                        src="http://deportesuaq.mx/wp-content/uploads/2025/01/valorantG.jpg"
-                        alt="Juegos eSports UAQ" />
+                    <img src="" alt="Juegos eSports UAQ" />
                 </picture>
             </div>
         </div>
@@ -136,29 +132,25 @@
             <div class="card">
                 <picture>
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/rocketLeagueP.jpg"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/rocketLeagueP.jpg"
                         media="(max-width: 450px)"
                         type="image/jpg" />
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/rocketLeagueG.jpg"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/rocketLeagueG.jpg"
                         type="image/jpg" />
-                    <img
-                        src="http://deportesuaq.mx/wp-content/uploads/2025/01/rocketLeagueG.jpg"
-                        alt="Juegos eSports UAQ" />
+                    <img src="" alt="Juegos eSports UAQ" />
                 </picture>
             </div>
             <div class="card">
                 <picture>
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/superSmashP.webp"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/superSmashP.webp"
                         media="(max-width: 735px)"
                         type="image/webp" />
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/superSmashG.avif"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/superSmashG.avif"
                         type="image/avif" />
-                    <img
-                        src="http://deportesuaq.mx/wp-content/uploads/2025/01/superSmashG.avif"
-                        alt="Juegos eSports UAQ" />
+                    <img src="" alt="Juegos eSports UAQ" />
                 </picture>
             </div>
         </div>
@@ -171,29 +163,25 @@
             <div class="card">
                 <picture>
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/warzoneP.webp"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/warzoneP.webp"
                         media="(max-width: 735px)"
                         type="image/webp" />
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/warzoneG.jpg"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/warzoneG.jpg"
                         type="image/jpg" />
-                    <img
-                        src="http://deportesuaq.mx/wp-content/uploads/2025/01/warzoneG.jpg"
-                        alt="Juegos eSports UAQ" />
+                    <img src="" alt="Juegos eSports UAQ" />
                 </picture>
             </div>
             <div class="card">
                 <picture>
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/fortniteP.webp"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/fortniteP.webp"
                         media="(max-width: 450px)"
                         type="image/webp" />
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/fortniteG.jpg"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/fortniteG.jpg"
                         type="image/jpg" />
-                    <img
-                        src="http://deportesuaq.mx/wp-content/uploads/2025/01/fortniteG.jpg"
-                        alt="Juegos eSports UAQ" />
+                    <img src="" alt="Juegos eSports UAQ" />
                 </picture>
             </div>
         </div>
@@ -201,29 +189,25 @@
             <div class="card">
                 <picture>
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/freeFireP.jpg"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/freeFireP.jpg"
                         media="(max-width: 450px)"
                         type="image/jpg" />
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/freeFireG.webp"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/freeFireG.webp"
                         type="image/webp" />
-                    <img
-                        src="http://deportesuaq.mx/wp-content/uploads/2025/01/freeFireG.webp"
-                        alt="Juegos eSports UAQ" />
+                    <img src="" alt="Juegos eSports UAQ" />
                 </picture>
             </div>
             <div class="card">
                 <picture>
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/codMobileP.jpg"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/codMobileP.jpg"
                         media="(max-width: 735px)"
                         type="image/jpg" />
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/codMobileG.jpg"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/codMobileG.jpg"
                         type="image/webp" />
-                    <img
-                        src="http://deportesuaq.mx/wp-content/uploads/2025/01/codMobileG.jpg"
-                        alt="Juegos eSports UAQ" />
+                    <img src="" alt="Juegos eSports UAQ" />
                 </picture>
             </div>
         </div>
@@ -231,15 +215,13 @@
             <div class="card">
                 <picture>
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/marvelP.png"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/marvelP.png"
                         media="(max-width: 680px)"
                         type="image/png" />
                     <source
-                        srcset="http://deportesuaq.mx/wp-content/uploads/2025/01/marvelG.png"
+                        srcset="https://deportesuaq.mx/wp-content/uploads/2025/01/marvelG.png"
                         type="image/png" />
-                    <img
-                        src="http://deportesuaq.mx/wp-content/uploads/2025/01/marvelG.png"
-                        alt="Juegos eSports UAQ" />
+                    <img src="" alt="Juegos eSports UAQ" />
                 </picture>
             </div>
         </div>
